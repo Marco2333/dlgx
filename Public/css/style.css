@@ -106,7 +106,7 @@
 .ccreate-detail li > input[type='text'] { height: 2.8rem; border: none; outline: none; font-size: 1.6rem; vertical-align: 2px; }
 .ccreate-detail li > img { position: absolute; right: 1rem; top: 1.2rem; width: 1rem; }
 
-.date-picker { position: fixed; left: 0; bottom: -17.4rem; width: 100%; text-align: center; border-top: 1px solid #eee; background-color: #fff; transition: bottom 200ms; }
+.date-picker { position: fixed; left: 0; bottom: -17.5rem; width: 100%; text-align: center; border-top: 1px solid #eee; background-color: #fff; transition: bottom 200ms; }
 .date-picker > p { color: #80d6c1; font-size: 2.1rem; padding: 1rem; text-align: right; }
 
 .dpicker-body { height: 9.8rem; overflow: scroll; }
