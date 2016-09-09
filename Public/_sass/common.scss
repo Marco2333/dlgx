@@ -1,0 +1,40 @@
+$mainColor: #80d6c1;
+$preNavbt: 5.4rem;
+
+
+.submit {
+	display: block;
+	width: 95%;
+	height: 3.8rem;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin: 1.1rem auto;
+	background-color: $mainColor;
+}
+
+.round-button {
+	padding: .7rem 2.2rem;
+	border-radius: 18px;
+	color: $mainColor;
+	background-color: #fff;
+	outline: none;
+	font-size: 1.4rem;
+	border: 1px solid $mainColor;
+	&:last-of-type {
+		margin-left: -2.3rem;
+		
+	}
+}
+.round-button.active {
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	background-color: $mainColor;
+}
+
+.pre-navbt {
+	margin-bottom: $preNavbt;
+}

@@ -1,0 +1,36 @@
+<include file="Common/header" title="社团详情" keywords="社团详情" description=""/>
+	<style>body {background-color: #eee}</style>
+	
+	<div id="ccreate-wrap">
+		<form action="">
+			<p class="ccreate-title">
+				填写社团资料
+			</p>
+			<div class="ccreate-detail">
+				<ul>
+					<li><span> 社团名称</span><input type="text" placeholder="请输入社团名称"></li>
+					<li class="pr"><span>社团级别</span><input type="text" value="校级组织" readonly><img src="__PUBLIC__/images/arrow_right.png" alt=""></li>
+				</ul>
+			</div>
+			<p class="ccreate-title">
+				填写申请人信息
+			</p>
+			<div class="ccreate-detail">
+				<ul>
+					<li><span>申请人姓名</span><input type="text" placeholder="请输入您的姓名"></li>
+					<li><span>身份证号码</span><input type="text" placeholder="请输入您的身份证号码"></li>
+					<li class="scode-send-wrap"><span>手机号码</span><input type="text" placeholder="手机号码"><input type="button" class="" value="发送验证码"></li>
+					<li><span>验证码</span><input type="text" placeholder="请输入您收到的验证码"></li>
+				</ul>
+			</div>
+			<button class="submit">立即创建</button>
+		</form>
+	</div>
+	<script>
+		$(function() {
+			$(".submit").click(function() {
+				alert("12");
+			});
+		})
+	</script>
+<include file="Common/footer" />

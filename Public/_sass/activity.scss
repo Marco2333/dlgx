@@ -1,0 +1,81 @@
+#act-top {
+	padding: .8rem;
+	text-align: center;
+	background-color: #fff;
+}
+#act-list {
+	padding: .5rem .8rem;
+}
+.act-item {
+	background-color: #fff;
+	margin: .7rem 0;
+	overflow: hidden;
+}
+.act-img {
+	float: left;
+	width: 31%;
+	> img {
+		width: 100%;
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+	}
+}
+.act-info {
+	float: left;
+	width: 69%;
+	padding: .8rem 1rem .4rem;
+}
+.act-title {
+	color: #000;
+	font-size: 1.7rem;
+	margin-bottom: .8rem;
+}
+.act-organize {
+	> img {
+		float: left;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 100%;
+	}
+	> span {
+		float: left;
+		width: 77%; 
+		color: #bbb;
+		margin-top: .6rem;
+		font-size: 1.5rem;
+	}
+}
+.act-time {
+	color: #111;
+	margin: .8rem 0;
+	font-size: 1.5rem;
+}
+.act-operate {
+	position: relative;
+	margin-top: .8rem;
+	> button {
+		width: 8rem;
+		height: 2.6rem;
+		color: #fff;
+		background-color: #999;
+		border-radius: 6px;
+		border: none;
+		outline: none;
+		font-size: 1.3rem;
+	}
+	> button.active {
+		background-color: $mainColor;
+	}
+	> span {
+		color: #bbb;
+		vertical-align: bottom;
+		font-size: 1.4rem;
+	}
+	> img {
+		position: absolute;
+		width: 6rem;
+		height: 6rem;
+		right: 0;
+		bottom: -1rem;
+	}
+}

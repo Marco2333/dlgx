@@ -1,0 +1,68 @@
+#uinfo-top {
+	height: 3.4rem;
+	color: #fff;
+	line-height: 3.4rem;
+	padding: 0 0.6rem;
+	font-size: 1.4rem;
+	background-color: $mainColor;
+}
+#uinfo-wrap {
+	padding: 0 .6rem;
+	background-color: #fff;
+}
+.uinfo-item {
+	padding: .7rem .3rem;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+	> span {
+		display: inline-block;
+		width: 6.2rem;
+		font-size: 1.4rem;
+		color: #666;
+		padding: 0.3rem;
+		margin-right: .3em;
+		text-align: justify;
+		-ms-text-align-last: justify;
+		text-align-last: justify;
+	}
+	> input[type='text'] {
+		width: 15.5rem;
+		height: 2.6rem;
+		color: #000;
+		font-size: 15px;
+		border: none;
+		outline: none;
+		font-family: "SimHei";
+	}
+	> img {
+		width: .8rem;
+		float: right;
+		margin: 6px 6px 0 0;
+	}
+	&:last-of-type {
+		border-bottom: none;
+		padding-bottom: none;
+	}
+}
+.scode-send-wrap {
+	> input[type='text'] {
+		width: 11rem;
+	}
+	> input[type='button'] {
+		float: right;
+		height: 2.7rem;
+		border: 1px solid #aaa;
+		border-radius: 6px;
+		background-color: #fff;
+		padding: 0 5px;
+		outline: none;
+		font-size: 1.2rem;
+		color: #999;
+	}
+	> input[type='button'].active {
+		color: #fff;
+		border: none;
+		background-color: $mainColor;
+	}
+}
+

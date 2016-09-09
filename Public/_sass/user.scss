@@ -1,0 +1,64 @@
+#account-top {
+	height: 14.2rem;
+	text-align: center;
+	background-color: $mainColor;
+	> .portrait {
+		width: 8rem;
+		height: 8rem;
+		margin: 1.8rem 0 1rem;
+	}
+	> p{
+		color: #fff;
+		font-size: 1.7rem;
+	}
+}
+#account-list {
+	font-size: 1.6rem;
+	color: #111;
+	> p {
+		margin: .5rem 0;
+		padding: 1rem;
+		background-color: #fff;
+	}
+	> ul {
+		background-color: #fff;
+		padding: 0 1rem;
+	}
+	li {
+		padding: 1rem 0;
+		border-bottom: 1px solid #f0f0f0;
+	}
+	img {
+		float: right;
+		width: .8rem;
+		margin-top: .5rem;
+	}
+}
+.nav-bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #2f2f2f;
+}
+.navbt-item {
+	float: left;
+	width: 50%;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1.6rem;
+	&.active {
+		color: $mainColor;
+	}
+	&:first-child {
+		border-right: 1px solid #666;
+	}
+	> img {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 8px;
+		vertical-align: -0.3rem;
+	}
+}

@@ -1,0 +1,28 @@
+#notice-wrap {
+	margin: .8em .8rem 0;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: 0 0 3px #ccc;
+}
+#notice-head {
+	padding: .8rem;
+	border-bottom: 1px solid #f0f0f0;
+	> .fl {
+		font-size: 1.8rem;
+		color: #000;
+		> span {
+			margin-right: .3rem;
+			color: $mainColor;
+		}
+	}
+	> .fr {
+		color: #b4b4b4;
+		font-size: 1.5rem;
+		margin-top: .3rem;
+	}
+}
+#notice-body {
+	padding: 1rem .6rem;
+	color: #000;
+	font-size: 1.5rem;
+}

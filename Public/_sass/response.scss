@@ -1,0 +1,52 @@
+@media screen and (max-width: 350px){
+	.portrait {
+		width: 6rem;
+		height: 6rem;
+	}
+	.apply-detail {
+		> h1 {
+			font-size: 1.8rem;
+		}
+		> h2 {
+			font-size: 1.4rem;
+		}
+		> p {
+			font-size: 1.4rem;
+		}
+	}
+	.act-organize {
+		> img {
+			width: 2.3rem;
+			height: 2.3rem;
+		}
+		> span {
+			margin-top: .4rem;
+			font-size: 1.3rem;
+		}
+	}
+	.act-title {
+		font-size: 1.6rem;
+		margin-bottom: .5rem;
+	}
+	.act-time  {
+		margin: .8rem 0;
+		font-size: 1.3rem;
+	}
+	.act-operate {
+		margin-top: .7rem;
+	}
+	.act-operate {
+		> button {
+			width: 7.6rem;
+			padding: 0;
+		}
+		> span {
+			font-size: 1.2rem;
+		}
+	}
+	.scode-send-wrap {
+		> input[type='text'] {
+			width: 7.6rem;
+		}
+	}
+}
