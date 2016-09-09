@@ -1,4 +1,4 @@
-<include file="Common/header" title="社团详情" keywords="社团详情" description=""/>
+<include file="Common/header" title="社团创建" keywords="社团创建" description=""/>
 	<style>body {background-color: #eee}</style>
 	
 	<div id="ccreate-wrap">
@@ -9,7 +9,7 @@
 			<div class="ccreate-detail">
 				<ul>
 					<li><span> 社团名称</span><input type="text" placeholder="请输入社团名称"></li>
-					<li class="pr"><span>社团级别</span><input type="text" value="校级组织" readonly><img src="__PUBLIC__/images/arrow_right.png" alt=""></li>
+					<li class="show-dpicker pr"><span>社团级别</span><input type="text" value="校级组织" readonly><img src="__PUBLIC__/images/arrow_right.png" alt=""></li>
 				</ul>
 			</div>
 			<p class="ccreate-title">
@@ -19,18 +19,78 @@
 				<ul>
 					<li><span>申请人姓名</span><input type="text" placeholder="请输入您的姓名"></li>
 					<li><span>身份证号码</span><input type="text" placeholder="请输入您的身份证号码"></li>
-					<li class="scode-send-wrap"><span>手机号码</span><input type="text" placeholder="手机号码"><input type="button" class="" value="发送验证码"></li>
+					<li class="scode-send-wrap"><span>手机号码</span><input type="text" placeholder="手机号码"><input type="button" value="发送验证码"></li>
 					<li><span>验证码</span><input type="text" placeholder="请输入您收到的验证码"></li>
 				</ul>
 			</div>
 			<button class="submit">立即创建</button>
 		</form>
 	</div>
+	<div class="date-picker">
+		<p><span class="dpicker-finish">完成</span></p>
+		<div class="dpicker-body">
+			<ul>
+				<li class="dpicker-item empty sub-active"></li>
+				<li class="dpicker-item active">校级组织</li>
+				<li class="dpicker-item sub-active">院级组织</li>
+				<li class="dpicker-item">兴趣组织</li>
+				<li class="dpicker-item">校级组织</li>
+				<li class="dpicker-item">院级组织</li>
+				<li class="dpicker-item">兴趣组织</li>
+				<li class="dpicker-item empty"></li>
+			</ul>
+		</div>
+	</div>
 	<script>
+
 		$(function() {
+			$(".dpicker-body li")
 			$(".submit").click(function() {
 				alert("12");
 			});
+
+			var rate = 0;
+			$(".dpicker-body").scroll(function() {
+				rate = setPickerStyle(rate)
+			});
+			
+			$(".dpicker-finish").click(function() {
+				var text = $(".dpicker-item.active").text();
+				alert(text);
+				$(".date-picker").css({'bottom':'-17.4rem'})
+			});
+
+			$(".show-dpicker").click(function() {
+				console.log($(".date-picker"));
+				$(".date-picker").css({'bottom':0});
+			});
+
+			$(".scode-send-wrap input[type = 'button']").click(function() {
+				$(this).addClass('active');
+			});
+
+			setPickerStyle(0);
 		})
+		function setPickerStyle(rate) {
+			var i, len,
+				scrollTop = $(".dpicker-body").scrollTop(),
+				newRate = parseInt(scrollTop / 38);
+
+			if(newRate === rate) {
+				return rate;
+			}
+
+			var itemList = $(".dpicker-item");
+
+			if($(itemList[newRate + 1]).hasClass('empty')) {
+				return newRate;
+			}
+
+			itemList = $(".dpicker-item").removeClass('active').removeClass('sub-active');
+
+			$(itemList[newRate + 1]).addClass('active').prev().addClass('sub-active').next().next().addClass('sub-active');
+
+			return newRate;
+		}
 	</script>
 <include file="Common/footer" />

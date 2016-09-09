@@ -121,10 +121,6 @@
 			display: inline-block;
 			width: 8rem;
 			margin-right: .5rem;
-			text-align: justify;
-			-ms-text-align-last: justify;
-			text-align-last: justify;
-
 		}
 		> input[type='text'] {
 			height: 2.8rem;
@@ -139,5 +135,42 @@
 			top: 1.2rem;
 			width: 1rem;
 		}
+	}
+}
+
+.date-picker {
+	position: fixed;
+	left: 0;
+	bottom: -17.4rem;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #eee;
+	background-color: #fff;
+	transition: bottom 200ms;
+	> p {
+		color: $mainColor;
+		font-size: 2.1rem;
+		padding: 1rem;
+		text-align: right;
+	}
+}
+.dpicker-body {
+	height: 9.8rem;
+	overflow: scroll;
+}
+.dpicker-item {
+	width: 100%;
+	height: 3.8rem;
+	line-height: 3.8rem;
+	font-size: 2.5rem;
+	color: #999;
+	transform: scaleY(0.6);
+	&.sub-active {
+		color: #666;
+		transform: scaleY(0.8);
+	}
+	&.active {
+		color: #000;
+		transform: scaleY(1);
 	}
 }
