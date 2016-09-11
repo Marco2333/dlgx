@@ -45,7 +45,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -63,7 +63,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -81,7 +81,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -99,7 +99,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -117,7 +117,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -135,7 +135,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -153,7 +153,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -171,7 +171,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -189,7 +189,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -207,7 +207,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -225,7 +225,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -243,7 +243,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -261,7 +261,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -279,7 +279,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -297,7 +297,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">

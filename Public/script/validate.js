@@ -1,6 +1,6 @@
 $(function() {
 	$(".submit").click(function(e) {
-		var i = 0, flag = true, inputList = $("input[type='text']"), 
+		var i = 0, val, flag = true, inputList = $("input[type='text']"), 
 		len = inputList.length;
 		for(;i < len;i++){
 			if(!$(inputList[i]).val().trim()) {
@@ -9,12 +9,12 @@ $(function() {
 				return false;
 			}
 		}
-		if(!regRule.idcard.test($("input[name='id']").val())) {
+		if($("input[name='idnumber']").length && !regRule.idcard.test($("input[name='idnumber']").val())) {
 			alert('请输入规范的身份证号码！');
 			e.preventDefault();
 			return false;
 		}
-		if(!regRule.mobile.test($("input[name='phone']").val())) {
+		if($("input[name='phone']").length && !regRule.mobile.test($("input[name='phone']").val())) {
 			alert('请输入规范的手机号！');
 			e.preventDefault();
 			return false;
@@ -22,8 +22,6 @@ $(function() {
 	});
 
 	$(".scode-send-wrap input[type = 'button']").click(function() {
-		
-
 		var phone;
 
 		if(phone = $(this).prev('input').val().trim()) {
@@ -38,7 +36,7 @@ $(function() {
 
 		$(this).addClass('active').attr('disabled',true);
 
-		var count = 5,
+		var count = 58,
 			that = $(this).val('59s后可重新发送'),
 			interID = setInterval(function() {
 				if(count == 0) {

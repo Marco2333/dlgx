@@ -165,7 +165,7 @@
 #adetail-body { padding: .5rem 1.2rem; background-color: #fff; }
 #adetail-body > p { padding: .8rem 0; color: #000; font-size: 1.8rem; border-bottom: 1px solid #ccc; }
 
-.detail-info { font-size: 1.7rem; padding: .6em 0; overflow: hidden; }
+.detail-info { font-size: 1.6rem; padding: .6em 0; overflow: hidden; }
 .detail-info span { color: #666; }
 .detail-info p { float: left; width: 76%; color: #222; padding-left: .5rem; }
 .detail-info li { margin-bottom: .5em; }
@@ -193,5 +193,5 @@
   .act-operate { margin-top: .7rem; }
   .act-operate > button { width: 7.6rem; padding: 0; }
   .act-operate > span { font-size: 1.2rem; }
-  .scode-send-wrap > input[type='text'] { width: 7.6rem; }
+  .scode-send-wrap > input[type='text'] { width: 8rem; }
   #club-member img { width: 5rem; height: 5rem; } }
