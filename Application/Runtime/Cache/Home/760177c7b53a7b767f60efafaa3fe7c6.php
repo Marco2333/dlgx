@@ -31,7 +31,7 @@
 	<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> -->
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
-	<script type="text/javascript" src="/collegial/Public/plugins/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
 	<div id="adetail-img">
@@ -60,11 +60,31 @@
 				<li class="clearfix">
 					<span id="adetail-count">参与人员(123人)</span>
 				</li>
-				<li>
-					<img src="/collegial/Public/images/user1.jpg" alt="">
-					<img src="/collegial/Public/images/user3.jpg" alt="">
-					<img src="/collegial/Public/images/user1.jpg" alt="">
-					<img src="/collegial/Public/images/user3.jpg" alt="">
+				<li id="uportrait-list">
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user1.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user2.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user3.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user1.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user2.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user3.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user2.jpg" alt="">
+					</div>
+					<div class="uportrait-wrap">
+						<img src="/collegial/Public/images/user3.jpg" alt="">
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -77,9 +97,11 @@
 	<div id="adetail-navbt" class="nav-bottom">
 		<div class="navbt-item"><span>社团互助</span>
 		</div>
-		<div class="navbt-item active"><span>立即报名</span>
+		<div id="act-apply" class="navbt-item active"><span>立即报名</span>
 		</div>
 	</div>
+	<script src="/collegial/Public/script/min/touch.min.js"></script>
+	<script src="/collegial/Public/script/min/actdetail.min.js"></script>
 
 </body>
 </html>

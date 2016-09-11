@@ -31,7 +31,7 @@
 	<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> -->
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
-	<script type="text/javascript" src="/collegial/Public/plugins/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
 	<style>body {background-color: #ebebeb}</style>

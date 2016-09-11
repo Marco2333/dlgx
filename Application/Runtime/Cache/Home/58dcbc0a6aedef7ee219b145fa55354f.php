@@ -36,7 +36,7 @@
 <body>
 
 	<style>body {background-color: #eee}</style>
-	<div id="uinfo-top" class="one-line">
+	<div id="uinfo-top">
 		完善个人信息才能加入社团,或者创建属于自己的社团哦！
 	</div>
 	<div id="uinfo-detail">
@@ -48,15 +48,17 @@
 				</div>
 				<div class="uinfo-item">
 					<span>性别</span>
-					<input id="uitem-man" type="radio" name="sex" value="1">
+					<input id="uitem-man" type="radio" name="sex" value="1" checked>
 					<label for="uitem-man">男</label>
 					<input id="uitem-woman" type="radio" name="sex" value="2">
 					<label for="uitem-woman">女</label>
 				</div>
 				<div class="uinfo-item">
-					<span>学校</span>
-					<input type="text" value="浙江工业大学" placeholder="请输入您所在的学校" readonly>
-					<img src="/collegial/Public/images/arrow_right.png" alt="">
+					<a href="<?php echo U('Index/school');?>">
+						<span>学校</span>
+						<input type="text" value="浙江工业大学" placeholder="请输入您所在的学校" readonly>
+						<img src="/collegial/Public/images/arrow_right.png" alt="">
+					</a>
 				</div>
 				<div class="uinfo-item">
 					<span>学院院系</span>
@@ -68,8 +70,8 @@
 				</div>
 				<div class="scode-send-wrap uinfo-item">
 					<span>手机号码</span>
-					<input type="text" value="路三三" placeholder="手机号码">
-					<input type="button" class="active" value="65s后可重新发送">
+					<input type="text" value="18896554856" placeholder="手机号码" name="phone">
+					<input type="button" value="发送验证码">
 				</div>
 				<div class="uinfo-item">
 					<span>验证码</span>
@@ -79,7 +81,8 @@
 			<input class="submit" type="submit" value="确认修改">
 		</form>
 	</div>
-	
+
+	<script src="/collegial/Public/script/min/validate.min.js"></script>
 
 
 </body>

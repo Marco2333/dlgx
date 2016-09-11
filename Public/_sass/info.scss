@@ -1,8 +1,7 @@
 #uinfo-top {
-	height: 3.4rem;
 	color: #fff;
-	line-height: 3.4rem;
-	padding: 0 0.6rem;
+	padding: .8rem 0.2rem;
+	padding-top: 1rem;
 	font-size: 1.4rem;
 	background-color: $mainColor;
 }
@@ -12,32 +11,34 @@
 }
 .uinfo-item {
 	padding: .7rem .3rem;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #eee;
 	background-color: #fff;
-	> span {
+	span {
 		display: inline-block;
-		width: 6.2rem;
-		font-size: 1.4rem;
-		color: #666;
-		padding: 0.3rem;
-		margin-right: .3em;
-		text-align: justify;
-		-ms-text-align-last: justify;
-		text-align-last: justify;
+		width: 6.6rem;
+		font-size: 1.5rem;
+		padding: 0.2rem;
+		margin-right: .4em;
+		color: #333;
 	}
-	> input[type='text'] {
+	input[type='text'] {
 		width: 15.5rem;
 		height: 2.6rem;
 		color: #000;
-		font-size: 15px;
+		font-size: 1.5rem;
 		border: none;
 		outline: none;
-		font-family: "SimHei";
 	}
-	> img {
-		width: .8rem;
+	> input[type='radio'] {
+		vertical-align: -2px;
+	}
+	label {
+		margin-right: 1rem;
+	}
+	img {
+		width: .9rem;
 		float: right;
-		margin: 6px 6px 0 0;
+		margin: 6px 7px 0 0;
 	}
 	&:last-of-type {
 		border-bottom: none;

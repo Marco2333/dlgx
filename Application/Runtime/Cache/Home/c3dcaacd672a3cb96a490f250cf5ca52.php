@@ -31,12 +31,12 @@
 	<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> -->
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
-	<script type="text/javascript" src="/collegial/Public/plugins/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
 
 	<div id="cselect-top">
-		<img src="/collegial/Public/images/add.png" alt="">
+		<a href="<?php echo U('Index/club-create');?>"><img src="/collegial/Public/images/add.png" alt=""></a>
 		<span>没有感兴趣的社团？那就自己创建一个吧！</span>
 	</div>
 	<div id="club-list">

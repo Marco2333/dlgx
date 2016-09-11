@@ -5,18 +5,24 @@
 		color: #999;
 		font-size: 1.5rem;
 	}
-	> .round-button {
+	> a {
+		display: inline-block;
 		margin: 1.5rem 0;
-		padding: .8rem 3.4rem;
-		font-size: 1.7rem;
+		padding: .7rem 3rem;
+		font-size: 1.6rem;
+		border-radius: 20px;
+		color: #fff;
+		background-color: $mainColor;
 	}
 }
+
+// club-select
 #cselect-top {
 	padding: .1rem .3rem 0 .8rem;
 	line-height: 4.5rem;
 	color: #111;
 	background-color: #eee;
-	> img {
+	img {
 		width: 2.6rem;
 		margin-right: .2rem;
 		vertical-align: -.8rem;
@@ -102,6 +108,11 @@
 		width: 20%;
 		text-align: center;
 		font-size: 1.3rem;
+	}
+	img {
+		width: 5.6rem;
+		height: 5.6rem;
+		border-radius: 100%;
 	}
 }
 

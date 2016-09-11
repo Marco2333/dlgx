@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
-	<meta name="keywords" content="我的信息" />
+	<meta name="keywords" content="我的活动" />
 	<meta name="description" content=""/>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<meta http-equiv="Cache-Control" content="no-transform" /> 
@@ -31,7 +31,7 @@
 	<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> -->
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
-	<script type="text/javascript" src="/collegial/Public/plugins/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
 
@@ -317,6 +317,9 @@
 		$(".round-button").click(function() {
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
+			if($(this).prev().length) {
+				alert('功能有待开发');
+			}
 		})
 	})
 </script>

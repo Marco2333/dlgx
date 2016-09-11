@@ -55,7 +55,36 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+				</h2>
+				<div class="act-organize clearfix">
+					<img src="/collegial/Public/images/actorg1.png" alt="">
+					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+				</div>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
+				<div class="act-operate">
+					<button class="active">社团互助</button>
+					<span>一天前发布</span>
+					<img src="/collegial/Public/images/activity_ing.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="act-item">
+			<div class="act-video">
+				<video src="/collegial/Public/video/v1.mp4" poster="/collegial/Public/images/poster1.png" controls></video>
+				<p><span class="fl one-line">因为青春</span><span class="fr">2.33</span></p>
+			</div>
+			<div class="video-bottom">
+				<img src="/collegial/Public/images/actorg1.png" alt="">
+				<span>大了个学</span>
+				<span class="fr">8月15日发布</span>
+			</div>
+		</div>
+		<div class="act-item clearfix">
+			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
+			<div class="act-info">
+				<h2 class="act-title one-line">
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -73,31 +102,13 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
 					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
 				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button>社团互助</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_over.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
 					<button class="active">社团互助</button>
 					<span>一天前发布</span>
@@ -109,43 +120,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button class="active">社团互助</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_ing.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button class="active">社团互助</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_ing.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -163,31 +138,13 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
 					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
 				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button>社团互助</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_over.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
 					<button class="active">社团互助</button>
 					<span>一天前发布</span>
@@ -199,43 +156,7 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button class="active">社团互助</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_ing.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button class="active">社团互助</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_ing.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -253,13 +174,13 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
 					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
 				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
 					<button>社团互助</button>
 					<span>一天前发布</span>
@@ -271,13 +192,13 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
 					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
 				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
 					<button class="active">社团互助</button>
 					<span>一天前发布</span>
@@ -289,13 +210,13 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity1.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
 					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
 				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
 					<button class="active">社团互助</button>
 					<span>一天前发布</span>
@@ -307,13 +228,13 @@
 			<div class="act-img"><img src="/collegial/Public/images/activity2.png" alt=""></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					蒙牛全明星~早间青春SHOW
+					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
 					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
 				</div>
-				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
+				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
 					<button class="active">社团互助</button>
 					<span>一天前发布</span>
@@ -323,10 +244,12 @@
 		</div>
 	</div>
 	<div class="nav-bottom">
-		<div class="navbt-item"><img src="/collegial/Public/images/home_white.png" alt=""><span>首页</span>
+		<div class="navbt-item active"><img src="/collegial/Public/images/home.png" alt=""><span>首页</span>
 		</div>
-		<div class="navbt-item active"><img src="/collegial/Public/images/person.png" alt=""><span>我的</span>
-		</div>
+		<a href="<?php echo U('Index/user');?>">
+			<div class="navbt-item"><img src="/collegial/Public/images/person_white.png" alt=""><span>我的</span>
+			</div>
+		</a>
 	</div>
 
 
@@ -335,6 +258,9 @@
 			$(".round-button").click(function() {
 				$(this).addClass('active');
 				$(this).siblings().removeClass('active');
+			});
+			$(".act-video > p").click(function(){
+				$(this).css('bottom','-40px');
 			})
 		})
 	</script>

@@ -14,7 +14,9 @@
 }
 #account-list {
 	font-size: 1.6rem;
-	color: #111;
+	a {
+		color: #111;
+	}
 	> p {
 		margin: .5rem 0;
 		padding: 1rem;
@@ -38,6 +40,7 @@
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	z-index: 10;
 	width: 100%;
 	background-color: #2f2f2f;
 }
@@ -56,8 +59,8 @@
 		border-right: 1px solid #666;
 	}
 	> img {
-		width: 2rem;
-		height: 2rem;
+		width: 1.8rem;
+		height: 1.8rem;
 		margin-right: 8px;
 		vertical-align: -0.3rem;
 	}

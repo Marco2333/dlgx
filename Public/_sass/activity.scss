@@ -10,14 +10,49 @@
 	background-color: #fff;
 	margin: .7rem 0;
 	overflow: hidden;
+	border-radius: 6px;
+}
+.act-video {
+	position: relative;
+	font-size: 0;
+	overflow: hidden;
+	> video {
+		width: 100%;
+	}
+	> p {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: .6rem .8rem;
+		color: #fff;
+		font-size: 1.6rem;
+		background-color: rgba(90,90,90,.5);
+		transition: bottom .3s;
+		> .fl {
+			width: 80%;
+		}
+	}
+}
+.video-bottom {
+	padding: .6rem .5rem;
+	color: #aaa;
+	font-size: 1.5rem;
+	> img {
+		width: 2.9rem;
+		height: 2.9rem;
+		border-radius: 100%;
+	}
+	> span.fr {
+		font-size: 1.3rem;
+		margin-top: .6rem;
+	}
 }
 .act-img {
 	float: left;
 	width: 31%;
 	> img {
 		width: 100%;
-		border-top-left-radius: 6px;
-		border-bottom-left-radius: 6px;
 	}
 }
 .act-info {
@@ -28,7 +63,7 @@
 .act-title {
 	color: #000;
 	font-size: 1.7rem;
-	margin-bottom: .8rem;
+	margin-bottom: .6rem;
 }
 .act-organize {
 	> img {
@@ -52,7 +87,7 @@
 }
 .act-operate {
 	position: relative;
-	margin-top: .8rem;
+	margin-top: 1rem;
 	> button {
 		width: 8rem;
 		height: 2.6rem;
