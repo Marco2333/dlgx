@@ -28,21 +28,10 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_ing.png" alt="">
 				</div>
-			</div>
-		</div>
-		<div class="act-item">
-			<div class="act-video">
-				<video src="__PUBLIC__/video/v1.mp4" poster="__PUBLIC__/images/poster1.png" controls></video>
-				<p><span class="fl one-line">因为青春</span><span class="fr">2.33</span></p>
-			</div>
-			<div class="video-bottom">
-				<img src="__PUBLIC__/images/actorg1.png" alt="">
-				<span>大了个学</span>
-				<span class="fr">8月15日发布</span>
 			</div>
 		</div>
 		<div class="act-item clearfix">
@@ -57,7 +46,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_ing.png" alt="">
 				</div>
@@ -75,7 +64,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_ing.png" alt="">
 				</div>
@@ -93,7 +82,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button>社团互助</button>
+					<button>立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_over.png" alt="">
 				</div>
@@ -111,7 +100,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_ing.png" alt="">
 				</div>
@@ -129,7 +118,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_ing.png" alt="">
 				</div>
@@ -147,10 +136,21 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">立即报名</button>
 					<span>一天前发布</span>
 					<img src="__PUBLIC__/images/activity_ing.png" alt="">
 				</div>
+			</div>
+		</div>
+		<div class="act-item">
+			<div class="act-video">
+				<video src="__PUBLIC__/video/v1.mp4" poster="__PUBLIC__/images/poster1.png" controls></video>
+				<p><span class="fl one-line">因为青春</span><span class="fr">2.33</span></p>
+			</div>
+			<div class="video-bottom">
+				<img src="__PUBLIC__/images/actorg1.png" alt="">
+				<span>大了个学</span>
+				<span class="fr">8月15日发布</span>
 			</div>
 		</div>
 	</div>
@@ -162,7 +162,8 @@
 			</div>
 		</a>
 	</div>
-
+	
+	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
 	<script>
 		$(function() {
 			$(".round-button").click(function() {
@@ -171,6 +172,9 @@
 			});
 			$(".act-video > p").click(function(){
 				$(this).css('bottom','-40px');
+			});
+			$(".act-operate button").click(function(){
+				myalert('报名成功');
 			})
 		})
 	</script>
