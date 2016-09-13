@@ -263,7 +263,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     padding: .4rem 1.3rem 1.4rem;
 }
 .alert-operate {
-    padding: .8rem 0;
+    padding: 1rem 0;
     font-size: 1.7rem;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -278,7 +278,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .confirm-operate > p {
     float: left;
     width: 50%;
-    padding: .8rem 0;
+    padding: 1rem 0;
 }
 .confirm-operate .active {
     color: #80d6c1;

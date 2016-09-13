@@ -60,7 +60,7 @@
 .video-bottom > span.fr { font-size: 1.3rem; margin-top: .6rem; }
 
 .act-img { float: left; width: 31%; max-width: 10.3rem; }
-.act-img > img { width: 100%; }
+.act-img img { width: 100%; }
 
 .act-info { float: left; width: 69%; padding: .8rem 1rem .4rem; }
 
@@ -134,7 +134,7 @@
 
 #account-list { font-size: 1.6rem; }
 #account-list a { color: #111; }
-#account-list > p { margin: .5rem 0; padding: 1rem; background-color: #fff; }
+#account-list p { margin: .5rem 0; padding: 1rem; background-color: #fff; }
 #account-list > ul { background-color: #fff; padding: 0 1rem; }
 #account-list li { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
 #account-list img { float: right; width: .8rem; margin-top: .5rem; }
