@@ -4,18 +4,18 @@ $(function() {
 		len = inputList.length;
 		for(;i < len;i++){
 			if(!$(inputList[i]).val().trim()) {
-				alert('信息填写不完整！');
+				myalert('信息填写不完整！');
 				e.preventDefault();
 				return false;
 			}
 		}
 		if($("input[name='idnumber']").length && !regRule.idcard.test($("input[name='idnumber']").val())) {
-			alert('请输入规范的身份证号码！');
+			myalert('请输入规范的身份证号码！');
 			e.preventDefault();
 			return false;
 		}
 		if($("input[name='phone']").length && !regRule.mobile.test($("input[name='phone']").val())) {
-			alert('请输入规范的手机号！');
+			myalert('请输入规范的手机号！');
 			e.preventDefault();
 			return false;
 		}
@@ -26,11 +26,11 @@ $(function() {
 
 		if(phone = $(this).prev('input').val().trim()) {
 			if(!regRule.mobile.test(phone)) {
-				alert('请输入规范的手机号！');
+				myalert('请输入规范的手机号！');
 				return false;
 			}
 		} else {
-			alert('手机号不能为空！');
+			myalert('手机号不能为空！');
 			return false;
 		}
 

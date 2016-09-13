@@ -39,7 +39,7 @@
 		<img class="portrait" src="/collegial/Public/images/user1.jpg" alt="">
 		<h2>大学生创业协会</h2>
 		<p>浙江工业大学</p>
-		<button>退出社团</button>
+		<button class="_exit">退出社团</button>
 	</div>
 	<div id="club-info" class="info-wrap">
 		<p class="info-title">社团资料</p>
@@ -80,6 +80,18 @@
 		<div class="navbt-item active"><span>发布公告</span>
 		</div>
 	</div>
+	<script src="/collegial/Public/script/min/mypop.min.js"></script>
+	<script>
+		$("#cdetail-top").on('click','._apply',function() {
+			myalert('您的申请已收到，社团管理员将在24小时内完成审核，请耐心等待。');
+			$(this).removeClass('_apply').addClass('_wait')
+			.text('等待审核');
+		}).on('click','._exit',function() {
+			myconfirm('确定退出该社团吗？',function() {
+
+			})
+		})
+	</script>
 
 </body>
 </html>

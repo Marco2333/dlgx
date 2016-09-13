@@ -100,7 +100,9 @@
 		<div id="act-apply" class="navbt-item active"><span>立即报名</span>
 		</div>
 	</div>
+
 	<script src="/collegial/Public/script/min/touch.min.js"></script>
+	<script src="/collegial/Public/script/min/mypop.min.js"></script>
 	<script src="/collegial/Public/script/min/actdetail.min.js"></script>
 
 </body>

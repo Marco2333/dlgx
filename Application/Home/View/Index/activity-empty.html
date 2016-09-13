@@ -1,0 +1,30 @@
+<include file="Common/header" title="我的活动" keywords="我的活动" description=""/>
+
+	<style>body {background-color: #f2f2f2}</style>
+
+	<div id="act-top">
+		<button class="round-button active">我参加的</button><button class="round-button">我发起的</button>
+	</div>
+
+
+	<div id="none-club" class="center">
+		<p>您还没有参加任何活动哦。</p>
+		<a>参加活动</a>
+	</div>
+
+	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
+<script>
+	$(function() {
+		$(".round-button").click(function() {
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+			if($(this).prev().length) {
+				myalert('功能有待开发');
+			}
+		});
+		$("#none-club a").click(function(){
+			myalert('请先加入一个社团，才能参加活动哦。');
+		})
+	})
+</script>
+<include file="Common/footer" />

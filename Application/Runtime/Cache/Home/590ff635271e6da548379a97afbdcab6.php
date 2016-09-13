@@ -207,7 +207,17 @@
 			</div>
 		</div>
 	</div>
-	
+	<script src="/collegial/Public/script/min/mypop.min.js"></script>
+	<script>
+		$(function(){
+			$("#apply-list").on('click','button.active',function(){
+				$(this).parent().empty().html('<span>已通过</span>');
+			});
+			$("#apply-list").on('click','button.inactive',function(){
+				$(this).parent().empty().html('<span>未通过</span>');
+			})
+		})
+	</script>
 
 </body>
 </html>

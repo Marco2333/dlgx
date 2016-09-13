@@ -235,12 +235,53 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     transform: translate3D(-50%,-50%,0);
     z-index: 100;
 }
-.transparent {
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    -khtml-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+.pop-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 999;
+    background-color: rgba(100,100,100,.5);
+}
+.pop-panel {
+    width: 80%;
+    max-width: 36rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.pop-title {
+    color: #000;
+    font-size: 1.8rem;
+    padding: .8rem 0;
+    text-align: center;
+}
+.alert-body {
+    color: #444;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .4rem 1.3rem 1.4rem;
+}
+.alert-operate {
+    padding: .8rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    color: #80d6c1;
+}
+.confirm-operate {
+    font-size: 1.7rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    color: #aaa; 
+}
+.confirm-operate > p {
+    float: left;
+    width: 50%;
+    padding: .8rem 0;
+}
+.confirm-operate .active {
+    color: #80d6c1;
+    border-left: 1px solid #ddd;
 }

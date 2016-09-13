@@ -21,6 +21,6 @@ $(function() {
 	});
 
 	$("#act-apply").click(function() {
-		alert('恭喜您，报名成功了！');
+		myalert('恭喜您，报名成功了！');
 	});
 })

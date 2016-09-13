@@ -76,6 +76,7 @@
 			</ul>
 		</div>
 	</div>
+	<script src="/collegial/Public/script/min/mypop.min.js"></script>
 	<script src="/collegial/Public/script/min/validate.min.js"></script>
 	<script src="/collegial/Public/script/min/clubCreate.min.js"></script>
 

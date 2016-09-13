@@ -277,13 +277,14 @@
 			</div>
 		</div>
 	</div>
+	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
 <script>
 	$(function() {
 		$(".round-button").click(function() {
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 			if($(this).prev().length) {
-				alert('功能有待开发');
+				myalert('功能有待开发');
 			}
 		})
 	})

@@ -45,7 +45,10 @@
 	float: left;
 	font-size: 0;
 	text-align: right;
-
+	> span {
+		color: #aaa;
+		font-size: 1.5rem;
+	}
 	> button {
 		width: 8.2rem;
 		height: 2.8rem;
