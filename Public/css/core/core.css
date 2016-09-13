@@ -260,7 +260,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .alert-body {
     color: #444;
     font-size: 1.6rem;
-    white-space: nowrap;
     padding: .4rem 1.3rem 1.4rem;
 }
 .alert-operate {

@@ -7,6 +7,7 @@
 	padding: .5rem .8rem;
 }
 .act-item {
+	position: relative;
 	background-color: #fff;
 	margin: .7rem 0;
 	overflow: hidden;
@@ -51,6 +52,7 @@
 .act-img {
 	float: left;
 	width: 31%;
+	max-width: 10.3rem;
 	> img {
 		width: 100%;
 	}
@@ -86,7 +88,6 @@
 	font-size: 1.5rem;
 }
 .act-operate {
-	position: relative;
 	margin-top: 1rem;
 	> button {
 		width: 8rem;

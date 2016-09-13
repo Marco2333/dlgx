@@ -52,8 +52,9 @@
 			$(this).removeClass('_apply').addClass('_wait')
 			.text('等待审核');
 		}).on('click','._exit',function() {
+			var that = this;
 			myconfirm('确定退出该社团吗？',function() {
-
+				$(that).removeClass('_exit').addClass('_apply').text('申请加入');
 			})
 		})
 	</script>

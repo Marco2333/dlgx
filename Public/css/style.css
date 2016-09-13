@@ -48,7 +48,7 @@
 
 #act-list { padding: .5rem .8rem; }
 
-.act-item { background-color: #fff; margin: .7rem 0; overflow: hidden; border-radius: 6px; }
+.act-item { position: relative; background-color: #fff; margin: .7rem 0; overflow: hidden; border-radius: 6px; }
 
 .act-video { position: relative; font-size: 0; overflow: hidden; }
 .act-video > video { width: 100%; }
@@ -59,7 +59,7 @@
 .video-bottom > img { width: 2.9rem; height: 2.9rem; border-radius: 100%; }
 .video-bottom > span.fr { font-size: 1.3rem; margin-top: .6rem; }
 
-.act-img { float: left; width: 31%; }
+.act-img { float: left; width: 31%; max-width: 10.3rem; }
 .act-img > img { width: 100%; }
 
 .act-info { float: left; width: 69%; padding: .8rem 1rem .4rem; }
@@ -71,7 +71,7 @@
 
 .act-time { color: #111; margin: .8rem 0; font-size: 1.5rem; }
 
-.act-operate { position: relative; margin-top: 1rem; }
+.act-operate { margin-top: 1rem; }
 .act-operate > button { width: 8rem; height: 2.6rem; color: #fff; background-color: #999; border-radius: 6px; border: none; outline: none; font-size: 1.3rem; }
 .act-operate > button.active { background-color: #80d6c1; }
 .act-operate > span { color: #bbb; vertical-align: bottom; font-size: 1.4rem; }

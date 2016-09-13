@@ -1,6 +1,6 @@
-window.alert = function(msg) {
+window.myalert = function(msg) {
 	var panelString = [
-		"<div class='pop-panel'>",
+		"<div class='pop-panel center'>",
 		"<h2 class='pop-title'>提示</h2>",
 		"<div class='alert-body'>",
 		msg,
@@ -8,15 +8,15 @@ window.alert = function(msg) {
 		"<div class='alert-operate'>确认</div>",
 		"</div>"
 	].join(" ");
-	$("<div class='pop-wrap center'>").html(panelString).appendTo($('body'));
+	$("<div class='pop-wrap'>").html(panelString).appendTo($('body'));
 	$(".alert-operate").click(function() {
 		$(".pop-wrap").remove();
 	})
 }
 
-window.confirm = function(msg,succsss) {
+window.myconfirm = function(msg,succsss) {
 	var panelString = [
-		"<div class='pop-panel'>",
+		"<div class='pop-panel center'>",
 		"<h2 class='pop-title'>提示</h2>",
 		"<div class='alert-body'>",
 		msg,
@@ -25,11 +25,13 @@ window.confirm = function(msg,succsss) {
 		"</div>"
 	].join(" ");
 	
-	$("<div class='pop-wrap center'>").html(panelString).appendTo($('body'));
+	$("<div class='pop-wrap'>").html(panelString).appendTo($('body'));
 
 	$(".confirm-operate").on('click','.inactive',function() {
 		$(".pop-wrap").remove();
 	}).on('click','.active',function() {
+		console.log(this);
 		succsss();
+		$(".pop-wrap").remove();
 	});
 }
