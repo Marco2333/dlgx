@@ -40,11 +40,11 @@
 		<p>路三三</p>
 	</div>
 	<div id="account-list" class="pre-navbt">
-		<p><a href="<?php echo U('Index/check');?>"><span>申请审核</span><img src="/collegial/Public/images/arrow_right.png" alt=""></a></p>
+		<a href="<?php echo U('Index/check');?>"><p><span>申请审核</span><img src="/collegial/Public/images/arrow_right.png" alt=""></p></a>
 		<ul>
-			<li><a href="<?php echo U('Index/info');?>"><span>我的信息</span><img src="/collegial/Public/images/arrow_right.png" alt=""></a></li>
-			<li><a href="<?php echo U('Index/activity');?>"><span>我的活动</span><img src="/collegial/Public/images/arrow_right.png" alt=""></a></li>
-			<li><a href="<?php echo U('Index/club');?>"><span>我的社团</span><img src="/collegial/Public/images/arrow_right.png" alt=""></a></li>
+			<a href="<?php echo U('Index/info');?>"><li><span>我的信息</span><img src="/collegial/Public/images/arrow_right.png" alt=""></li></a>
+			<a href="<?php echo U('Index/activity');?>"><li><span>我的活动</span><img src="/collegial/Public/images/arrow_right.png" alt=""></li></a>
+			<a href="<?php echo U('Index/club');?>"><li><span>我的社团</span><img src="/collegial/Public/images/arrow_right.png" alt=""></li></a>
 		</ul>
 	</div>
 	<div class="nav-bottom">

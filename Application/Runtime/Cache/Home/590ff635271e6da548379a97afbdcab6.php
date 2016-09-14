@@ -207,7 +207,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="/collegial/Public/script/min/mypop.min.js"></script>
 	<script>
 		$(function(){
 			$("#apply-list").on('click','button.active',function(){

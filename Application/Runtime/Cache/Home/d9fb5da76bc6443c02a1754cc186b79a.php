@@ -53,7 +53,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -71,7 +71,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button>社团互助</button>
+					<button>取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_over.png" alt="">
 				</div>
@@ -89,7 +89,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -107,7 +107,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -125,7 +125,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -143,7 +143,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -161,7 +161,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button>社团互助</button>
+					<button>取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_over.png" alt="">
 				</div>
@@ -179,7 +179,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -197,7 +197,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -215,7 +215,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -233,7 +233,7 @@
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -251,7 +251,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button>社团互助</button>
+					<button>取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_over.png" alt="">
 				</div>
@@ -269,7 +269,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -287,7 +287,7 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
@@ -305,21 +305,25 @@
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">社团互助</button>
+					<button class="active">取消报名</button>
 					<span>一天前发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="/collegial/Public/script/min/mypop.min.js"></script>
 <script>
 	$(function() {
 		$(".round-button").click(function() {
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 			if($(this).prev().length) {
-				alert('功能有待开发');
+				myalert('功能有待开发');
 			}
+		});
+		$(".act-operate button").click(function(){
+			myalert('取消报名成功');
 		})
 	})
 </script>
