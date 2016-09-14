@@ -173,8 +173,15 @@
 			$(".act-video > p").click(function(){
 				$(this).css('bottom','-40px');
 			});
-			$(".act-operate button").click(function(){
-				myalert('报名成功');
+			$(".act-operate button.active").click(function(){
+				if($(this).hasClass('_cancel')) {
+					myalert('取消报名成功');
+					$(this).removeClass('_cancel').text('立即报名');
+				}
+				else {
+					myalert('报名成功');
+					$(this).addClass('_cancel').text('取消报名');
+				}
 			})
 		})
 	</script>

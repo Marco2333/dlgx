@@ -287,9 +287,16 @@
 				myalert('功能有待开发');
 			}
 		});
-		$(".act-operate button").click(function(){
-			myalert('取消报名成功');
+		$(".act-operate button.active").click(function(){
+			if($(this).hasClass('_apply')) {
+				myalert('报名成功');
+				$(this).removeClass('_apply').text('取消报名');
+			}
+			else {
+				myalert('取消报名成功');
+				$(this).addClass('_apply').text('立即报名');
+			}
 		})
-	})
+})
 </script>
 <include file="Common/footer" />
