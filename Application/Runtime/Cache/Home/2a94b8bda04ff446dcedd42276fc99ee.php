@@ -52,7 +52,7 @@
 	
 	<div id="act-list" class="pre-navbt">
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/test.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
 					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
@@ -208,8 +208,15 @@
 			$(".act-video > p").click(function(){
 				$(this).css('bottom','-40px');
 			});
-			$(".act-operate button").click(function(){
-				myalert('报名成功');
+			$(".act-operate button.active").click(function(){
+				if($(this).hasClass('_cancel')) {
+					myalert('取消报名成功');
+					$(this).removeClass('_cancel').text('立即报名');
+				}
+				else {
+					myalert('报名成功');
+					$(this).addClass('_cancel').text('取消报名');
+				}
 			})
 		})
 	</script>

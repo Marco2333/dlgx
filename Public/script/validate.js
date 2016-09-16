@@ -21,8 +21,9 @@ $(function() {
 		}
 	});
 
-	$(".scode-send-wrap input[type = 'button']").click(function() {
+	$(".scode-send-wrap button").click(function(e) {
 		var phone;
+		e.preventDefault();
 
 		if(phone = $(this).prev('input').val().trim()) {
 			if(!regRule.mobile.test(phone)) {
@@ -37,15 +38,15 @@ $(function() {
 		$(this).addClass('active').attr('disabled',true);
 
 		var count = 58,
-			that = $(this).val('59s后可重新发送'),
+			that = $(this).text('59s后可重新发送'),
 			interID = setInterval(function() {
 				if(count == 0) {
-					that.removeClass('active').val('发送验证码');
+					that.removeClass('active').text('发送验证码');
 					clearInterval(interID);
 					that.removeAttr("disabled");
 					return;
 				}
-				that.val(count-- + 's后可重新发送');
+				that.text(count-- + 's后可重新发送');
 			},1000)
 	});
 })

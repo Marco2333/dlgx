@@ -22,15 +22,12 @@
 		color: #333;
 	}
 	input[type='text'] {
-		width: 15.5rem;
+		width: 17.4rem;
 		height: 2.6rem;
 		color: #000;
 		font-size: 1.5rem;
 		border: none;
 		outline: none;
-	}
-	> input[type='radio'] {
-		vertical-align: -2px;
 	}
 	label {
 		margin-right: 1rem;
@@ -45,13 +42,41 @@
 		padding-bottom: none;
 	}
 }
+.radio-wrap {
+	position: relative;
+	display: inline-block;
+	> input[type='radio'] {
+		position: relative;
+		vertical-align: -1px;
+		opacity: 0;
+		width: 1.5rem;
+		height: 1.5rem;
+		z-index: 10;
+		margin-right: .2rem;
+		&:checked {
+			+ .radio-temp {
+				background-color: $mainColor;
+			}
+		}
+	}
+}
+.radio-temp {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: .2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+	border: 2px solid $mainColor;
+}
 .scode-send-wrap {
 	> input[type='text'] {
 		width: 11rem;
 	}
-	> input[type='button'] {
+	> button {
 		float: right;
-		height: 2.7rem;
+		height: 2.8rem;
 		border: 1px solid #aaa;
 		border-radius: 6px;
 		background-color: #fff;
@@ -60,10 +85,9 @@
 		font-size: 1.2rem;
 		color: #999;
 	}
-	> input[type='button'].active {
+	> button.active {
 		color: #fff;
 		border: none;
 		background-color: $mainColor;
 	}
 }
-
