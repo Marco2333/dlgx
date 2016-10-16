@@ -1,28 +1,190 @@
-#notice-wrap {
-	margin: .8em .8rem 0;
-	border-radius: 6px;
+/*首页*/
+.search-wrap {
+	height: 3.2rem;
+	margin: .8rem;
+	border: .1rem solid #ddd;
+	border-radius: 5px;
+	padding: 0 .5rem;
+	line-height: 3rem;
 	background-color: #fff;
-	box-shadow: 0 0 3px #ccc;
+	overflow: hidden;
+	> img {
+		width: 1.9rem;
+		height: 1.9rem;
+	}
+	> input {
+		height: 3rem;
+		width: 90%;
+		border: none;
+		outline: none;
+		font-size: 1.4rem;
+		color: #444 ;
+		padding-left: .5rem;
+	}
 }
-#notice-head {
-	padding: .8rem;
-	border-bottom: 1px solid #f0f0f0;
-	> .fl {
-		font-size: 1.8rem;
-		color: #000;
-		> span {
-			margin-right: .3rem;
-			color: $mainColor;
+.acttype-head {
+	padding: .5rem 1rem;
+	padding-top: .8rem;
+	font-size: 1.7rem;
+	color: #666;
+	div {
+		font-size: 1.4rem;
+		color: #999;
+	}
+	img {
+		height: 1.5rem;
+		vertical-align: -.2rem;
+		margin-left: .5rem;
+	} 
+}
+.online-act {
+	text-align: center;
+	padding: 0 0 1rem .6rem;
+	background-color: #fff;
+	img {
+		margin: 1rem .6rem 0 0;
+		width: 47%;
+		border-radius: 6px;
+	}
+}
+.imgbox {
+	overflow: hidden;
+	li {
+		float: left;
+		width: 100vw;
+		height: 20rem;
+	}
+	img {
+		width: 100vw;
+		max-height: 20rem;
+		margin:0 auto;
+	}
+}
+.page {
+	position: relative;
+	ol {
+		position: absolute;
+		left: 50%;
+		bottom: .3rem;
+		z-index: 10;
+	}
+	li {
+		position: relative;
+		left: -50%;
+		display: inline-block;
+		width: 1rem;
+		height: 1rem;
+		margin: 0px .4rem;
+		text-align: center;
+		border-radius:50%;
+		border: 1px solid #fff;
+		background-color:transparent;
+		&.active {
+			background:#fff;
 		}
 	}
-	> .fr {
-		color: #b4b4b4;
-		font-size: 1.5rem;
-		margin-top: .3rem;
+
+}
+
+/*index-club*/
+#clubs-wrap {
+	padding-bottom: 5.6rem;
+}
+.club-item {
+	position: relative;
+	margin: .5rem .7rem;
+	background-color: #fff;
+}
+.club-img {
+	float: left;
+	width: 30%;
+	padding: 1rem;
+	> img {
+		width: 100%;
+		border-radius: 100%;
 	}
 }
-#notice-body {
-	padding: 1rem .6rem;
-	color: #000;
+.club-item-info {
+	float: left;
+	width: 70%;
+	padding-right: .5rem;
+	> h2 {
+		color: #111;
+		font-size: 1.7rem;
+	}
+	> p {
+		color: #777;
+		margin: .5rem 0;
+		font-size: 1.4rem;
+	}
+	> span {
+		color: #555;
+		word-break: break-all;
+	}
+}
+.club-watch {
+	position: absolute;
+	display: inline-block;
+	top: 1.2rem;
+	right: .8rem;
+	color: $mainColor;
+	padding: 0 .5rem;
+	padding-top: .1rem;
+	line-height: 2.2rem;
+	border: 2px solid $mainColor;
+	border-radius: 3px;
+	> img {
+		width: 1rem;
+		height: 1rem;
+		margin-right: .5rem;
+		vertical-align: 0;
+	}
+	&._watch {
+		color: #ccc;
+		border-color: #ccc;
+	}
+	&:active {
+		color: $mainColor;
+	}
+	&._watch:active {
+		color: #ccc;
+	}
+}
+.club-create-button {
+	position: absolute;
+	top: 1.2rem;
+	right: 1.6rem;
+	color: #fff;
+	padding: 0 .5rem;
+	padding-top: .1rem;
+	line-height: 2.6rem;
+	background-color: $mainColor;
+	border-radius: 3px;
+	> img {
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-right: .5rem;
+		vertical-align: -1px;
+	}
+	&:active {
+		color: #fff;
+	}
+}
+
+.trans-alert {
+	position: fixed;
+	width: 10.5rem;
+	padding: 1rem 0;
+	overflow: hidden;
+	color: #fff;
 	font-size: 1.5rem;
+	text-align: center;
+	border-radius: 6px;
+	background-color: rgba(100,100,100,.5);
+	transition: bottom .3s;
+	> img {
+		width: 4rem;
+		max-height: 4rem;
+		margin-bottom: .5rem;
+	}
 }

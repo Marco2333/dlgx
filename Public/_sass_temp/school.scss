@@ -1,0 +1,20 @@
+.school-city {
+	padding: .6rem;
+	font-size: 1.6rem;
+	color: #888;
+	background-color: #eee;
+	+ ul {
+		padding-right: .6rem;
+	}
+}
+.school-item {
+	border-bottom: 1px solid #ddd;
+	background-color: #dedede;
+	padding-left: 5.5rem;
+	> p {
+		padding: .8rem .7rem;
+		color: #000;
+		font-size: 1.6rem;
+		background-color: #fff;
+	}
+}

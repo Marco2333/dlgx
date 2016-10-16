@@ -3,15 +3,25 @@ $(function() {
 	$(".dpicker-body").scroll(function() {
 		rate = setPickerStyle(rate)
 	});
-	
+
 	$(".dpicker-finish").click(function() {
 		var text = $(".dpicker-item.active").text();
-		$(".date-picker").css({'bottom':'-17.5rem'});
+		$(".date-picker").css({
+			'bottom': '-17.5rem'
+		});
 		$(".show-dpicker input").val(text);
 	});
 
+	$(".dpicker-cancel").click(function() {
+		$(".date-picker").css({
+			'bottom': '-17.5rem'
+		});
+	});
+
 	$(".show-dpicker").click(function() {
-		$(".date-picker").css({'bottom':0});
+		$(".date-picker").css({
+			'bottom': 0
+		});
 	});
 
 	setPickerStyle(0);
@@ -23,13 +33,13 @@ function setPickerStyle(rate) {
 		scrollTop = $(".dpicker-body").scrollTop(),
 		newRate = parseInt(scrollTop / 38);
 
-	if(newRate === rate) {
+	if (newRate === rate) {
 		return rate;
 	}
 
 	var itemList = $(".dpicker-item");
 
-	if($(itemList[newRate + 1]).hasClass('empty')) {
+	if ($(itemList[newRate + 1]).hasClass('empty')) {
 		return newRate;
 	}
 

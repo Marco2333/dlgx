@@ -1,0 +1,93 @@
+#uinfo-top {
+	color: #fff;
+	padding: .8rem 0.2rem;
+	padding-top: 1rem;
+	font-size: 1.4rem;
+	background-color: $mainColor;
+}
+#uinfo-wrap {
+	padding: 0 .6rem;
+	background-color: #fff;
+}
+.uinfo-item {
+	padding: .7rem .3rem;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	span {
+		display: inline-block;
+		width: 6.6rem;
+		font-size: 1.5rem;
+		padding: 0.2rem;
+		margin-right: .4em;
+		color: #333;
+	}
+	input[type='text'] {
+		width: 17.4rem;
+		height: 2.6rem;
+		color: #000;
+		font-size: 1.5rem;
+		border: none;
+		outline: none;
+	}
+	label {
+		margin-right: 1rem;
+	}
+	img {
+		width: .9rem;
+		float: right;
+		margin: 6px 7px 0 0;
+	}
+	&:last-of-type {
+		border-bottom: none;
+		padding-bottom: none;
+	}
+}
+.radio-wrap {
+	position: relative;
+	display: inline-block;
+	> input[type='radio'] {
+		position: relative;
+		vertical-align: -1px;
+		opacity: 0;
+		width: 1.5rem;
+		height: 1.5rem;
+		z-index: 10;
+		margin-right: .2rem;
+		&:checked {
+			+ .radio-temp {
+				background-color: $mainColor;
+			}
+		}
+	}
+}
+.radio-temp {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: .2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+	border: 2px solid $mainColor;
+}
+.scode-send-wrap {
+	> input[type='text'] {
+		width: 11rem;
+	}
+	> button {
+		float: right;
+		height: 2.8rem;
+		border: 1px solid #aaa;
+		border-radius: 6px;
+		background-color: #fff;
+		padding: 0 5px;
+		outline: none;
+		font-size: 1.2rem;
+		color: #999;
+	}
+	> button.active {
+		color: #fff;
+		border: none;
+		background-color: $mainColor;
+	}
+}

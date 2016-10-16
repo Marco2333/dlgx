@@ -4,15 +4,22 @@
 		max-height: 22rem;
 	}
 }
-#adetail-body {
-	padding: .5rem 1.2rem;
+.adetail-head {
+	padding: .8rem 0;
+	color: #000;
+	font-size: 1.8rem;
+	border-bottom: 1px solid #ccc;
 	background-color: #fff;
-	> p {
-		padding: .8rem 0;
-		color: #000;
-		font-size: 1.8rem;
-		border-bottom: 1px solid #ccc;
+	> .fr {
+		font-size: 1.6rem;
+		color: #aaa;
+		margin-top: .3rem;
 	}
+}
+.adetail-wrap {
+	padding: 0 1.4rem;
+	background-color: #fff;
+	margin-bottom: 1rem;
 }
 .detail-info {
 	font-size: 1.6rem;
@@ -28,7 +35,7 @@
 		padding-left: .5rem;
 	}
 	li {
-		margin-bottom: .5em;
+		margin-bottom: .4em;
 		> span {
 			float: left;
 			width: 24%;
@@ -60,15 +67,60 @@
 	}
 }
 #adetail-intro {
-	padding-top: .8rem;
+	padding: .8rem 0;
 	color: #111;
 	font-size: 1.7rem;
 }
+.mark-item {
+	border-bottom: 1px solid #ddd;
+	&:last-child {
+		border-bottom: none;
+	}	
+}
+.mark-head {
+	padding: .8rem 0;
+}
+.mark-portrait {
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 100%;
+}
+.mark-name {
+	display: inline-block;
+	width: 45%;
+	font-size: 1.7rem;
+	color: #111;
+	vertical-align: middle;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mark-date {
+	float: right;
+	font-size: 1.5rem;
+	color: #aaa;
+	margin-top: .5rem;
+}
+.mark-body {
+	color: #666;
+	font-size: 1.6rem;
+	word-break: break-word;
+}
+.mark-reply {
+	text-align: right;
+	color: #666;
+	font-size: 1.6rem;
+	padding-bottom: .8rem;
+}
+.mark-at {
+	color: $mainColor;
+}
 #adetail-navbt {
 	> .navbt-item {
+		padding: 1.2rem 0;
 		&:first-child {
 			width: 33%;
-			color: #111;
+			color: $mainColor;
 			border: none;
 			background-color: #fafafa;
 		}

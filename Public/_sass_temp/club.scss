@@ -122,10 +122,9 @@
 	font-size: 1.6rem;
 }
 .ccreate-title {
-	padding: 1.1rem .7rem;
+	padding: 1.2rem  .8rem;
 }
 .ccreate-detail {
-	margin-bottom: 1rem;
 	li {
 		padding: .7rem;
 		background-color: #fff;
@@ -135,22 +134,11 @@
 			margin-right: .5rem;
 		}
 		> input[type='text'] {
-			width: 18.5rem;
 			height: 2.8rem;
 			border: none;
 			outline: none;
 			font-size: 1.6rem;
 			vertical-align: 2px;
-		}
-		> textarea {
-			width: 18.5rem;
-			height: 8rem;
-			resize: none;
-			outline: none;
-			padding: .3rem;
-			font-size: 1.6rem;
-			border: none;
-			vertical-align: text-top;
 		}
 		> img {
 			position: absolute;
@@ -158,29 +146,6 @@
 			top: 1.2rem;
 			width: 1rem;
 		}
-	}
-}
-#club-logo-set {
-	position: static;
-	width: 3.5rem;
-	height: 3.5rem;
-	border-radius: 100%;
-	+ img {
-		top: 1.6rem;
-	}
-}
-.club-add-img {
-	padding: .7rem;
-	background-color: #fff;
-	> img {
-		width: 6rem;
-		height: 6rem;
-		border-radius: 5px;
-		margin-right: 1.2rem;
-	}
-	> span {
-		color: #aaa;
-		font-size: 1.4rem;
 	}
 }
 
@@ -194,14 +159,10 @@
 	background-color: #fff;
 	transition: bottom 200ms;
 	> p {
-		color: #111;
-		font-size: 1.9rem;
+		color: $mainColor;
+		font-size: 2.1rem;
 		padding: 1rem;
-		text-align: center;
-		> span {
-			margin-top: -.3rem;
-			font-size: 1.8rem;
-		}
+		text-align: right;
 	}
 }
 .dpicker-body {

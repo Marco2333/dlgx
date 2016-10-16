@@ -1,0 +1,145 @@
+<include file="Common/header" title="首页" keywords="主页" description=""/>
+	
+	<style>body {background-color: #f2f2f2}</style>
+
+	<div id="act-top" >
+		<button class="round-button">活动</button><button class="round-button active">社团</button>
+		<a class="club-create-button"><img src="__PUBLIC__/images/plus_white.png" alt="">创建</a>
+	</div>
+	<div class="search-wrap">
+		<img src="__PUBLIC__/images/search.png" alt=""><input type="text" placeholder="搜索社团">
+	</div>
+	<div id="clubs-wrap">
+		<ul>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch _watch"><img src="__PUBLIC__/images/plus.png" alt="" class="none"><span>已关注</span></a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+			</li><li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：fadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasf
+					</span>
+				</div>
+				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="nav-bottom">
+		<div class="navbt-item active"><img src="__PUBLIC__/images/home.png" alt=""><p>首页</p>
+		</div>
+		<a href="{:U('Index/user')}">
+			<div class="navbt-item"><img src="__PUBLIC__/images/topic_gray.png" alt=""><p>话题</p>
+			</div>
+		</a>
+		<a href="{:U('Index/user')}">
+			<div class="navbt-item"><img src="__PUBLIC__/images/person_gray.png" alt=""><p>我的</p>
+			</div>
+		</a>
+	</div>
+	
+	<div class="center trans-alert none">
+		<img src="__PUBLIC__/images/tick.png" alt="">
+		<p></p>
+	</div>
+	<script>
+		$(function() {
+			$(".round-button").click(function() {
+				$(this).addClass('active');
+				$(this).siblings().removeClass('active');
+			}); 
+
+			$("#clubs-wrap").on('click','.club-watch',function() {
+				if($(this).hasClass('_watch')) {
+					$(this).removeClass('_watch').find('img').removeClass('none').next('span').text('关注');
+					$(".trans-alert p").text('已取消关注').parent().removeClass('none');
+				} else {
+					$(this).addClass('_watch').find('img').addClass('none').next('span').text('已关注');
+					$(".trans-alert p").text('关注成功').parent().removeClass('none');
+				}
+				setTimeout(function() {
+					$(".trans-alert").addClass('none');
+				},1400)
+			})
+		})
+	</script>
+<include file="Common/footer" />

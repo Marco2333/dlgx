@@ -35,6 +35,15 @@
 	.act-operate {
 		margin-top: .7rem;
 	}
+	.act-operate {
+		> button {
+			width: 7.6rem;
+			padding: 0;
+		}
+		> span {
+			font-size: 1.2rem;
+		}
+	}
 	.uinfo-item input[type='text'] {
 		width: 15.4rem;
 	}
@@ -46,29 +55,5 @@
 	#club-member img {
 		width: 5rem;
 		height: 5rem;
-	}
-	.online-act {
-		img {
-			width: 46%;
-		}
-	}
-	.ccreate-detail li {
-		> input[type='text'] {
-			width: 15.5rem;
-		}
-		> textarea {
-			width: 15.5rem;
-		}
-	}
-}
-
-@media screen and (min-width: 390px) {
-	.ccreate-detail li {
-		> input[type='text'] {
-			width: 21rem;
-		}
-		> textarea {
-			width: 21rem;
-		}
 	}
 }

@@ -26,10 +26,7 @@
 	<![endif]-->
 	
 	<title>我的活动</title>
-	<!-- <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
-	<link rel="bookmark" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon" /> 
-	<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> -->
-	<link rel="stylesheet" href="/collegial/Public/css/core/core.css">
+	<link rel="stylesheet" href="/collegial/Public/css/core/core.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
@@ -49,7 +46,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -67,7 +64,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -85,7 +82,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -103,7 +100,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -121,7 +118,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -139,7 +136,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -157,7 +154,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -175,7 +172,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -193,7 +190,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -211,7 +208,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -229,7 +226,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -247,7 +244,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -265,7 +262,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -283,7 +280,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
@@ -301,7 +298,7 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">

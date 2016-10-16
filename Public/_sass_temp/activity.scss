@@ -1,11 +1,10 @@
 #act-top {
-	position: relative;
 	padding: .8rem;
 	text-align: center;
 	background-color: #fff;
 }
 #act-list {
-	padding: 0 .8rem;
+	padding: .5rem .8rem;
 }
 .act-item {
 	position: relative;
@@ -13,9 +12,6 @@
 	margin: .7rem 0;
 	overflow: hidden;
 	border-radius: 6px;
-	&:first-child {
-		margin-top: 0;
-	}
 }
 .act-video {
 	position: relative;
@@ -68,7 +64,7 @@
 	padding: .8rem 1rem .4rem;
 }
 .act-title {
-	color: #222;
+	color: #000;
 	font-size: 1.7rem;
 	margin-bottom: .6rem;
 }
@@ -82,20 +78,33 @@
 	> span {
 		float: left;
 		width: 77%; 
-		color: #999;
+		color: #bbb;
 		margin-top: .6rem;
 		font-size: 1.5rem;
 	}
 }
 .act-time {
-	color: #333;
+	color: #111;
 	margin: .8rem 0;
 	font-size: 1.5rem;
 }
 .act-operate {
 	margin-top: 1rem;
+	> button {
+		width: 8rem;
+		height: 2.6rem;
+		color: #fff;
+		background-color: #999;
+		border-radius: 6px;
+		border: none;
+		outline: none;
+		font-size: 1.3rem;
+	}
+	> button.active {
+		background-color: $mainColor;
+	}
 	> span {
-		color: #999;
+		color: #bbb;
 		vertical-align: bottom;
 		font-size: 1.4rem;
 	}
@@ -106,19 +115,4 @@
 		right: 0;
 		bottom: -1rem;
 	}
-}
-
-/*launch-activity*/
-#ladate-picker {
-	> .dpicker-body {
-		width: 29%;
-		float: left;
-	}
-}
-.dpicker-info {
-	float: left;
-	width: 4%;
-	font-size: 1.9rem;
-	color: #333;
-	padding-top: 3.3rem;
 }

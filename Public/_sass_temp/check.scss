@@ -1,0 +1,68 @@
+#apply-list {
+	padding: 2px 12px;
+}
+.apply-item {
+	padding: 12px 1px;
+	border-bottom: 1px solid #ddd;
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+.apply-info {
+	width: 70%;
+	float: left;
+
+	.portrait-wrap {
+		float: left;
+		margin-right: .7rem;
+	}
+}
+.portrait {
+	width: 6.8rem;
+	height: 6.8rem;
+	margin-top: .4rem;
+	border-radius: 100%;
+}
+.apply-detail {
+	float: left;
+	> h1 {
+		font-size: 1.7rem;
+		color: #000;
+	}
+	> h2 {
+		color: #777;
+		font-size: 1.4rem;
+		margin: .3rem 0 .4rem;
+	}
+	> p {
+		color: #444;
+		font-size: 1.4rem;
+	}
+}
+
+.check-button-wrap {
+	width: 30%;
+	float: left;
+	font-size: 0;
+	text-align: right;
+	> span {
+		color: #aaa;
+		font-size: 1.5rem;
+	}
+	> button {
+		width: 8.2rem;
+		height: 2.8rem;
+		font-size: 1.3rem;
+		border-radius: 3px;
+		color: #fff;
+		outline: none;
+		border: none;
+	}
+	.active {
+		margin-bottom: 12px;
+		background-color: $mainColor;
+	}
+	.inactive {
+		background-color: #999;
+	}
+}
