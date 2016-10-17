@@ -1,0 +1,58 @@
+<include file="Common/header" title="完善个人信息" keywords="完善个人信息" description=""/>
+
+	<div id="uinfo-top">
+		完善个人信息才能加入社团或创建属于自己的社团哦！
+	</div>
+	<div id="uinfo-detail">
+		<form action="">
+			<div id="uinfo-wrap">
+				<div class="uinfo-item">
+					<span>姓名</span>
+					<input type="text" value="" placeholder="请输入您的姓名">
+				</div>
+				<div class="uinfo-item">
+					<span>性别</span>
+					<div class="radio-wrap">
+						<input id="uitem-man" type="radio" name="sex" value="1" checked>
+						<p class="radio-temp"></p>
+						<label for="uitem-man">男</label>
+					</div>
+					<div class="radio-wrap">
+						<input id="uitem-woman" type="radio" name="sex" value="2">
+						<p class="radio-temp"></p>
+						<label for="uitem-woman">女</label>
+					</div>
+				</div>
+				<div class="uinfo-item">
+					<a href="{:U('Index/school')}">
+						<span>学校</span>
+						<input type="text" value="" placeholder="请输入您所在的学校" readonly>
+						<img src="__PUBLIC__/images/arrow_right.png" alt="">
+					</a>
+				</div>
+				<div class="uinfo-item">
+					<span>学院院系</span>
+					<input type="text" placeholder="请输入院系名称" value="">
+				</div>
+				<div class="uinfo-item">
+					<span>专业班级</span>
+					<input type="text" value="" placeholder="请输入专业班级">
+				</div>
+				<div class="scode-send-wrap uinfo-item">
+					<span>手机号码</span>
+					<input type="text" value="" placeholder="手机号码" name="phone">
+					<button>发送验证码</button>
+				</div>
+				<div class="uinfo-item">
+					<span>验证码</span>
+					<input type="text" placeholder="请输入您收到的验证码">
+				</div>
+			</div>
+			<button class="submit">确认修改</button>
+		</form>
+	</div>
+	
+	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
+	<script src="__PUBLIC__/script/min/validate.min.js"></script>
+
+<include file="Common/footer" />

@@ -108,11 +108,11 @@
 		width: 20%;
 		text-align: center;
 		font-size: 1.3rem;
-	}
-	img {
-		width: 5.6rem;
-		height: 5.6rem;
-		border-radius: 100%;
+		img {
+			width: 5.6rem;
+			height: 5.6rem;
+			border-radius: 100%;
+		}
 	}
 }
 
@@ -222,5 +222,161 @@
 	&.active {
 		color: #000;
 		transform: scaleY(1);
+	}
+}
+
+/*club-homepage*/
+#homepage-top {
+	height: 17rem;
+	position: relative;
+}
+#homepage-intro {
+	float: left;
+	width: 35%;
+	height: 17rem;
+	text-align: center;
+	background-color: $mainColor;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5rem;
+	> img {
+		width: 70%;
+		max-width: 15rem;
+		max-height: 15rem;
+		border-radius: 100%;
+		margin: 1.5rem 0 1rem;
+	}
+}
+#homepage-banner {
+	.imgbox img {
+		height: 17rem;
+	}
+	.imgbox li {
+		height: 17rem;
+	}
+	> .page ol {
+		left: auto;
+		right: .5rem;
+		li {
+			left: 0;
+		}
+	}
+}
+#homepage-actlist {
+	padding: 1rem 0 .6rem;
+	margin-bottom: 4.8rem;
+}
+.homepage-submit {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	> .submit {
+		width: 100%;
+		margin: 0;
+	}
+}
+.homepage-watch {
+	position: absolute;
+	top: 1.4rem;
+	right: .8rem;
+	color: #fff;
+	font-size: 1.4rem;
+	border-radius: 20px;
+	padding: .5rem 1.1rem .3rem;
+	background-color: rgba(100,100,100,.5);
+	> img {
+		width: 1.3rem;
+		max-height: 2rem;
+		vertical-align: -.1rem;
+		margin-right: .6rem;
+	}
+	&:active {
+		color: #fff;
+	}
+}
+.name-initial {
+	padding: .7rem 1.2rem;
+	font-size: 1.8rem;
+	color: #555;
+	background-color: #eee;
+}
+#member-list > ul {
+	padding: 0 .8rem;
+	background-color: #fff;
+}
+.member-item {
+	position: relative;
+	padding: .5rem 0;
+	border-bottom: 1px solid #ddd;
+	transition: left 150ms;
+	&:last-child {
+		border-bottom: none;
+	}
+}
+.member-portrait {
+	float: left;
+	width: 24%;
+	height: 8.2rem;
+	text-align: center; 
+	line-height: 8.2rem;
+	> img {
+		width: 88%;
+		border-radius: 100%;
+		max-height: 8rem;
+	}
+}
+.member-item-detail {
+	float: left;
+	width: 76%;
+	height: 8.2rem;
+	padding-left: .4rem;
+	> h1 {
+		font-size: 1.9rem;
+		color: #111;
+	}
+	> p {
+		font-size: 1.5rem;
+		color: #888;
+		margin: .4rem 0;
+	}
+	> div {
+		font-size: 1.5rem;
+		color: #333;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+.member-item-delete {
+	position: absolute;
+	right: -9rem;
+	top: 0;
+	width: 8rem;
+	height: 9.2rem;
+	line-height: 9.2rem;
+	background-color: $mainColor;
+	color: #fff;
+	text-align: center;
+	font-size: 1.7rem;
+}
+#member-list {
+	overflow: hidden;
+}
+
+/*edit-notice*/
+.edit-textarea {
+	text-align: center;
+	textarea {
+		width: 99%;
+		height: 17rem;
+		outline: none;
+		color: #444;
+		margin-top: 1rem;
+		padding: .5rem .8rem;
+		border-radius: 5px;
+		font-size: 1.6rem;
+		resize: none;
+		border: 1px solid #ddd;
 	}
 }

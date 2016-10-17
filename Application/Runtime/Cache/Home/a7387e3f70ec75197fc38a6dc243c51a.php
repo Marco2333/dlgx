@@ -26,10 +26,7 @@
 	<![endif]-->
 	
 	<title>选择学校</title>
-	<!-- <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
-	<link rel="bookmark" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon" /> 
-	<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"> -->
-	<link rel="stylesheet" href="/collegial/Public/css/core/core.css">
+	<link rel="stylesheet" href="/collegial/Public/css/core/core.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>

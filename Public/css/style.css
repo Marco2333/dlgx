@@ -2,7 +2,7 @@
 .submit {
   display: block;
   width: 95%;
-  height: 3.8rem;
+  height: 4rem;
   color: #fff;
   font-size: 15px;
   border-radius: 3px;
@@ -376,10 +376,10 @@
     width: 20%;
     text-align: center;
     font-size: 1.3rem; }
-  #club-member img {
-    width: 5.6rem;
-    height: 5.6rem;
-    border-radius: 100%; }
+    #club-member li img {
+      width: 5.6rem;
+      height: 5.6rem;
+      border-radius: 100%; }
 
 /*club-create*/
 #ccreate-wrap {
@@ -475,6 +475,147 @@
   .dpicker-item.active {
     color: #000;
     transform: scaleY(1); }
+
+/*club-homepage*/
+#homepage-top {
+  height: 17rem;
+  position: relative; }
+
+#homepage-intro {
+  float: left;
+  width: 35%;
+  height: 17rem;
+  text-align: center;
+  background-color: #80d6c1;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem; }
+  #homepage-intro > img {
+    width: 70%;
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 100%;
+    margin: 1.5rem 0 1rem; }
+
+#homepage-banner .imgbox img {
+  height: 17rem; }
+
+#homepage-banner .imgbox li {
+  height: 17rem; }
+
+#homepage-banner > .page ol {
+  left: auto;
+  right: .5rem; }
+  #homepage-banner > .page ol li {
+    left: 0; }
+
+#homepage-actlist {
+  padding: 1rem 0 .6rem;
+  margin-bottom: 4.8rem; }
+
+.homepage-submit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  .homepage-submit > .submit {
+    width: 100%;
+    margin: 0; }
+
+.homepage-watch {
+  position: absolute;
+  top: 1.4rem;
+  right: .8rem;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  padding: .5rem 1.1rem .3rem;
+  background-color: rgba(100, 100, 100, 0.5); }
+  .homepage-watch > img {
+    width: 1.3rem;
+    max-height: 2rem;
+    vertical-align: -.1rem;
+    margin-right: .6rem; }
+  .homepage-watch:active {
+    color: #fff; }
+
+.name-initial {
+  padding: .7rem 1.2rem;
+  font-size: 1.8rem;
+  color: #555;
+  background-color: #eee; }
+
+#member-list > ul {
+  padding: 0 .8rem;
+  background-color: #fff; }
+
+.member-item {
+  position: relative;
+  padding: .5rem 0;
+  border-bottom: 1px solid #ddd;
+  transition: left 150ms; }
+  .member-item:last-child {
+    border-bottom: none; }
+
+.member-portrait {
+  float: left;
+  width: 24%;
+  height: 8.2rem;
+  text-align: center;
+  line-height: 8.2rem; }
+  .member-portrait > img {
+    width: 88%;
+    border-radius: 100%;
+    max-height: 8rem; }
+
+.member-item-detail {
+  float: left;
+  width: 76%;
+  height: 8.2rem;
+  padding-left: .4rem; }
+  .member-item-detail > h1 {
+    font-size: 1.9rem;
+    color: #111; }
+  .member-item-detail > p {
+    font-size: 1.5rem;
+    color: #888;
+    margin: .4rem 0; }
+  .member-item-detail > div {
+    font-size: 1.5rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.member-item-delete {
+  position: absolute;
+  right: -9rem;
+  top: 0;
+  width: 8rem;
+  height: 9.2rem;
+  line-height: 9.2rem;
+  background-color: #80d6c1;
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem; }
+
+#member-list {
+  overflow: hidden; }
+
+/*edit-notice*/
+.edit-textarea {
+  text-align: center; }
+  .edit-textarea textarea {
+    width: 99%;
+    height: 17rem;
+    outline: none;
+    color: #444;
+    margin-top: 1rem;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    resize: none;
+    border: 1px solid #ddd; }
 
 #account-top {
   height: 14.2rem;
@@ -726,9 +867,14 @@
   border-bottom: 1px solid #ccc;
   background-color: #fff; }
   .adetail-head > .fr {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #aaa;
-    margin-top: .3rem; }
+    margin-top: .4rem; }
+    .adetail-head > .fr > img {
+      max-width: 1.4rem;
+      height: 1.4rem;
+      vertical-align: -.1rem;
+      margin: 0 .4rem; }
 
 .adetail-wrap {
   padding: 0 1.4rem;
@@ -777,7 +923,8 @@
 #adetail-intro {
   padding: .8rem 0;
   color: #111;
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  word-break: break-all; }
 
 .mark-item {
   border-bottom: 1px solid #ddd; }
@@ -834,6 +981,48 @@
     background-color: #80d6c1;
     color: #fff; }
 
+/*mark*/
+.mark-publish-wrap {
+  position: fixed;
+  bottom: -21rem;
+  left: 0;
+  width: 100%;
+  height: 21rem;
+  z-index: 99;
+  background-color: #fff;
+  transition: bottom 300ms ease-out; }
+
+.mark-publish-head {
+  height: 4.2rem;
+  line-height: 4.2rem;
+  color: #000;
+  font-size: 1.6rem;
+  text-align: center;
+  border-bottom: 1px solid #eee; }
+  .mark-publish-head > span {
+    margin: 0 1rem; }
+
+.mark-publish-body > textarea {
+  width: 100%;
+  outline: none;
+  height: 10rem;
+  resize: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: .5rem .8rem; }
+
+.mark-publish-body > p {
+  height: 6.8rem;
+  line-height: 6.8rem; }
+  .mark-publish-body > p > img {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: 0 1rem;
+    border-radius: 3px; }
+  .mark-publish-body > p > span {
+    color: #999;
+    font-size: 1.4rem; }
+
 @media screen and (max-width: 350px) {
   .portrait {
     width: 6rem;
@@ -862,7 +1051,7 @@
     width: 15.4rem; }
   .scode-send-wrap > input[type='text'] {
     width: 8rem; }
-  #club-member img {
+  #club-member li img {
     width: 5rem;
     height: 5rem; }
   .online-act img {

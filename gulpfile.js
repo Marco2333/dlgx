@@ -15,7 +15,7 @@ gulp.task('sass', function() {
 })
 
 gulp.task('minifycss', ['sass'], function() {
-	return gulp.src('./Public/css/style.css', {
+	return gulp.src(['./Public/css/style.css', './Public/css/core/core.css'], {
 			base: './'
 		})
 		.pipe(rename({
@@ -35,6 +35,8 @@ gulp.task('minifyjs', function() {
 })
 
 gulp.task('default', ['sass', 'minifycss', 'minifyjs'])
+
+gulp.watch('./Public/css/core/core.css', ['minifycss']);
 
 var wcss = gulp.watch('./Public/_sass/*.scss', ['sass', 'minifycss']);
 wcss.on('change', function() {
