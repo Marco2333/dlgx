@@ -1,0 +1,151 @@
+<include file="Common/header" title="个人主页" keywords="个人主页" description=""/>
+
+	<div id="uhome-top">
+		<img src="__PUBLIC__/images/user1.jpg" alt="">
+		<h2>大乐个学</h2>
+		<p><span>关注 2345</span> &nbsp;&nbsp;|&nbsp;&nbsp; <span>粉丝 4567</span></p>
+	</div>
+	<div id="uhome-info">
+		<ul>
+			<li class="uhome-info-item">
+				<span>学校</span>
+				<p>安徽师范大学</p>
+			</li>
+			<li class="uhome-info-item">
+				<span>院系</span>
+				<p>信息工程学院</p>
+			</li>
+			<li class="uhome-info-item">更多基本资料</li>
+		</ul>
+	</div>
+
+	<div id="uhome-detail">
+		<ul>
+			<li class="uhome-detail-item">
+				<span>TA的社团</span>
+				<p class="fr">2个 <i class="fa fa-angle-right"></i></p>
+			</li>
+			<li class="uhome-detail-item">
+				<span>TA的活动</span>
+				<p class="fr">9个 <i class="fa fa-angle-right"></i></p>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="uhome-topic-list" class="pre-navbt">
+		<div class="uhome-detail-item">
+			<span>TA的话题</span>
+			<p class="fr">234个 <i class="fa fa-angle-right"></i></p>
+		</div>
+		<ul>
+			<li class="topic-item">
+				<div class="topic-item-head">
+					<img src="__PUBLIC__/images/user1.jpg" alt="">
+					<span>昵称</span>
+				</div>
+				<div class="topic-item-body">
+					<h2>标题标题</h2>
+					<p>内容内容内容</p>
+					<div class="topic-item-imgs clearfix">
+						<div class="topic-iimg-wrap">
+							<img src="__PUBLIC__/images/user3.jpg" alt="">
+						</div>
+						<div class="topic-iimg-wrap">
+							<img src="__PUBLIC__/images/user3.jpg" alt="">
+						</div>
+						<div class="topic-iimg-wrap">
+							<img src="__PUBLIC__/images/user3.jpg" alt="">
+							<p class="topic-iimg-bottom">共n张</p>
+						</div>
+					</div>
+				</div>
+				<div class="topic-homepage-bottom">
+					<span>10月12日 12:35</span>
+					<p class="fr">
+						<i class="fa fa-commenting-o"></i><span>3</span>
+						<i class="fa fa-heart-o"></i><span>14</span>
+						<i class="fa fa-star-o"></i><span>139</span>
+					</p>
+				</div>
+			</li>
+			<li class="topic-item">
+				<div class="topic-item-head">
+					<img src="__PUBLIC__/images/user1.jpg" alt="">
+					<span>昵称</span>
+				</div>
+				<div class="topic-item-body">
+					<h2>标题标题</h2>
+					<p>内容内容内容</p>
+				</div>
+				<div class="topic-homepage-bottom">
+					<span>10月12日 12:35</span>
+					<p class="fr">
+						<i class="fa fa-commenting-o"></i><span>3</span>
+						<i class="fa fa-heart-o"></i><span>14</span>
+						<i class="fa fa-star-o"></i><span>139</span>
+					</p>
+				</div>
+			</li>
+			<li class="topic-item">
+				<div class="topic-item-head">
+					<img src="__PUBLIC__/images/user1.jpg" alt="">
+					<span>昵称</span>
+				</div>
+				<div class="topic-item-body">
+					<h2>标题标题</h2>
+					<p>内容内容内容</p>
+					<div class="topic-item-imgs clearfix">
+						<div class="topic-iimg-wrap">
+							<img src="__PUBLIC__/images/user3.jpg" alt="">
+						</div>
+						<div class="topic-iimg-wrap">
+							<img src="__PUBLIC__/images/user3.jpg" alt="">
+						</div>
+						<div class="topic-iimg-wrap">
+							<img src="__PUBLIC__/images/user3.jpg" alt="">
+							<p class="topic-iimg-bottom">共n张</p>
+						</div>
+					</div>
+				</div>
+				<div class="topic-homepage-bottom">
+					<span>10月12日 12:35</span>
+					<p class="fr">
+						<i class="fa fa-commenting-o"></i><span>3</span>
+						<i class="fa fa-heart-o"></i><span>14</span>
+						<i class="fa fa-star-o"></i><span>139</span>
+					</p>
+				</div>
+			</li>
+			<li class="topic-item">
+				<div class="topic-item-head">
+					<img src="__PUBLIC__/images/user1.jpg" alt="">
+					<span>昵称</span>
+				</div>
+				<div class="topic-item-body">
+					<h2>标题标题</h2>
+					<p>内容内容内容</p>
+				</div>
+				<div class="topic-homepage-bottom">
+					<span>10月12日 12:35</span>
+					<p class="fr">
+						<i class="fa fa-commenting-o"></i><span>3</span>
+						<i class="fa fa-heart-o"></i><span>14</span>
+						<i class="fa fa-star-o"></i><span>139</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="uhomepage-watch">
+		<button class="active">关注TA</button>
+	</div>
+	<script>
+		$(function() {
+			$("#uhomepage-watch button").click(function() {
+				if($(this).hasClass('active')) {
+					$(this).removeClass("active").text("已关注");
+				}
+			})
+		})
+	</script>
+<include file="Common/footer" />

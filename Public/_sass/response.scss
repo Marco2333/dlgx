@@ -60,6 +60,13 @@
 			width: 15.5rem;
 		}
 	}
+	#topic-publish-wrap {
+		li {
+			textarea, input {
+				width: 18.5rem;		
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 390px) {

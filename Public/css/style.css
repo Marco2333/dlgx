@@ -13,6 +13,7 @@
 
 .round-button {
   padding: .7rem 2.2rem;
+  padding-bottom: .6rem;
   border-radius: 18px;
   color: #80d6c1;
   background-color: #fff;
@@ -390,10 +391,10 @@
   padding: 1.1rem .7rem; }
 
 .ccreate-detail {
+  background-color: #fff;
   margin-bottom: 1rem; }
   .ccreate-detail li {
-    padding: .7rem;
-    background-color: #fff; }
+    padding: .7rem; }
     .ccreate-detail li > span {
       display: inline-block;
       width: 8rem;
@@ -413,6 +414,7 @@
       padding: .3rem;
       font-size: 1.6rem;
       border: none;
+      margin-top: -.3rem;
       vertical-align: text-top; }
     .ccreate-detail li > img {
       position: absolute;
@@ -435,7 +437,7 @@
     width: 6rem;
     height: 6rem;
     border-radius: 5px;
-    margin-right: 1.2rem; }
+    margin-right: 1.6rem; }
   .club-add-img > span {
     color: #aaa;
     font-size: 1.4rem; }
@@ -666,11 +668,114 @@
   font-size: 1.5rem; }
   .navbt-item.active {
     color: #80d6c1; }
+  .navbt-item:nth-child(2) > .fa {
+    font-size: 1.7rem; }
+  .navbt-item > .fa {
+    font-size: 2rem; }
   .navbt-item > p {
     height: 1.5rem; }
   .navbt-item > img {
     max-width: 1.9rem;
     height: 1.9rem; }
+
+/*userhomepage*/
+#uhome-top {
+  background-color: #80d6c1;
+  padding: 1.8rem 0 1.2rem;
+  text-align: center;
+  color: #fff; }
+  #uhome-top > img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%; }
+  #uhome-top > h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0 .5rem; }
+
+.topic-homepage-bottom {
+  color: #999;
+  padding: 0 1.1rem 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee; }
+  .topic-homepage-bottom > p.fr {
+    display: inline-block; }
+    .topic-homepage-bottom > p.fr > .fa {
+      font-size: 1.9rem;
+      vertical-align: -.1rem; }
+      .topic-homepage-bottom > p.fr > .fa:first-child {
+        vertical-align: 0d; }
+      .topic-homepage-bottom > p.fr > .fa:nth-of-type(2) {
+        font-size: 1.7rem; }
+    .topic-homepage-bottom > p.fr > span {
+      margin: 0 .6rem 0 .3rem; }
+
+#uhome-topic-list .topic-item {
+  margin-bottom: 0; }
+
+#uhome-topic-list > .uhome-detail-item {
+  padding: 1rem 1.1rem;
+  background-color: #fff; }
+
+#uhome-info {
+  margin: .8rem 0;
+  padding: 0 1.1rem;
+  background-color: #fff; }
+
+.uhome-info-item {
+  padding: .9rem	0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee; }
+  .uhome-info-item:last-child {
+    text-align: center;
+    color: #aaa;
+    padding: 1rem 0;
+    border-bottom: none; }
+  .uhome-info-item > span {
+    display: inline-block;
+    color: #999;
+    width: 6rem;
+    margin-right: 1rem; }
+  .uhome-info-item > p {
+    display: inline-block;
+    color: #222; }
+
+#uhome-detail {
+  padding: 0 1.1rem;
+  margin-bottom: .8rem;
+  background-color: #fff; }
+
+.uhome-detail-item {
+  padding: .9rem 0;
+  border-bottom: 1px solid #eee; }
+  .uhome-detail-item:last-child {
+    border-bottom: none; }
+  .uhome-detail-item > span {
+    color: #111;
+    font-size: 1.5rem; }
+  .uhome-detail-item .fa {
+    font-size: 2.2rem;
+    vertical-align: -.3rem;
+    margin-left: .2rem; }
+  .uhome-detail-item > .fr {
+    padding-top: .1em;
+    color: #aaa;
+    font-size: 1.4rem; }
+
+#uhomepage-watch {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  #uhomepage-watch > button {
+    width: 100%;
+    height: 4.3rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: #ccc; }
+  #uhomepage-watch .active {
+    background-color: #80d6c1; }
 
 /*首页*/
 .search-wrap {
@@ -749,9 +854,6 @@
       background: #fff; }
 
 /*index-club*/
-#clubs-wrap {
-  padding-bottom: 5.6rem; }
-
 .club-item {
   position: relative;
   margin: .5rem .7rem;
@@ -787,10 +889,13 @@
   right: .8rem;
   color: #80d6c1;
   padding: 0 .5rem;
-  padding-top: .1rem;
+  padding-top: .2rem;
   line-height: 2.2rem;
   border: 2px solid #80d6c1;
   border-radius: 3px; }
+  .club-watch > .fa {
+    font-size: 1.5rem;
+    margin-right: .5rem; }
   .club-watch > img {
     width: 1rem;
     height: 1rem;
@@ -806,7 +911,7 @@
 
 .club-create-button {
   position: absolute;
-  top: 1.2rem;
+  top: 1.1rem;
   right: 1.6rem;
   color: #fff;
   padding: 0 .5rem;
@@ -814,11 +919,8 @@
   line-height: 2.6rem;
   background-color: #80d6c1;
   border-radius: 3px; }
-  .club-create-button > img {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-right: .5rem;
-    vertical-align: -1px; }
+  .club-create-button > i {
+    margin-right: .5rem; }
   .club-create-button:active {
     color: #fff; }
 
@@ -1023,6 +1125,128 @@
     color: #999;
     font-size: 1.4rem; }
 
+#topic-list {
+  margin-top: .8rem; }
+
+.topic-item {
+  position: relative;
+  margin-bottom: .8rem;
+  background-color: #fff; }
+
+.topic-item-head {
+  padding: .6rem 1.1rem;
+  font-size: 1.7rem;
+  color: #80d6c1; }
+  .topic-item-head > img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: .5rem;
+    border-radius: 100%; }
+  .topic-item-head > .fr {
+    margin-top: .4rem;
+    color: #aaa;
+    font-size: 1.5rem; }
+
+.topic-item-body {
+  padding: 0 1.1rem 1rem; }
+  .topic-item-body > h2 {
+    font-size: 1.8rem;
+    color: #000; }
+  .topic-item-body > p {
+    font-size: 1.6rem;
+    color: #777;
+    margin: .3rem 0 .5rem; }
+
+.topic-iimg-wrap {
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding-right: 5px; }
+  .topic-iimg-wrap:last-child {
+    padding-right: 0; }
+  .topic-iimg-wrap > img {
+    width: 100%;
+    height: 10rem; }
+
+.topic-iimg-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.8); }
+
+.topic-item-bottom {
+  font-size: 1.4rem;
+  color: #999;
+  border-top: 1px solid #eee; }
+
+.topic-ibottom-item {
+  float: left;
+  width: 33.3%;
+  padding: .6rem 0;
+  padding-top: .8em;
+  text-align: center; }
+  .topic-ibottom-item.active {
+    color: #80d6c1; }
+  .topic-ibottom-item > .fa {
+    margin-right: .4rem;
+    font-size: 1.7rem; }
+
+/*topic-detail*/
+.topic-detail-head {
+  background: #fff; }
+
+.topic-detail-title {
+  color: #111;
+  font-size: 1.9rem;
+  padding: 1.2rem 1.1rem .5rem; }
+
+.topic-detail-body {
+  font-size: 1.5rem;
+  color: #777;
+  padding: .1rem 1.1rem .5rem;
+  border-bottom: 1px solid #eee;
+  background-color: #fff; }
+  .topic-detail-body > img {
+    width: 100%;
+    margin: .4rem 0; }
+
+#topic-detail-bottom {
+  margin-top: .8rem;
+  background-color: #fff;
+  border-top: none; }
+  #topic-detail-bottom .topic-ibottom-item {
+    padding: 1.1rem 0 .8rem; }
+    #topic-detail-bottom .topic-ibottom-item > i {
+      font-size: 1.9rem;
+      vertical-align: -.1rem; }
+    #topic-detail-bottom .topic-ibottom-item:nth-child(2) > i {
+      font-size: 1.7rem; }
+
+/*tpoic-publish*/
+#topic-publish-wrap li {
+  padding: .8rem 0; }
+  #topic-publish-wrap li > span {
+    width: 5rem;
+    color: #555;
+    font-size: 1.6rem; }
+  #topic-publish-wrap li > textarea {
+    width: 22rem;
+    margin-top: -.5rem; }
+  #topic-publish-wrap li > input {
+    width: 22rem; }
+
+.topic-publish-item {
+  margin: 0 1rem;
+  border-bottom: 1px solid #eee; }
+  .topic-publish-item:last-of-type {
+    border-bottom: none; }
+
 @media screen and (max-width: 350px) {
   .portrait {
     width: 6rem;
@@ -1059,7 +1283,9 @@
   .ccreate-detail li > input[type='text'] {
     width: 15.5rem; }
   .ccreate-detail li > textarea {
-    width: 15.5rem; } }
+    width: 15.5rem; }
+  #topic-publish-wrap li textarea, #topic-publish-wrap li input {
+    width: 18.5rem; } }
 
 @media screen and (min-width: 390px) {
   .ccreate-detail li > input[type='text'] {

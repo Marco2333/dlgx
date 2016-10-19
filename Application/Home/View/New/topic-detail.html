@@ -1,0 +1,106 @@
+<include file="Common/header" title="话题详情" keywords="话题详情" description=""/>
+<div class="topic-detail-head">
+	<h2 class="topic-detail-title">
+		标题标题标题标题
+	</h2>
+	<div class="topic-item-head">
+		<img src="__PUBLIC__/images/user1.jpg" alt="">
+		<span>昵称</span>
+		<span class="fr">1小时前</span>
+	</div>
+</div>
+<div class="topic-detail-body">
+	neirong 内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	<img src="__PUBLIC__/images/topic-detail.png" alt="">
+	<img src="__PUBLIC__/images/topic-detail.png" alt="">
+</div>
+<div class="adetail-wrap">
+	<p class="adetail-head">评论 <span class="fr">3条</span></p>
+	<div class="mark-list">
+		<ul>
+			<li class="mark-item">
+				<div class="mark-head">
+					<img src="__PUBLIC__/images/actorg1.png" alt="" class="mark-portrait">
+					<span class="mark-name">大了个学</span>
+					<span class="mark-date">2016-10-12</span>
+				</div>
+				<div class="mark-body">大了个学大了个学大了个学大了个学大了个学大了个学大了个学</div>
+				<p class="mark-reply"><span>回复</span></p>
+			</li>
+			<li class="mark-item">
+				<div class="mark-head">
+					<img src="__PUBLIC__/images/actorg1.png" alt="" class="mark-portrait">
+					<span class="mark-name">大了个学</span>
+					<span class="mark-date">2016-10-12</span>
+				</div>
+				<div class="mark-body">回复<span class="mark-at">@大了个学客服</span>：你好，巴拉巴拉巴拉巴拉</div>
+				<p class="mark-reply"><span>回复</span></p>
+			</li>
+			<li class="mark-item">
+				<div class="mark-head">
+					<img src="__PUBLIC__/images/actorg1.png" alt="" class="mark-portrait">
+					<span class="mark-name">大了个学</span>
+					<span class="mark-date">2016-10-12</span>
+				</div>
+				<div class="mark-body">namemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemarknamemark</div>
+				<p class="mark-reply"><span>回复</span></p>
+			</li>
+			<li class="mark-item">
+				<div class="mark-head">
+					<img src="__PUBLIC__/images/actorg1.png" alt="" class="mark-portrait">
+					<span class="mark-name">大了个学</span>
+					<span class="mark-date">2016-10-12</span>
+				</div>
+				<div class="mark-body">回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复</div>
+				<p class="mark-reply"><span>回复</span></p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="topic-detail-bottom" class="topic-item-bottom clearfix">
+	<ul>
+		<li class="topic-ibottom-item">
+			<i class="fa fa-commenting-o"></i>
+			评论
+		</li>
+		<li class="topic-ibottom-item active">
+			<i class="fa fa-heart"></i>14
+		</li>
+		<li class="topic-ibottom-item"><i class="fa fa-star-o"></i>收藏</li>
+	</ul>
+</div>
+
+<div class="mark-publish-wrap">
+	<p class="mark-publish-head">
+		<span class="fl">取消</span>
+		发表评论
+		<span class="fr">发布</span>
+	</p>
+	<div class="mark-publish-body">
+		<textarea placeholder="写评论..."></textarea>
+		<p><img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span></p>
+	</div>
+</div>
+
+<script src="__PUBLIC__/script/min/mypop.min.js"></script>
+<script>
+$(function() {
+	$(".topic-ibottom-item").eq(0).click(function() {
+		$(".mark-publish-wrap").css('bottom','0');
+	});
+
+	$(".mark-publish-head span.fl").click(function() {
+		$(".mark-publish-wrap").css("bottom", '-21rem');
+	});
+
+	$(".mark-publish-head span.fr").click(function() {
+		var text = $(".mark-publish-body > textarea").val().trim();
+		if (text == '') {
+			myalert("评论不能为空！");
+			return;
+		}
+		$(".mark-publish-wrap").css("bottom", '-21rem');
+	});
+})
+</script>
+<include file="Common/footer" />

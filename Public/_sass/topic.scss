@@ -1,0 +1,144 @@
+#topic-list {
+	margin-top: .8rem;
+}
+.topic-item {
+	position: relative;
+	margin-bottom: .8rem;
+	background-color: #fff;
+}
+.topic-item-head {
+	padding: .6rem 1.1rem;
+	font-size: 1.7rem;
+	color: $mainColor;
+	> img {
+		width: 4rem;
+		height: 4rem;
+		margin-right: .5rem;
+		border-radius: 100%;
+	}
+	> .fr {
+		margin-top: .4rem;
+		color: #aaa;
+		font-size: 1.5rem;
+	}
+}
+.topic-item-body {
+	padding: 0 1.1rem 1rem;
+	> h2 {
+		font-size: 1.8rem;
+		color: #000;
+	}
+	> p {
+		font-size: 1.6rem;
+		color: #777;
+		margin: .3rem 0 .5rem;
+	}
+}
+.topic-iimg-wrap {
+	position: relative;
+	float: left;
+	width: 33.3%;
+	padding-right: 5px;
+	&:last-child {
+		padding-right: 0;
+	}
+	> img {
+		width: 100%;
+		height: 10rem;
+	}
+}
+.topic-iimg-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1.7rem;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(30,30,30,.8);
+}
+.topic-item-bottom {
+	font-size: 1.4rem;
+	color: #999;
+	border-top: 1px solid #eee;
+}
+.topic-ibottom-item {
+	float: left;
+	width: 33.3%;
+	padding: .6rem 0;
+	padding-top: .8em;
+	text-align: center;
+	&.active {
+		color: $mainColor;
+	}
+	> .fa {
+		margin-right: .4rem;
+		font-size: 1.7rem;
+	}
+}
+
+/*topic-detail*/
+.topic-detail-head {
+	background: #fff;
+}
+.topic-detail-title {
+	color: #111;
+	font-size: 1.9rem;
+	padding: 1.2rem 1.1rem .5rem;
+}
+.topic-detail-body {
+	font-size: 1.5rem;
+	color: #777;
+	padding: .1rem 1.1rem .5rem;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	> img {
+		width: 100%;
+		margin: .4rem 0;
+	}
+}
+#topic-detail-bottom {
+	margin-top: .8rem;
+	background-color: #fff;
+	border-top: none;
+
+	.topic-ibottom-item {
+		padding: 1.1rem 0 .8rem;
+		> i {
+			font-size: 1.9rem;
+			vertical-align: -.1rem;
+		}
+		&:nth-child(2) {
+			> i {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
+/*tpoic-publish*/
+#topic-publish-wrap {
+	li {
+		padding: .8rem 0;
+		> span {
+			width: 5rem;
+			color: #555;
+			font-size: 1.6rem;
+		}
+		> textarea {
+			width: 22rem;
+			margin-top: -.5rem;
+		}
+		> input {
+			width: 22rem;
+		}
+	}
+}
+.topic-publish-item {
+	margin: 0 1rem;
+	border-bottom: 1px solid #eee;
+	&:last-of-type {
+		border-bottom: none;
+	}
+}

@@ -55,11 +55,136 @@
 	&.active {
 		color: $mainColor;
 	}
+	&:nth-child(2) > .fa {
+		font-size: 1.7rem;
+	}
+	> .fa {
+		font-size: 2rem;	
+	}
 	> p {
 		height: 1.5rem;
 	}
 	> img {
 		max-width: 1.9rem;
 		height: 1.9rem;
+	}
+}
+
+/*userhomepage*/
+#uhome-top {
+	background-color: $mainColor;
+	padding: 1.8rem 0 1.2rem;
+	text-align: center;
+	color: #fff;
+	> img {
+		width: 10rem;
+		height: 10rem;
+		border-radius: 100%;
+	}
+	> h2 {
+		font-size: 1.8rem;
+		margin: 1rem 0 .5rem;
+	}
+}
+.topic-homepage-bottom {
+	color: #999;
+	padding: 0 1.1rem 1rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #eee;
+	> p.fr {
+		display: inline-block;
+		> .fa {
+			font-size: 1.9rem;
+			vertical-align: -.1rem;
+			&:first-child {
+				vertical-align: 0d;
+			}
+			&:nth-of-type(2) {
+				font-size: 1.7rem;
+			}
+		}
+		> span {
+			margin: 0 .6rem 0 .3rem;
+		}
+	}
+}
+#uhome-topic-list {
+	.topic-item {
+		margin-bottom: 0;
+	}
+	> .uhome-detail-item {
+		padding: 1rem 1.1rem;
+		background-color: #fff;
+	}
+}
+#uhome-info {
+	margin: .8rem 0;
+	padding: 0 1.1rem;
+	background-color: #fff;
+}
+.uhome-info-item {
+	padding: .9rem	0;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #eee;
+	
+	&:last-child {
+		text-align: center;
+		color: #aaa;
+		padding: 1rem 0;
+		border-bottom: none;
+	}
+	> span {
+		display: inline-block;
+		color: #999;
+		width: 6rem;
+		margin-right: 1rem;
+	}
+	> p {
+		display: inline-block;
+		color: #222;
+	}
+}
+#uhome-detail {
+	padding: 0 1.1rem;
+	margin-bottom: .8rem;
+	background-color: #fff;
+}
+.uhome-detail-item {
+	padding: .9rem 0;
+	border-bottom: 1px solid #eee;
+	&:last-child {
+		border-bottom: none;
+	}
+	> span {
+		color: #111;
+		font-size: 1.5rem;
+	}
+	.fa {
+		font-size: 2.2rem;
+		vertical-align: -.3rem;
+		margin-left: .2rem;
+	}
+	> .fr {
+		padding-top: .1em;
+		color: #aaa;
+		font-size: 1.4rem;
+	}
+}
+#uhomepage-watch {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	> button {
+		width: 100%;
+		height: 4.3rem;
+		outline: none;
+		border: none;
+		color: #fff;
+		font-size: 1.6rem;
+		background-color: #ccc;
+	}
+	.active {
+		background-color: $mainColor;
 	}
 }

@@ -28,6 +28,7 @@
 	<title>大乐个学</title>
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
+	<link rel="stylesheet" href="/collegial/Static/font-awesome-4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
