@@ -1,10 +1,18 @@
 <include file="Common/header" title="编辑公告" keywords="编辑公告" description=""/>
 
-	<form action="">
+	<form action="" onsubmit="return check();">
 		<div class="edit-textarea">
 			<textarea placeholder="请输入社团公告"></textarea>
 		</div>
 		<button class="submit">确认提交</button>
 	</form>
-	
+	<script>
+		function check() {
+			if($("textarea").val().trim() == '') {
+				alert("社团公告不能为空！");
+				return false;
+			}
+			return true;
+		}
+	</script>
 <include file="Common/footer" />

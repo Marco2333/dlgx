@@ -52,30 +52,11 @@
 			width: 46%;
 		}
 	}
-	.ccreate-detail li {
-		> input[type='text'] {
-			width: 15.5rem;
-		}
-		> textarea {
-			width: 15.5rem;
-		}
-	}
 	#topic-publish-wrap {
 		li {
 			textarea, input {
 				width: 18.5rem;		
 			}
-		}
-	}
-}
-
-@media screen and (min-width: 390px) {
-	.ccreate-detail li {
-		> input[type='text'] {
-			width: 21rem;
-		}
-		> textarea {
-			width: 21rem;
 		}
 	}
 }

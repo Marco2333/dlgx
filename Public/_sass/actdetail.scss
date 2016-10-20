@@ -8,17 +8,21 @@
 	padding: .8rem 0;
 	color: #000;
 	font-size: 1.8rem;
-	border-bottom: 1px solid #ccc;
 	background-color: #fff;
+	border-bottom: 1px solid #ccc;
 	> .fr {
 		font-size: 1.5rem;
 		color: #aaa;
 		margin-top: .4rem;
-		> img {
-			max-width: 1.4rem;
-			height: 1.4rem;
-			vertical-align: -.1rem;
-			margin: 0 .4rem;
+		.fa {
+			font-size: 2.4rem;
+			color: #bbb;
+			vertical-align: -.2rem;
+			margin-left: .1em;
+		}
+		.fa-pencil {
+			font-size: 1.4rem;
+			vertical-align: .1rem;
 		}
 	}
 }

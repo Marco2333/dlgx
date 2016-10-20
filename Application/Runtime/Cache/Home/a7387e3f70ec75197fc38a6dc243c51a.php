@@ -26,6 +26,7 @@
 	<![endif]-->
 	
 	<title>选择学校</title>
+	<link rel="stylesheet" href="/collegial/Static/font-awesome-4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>

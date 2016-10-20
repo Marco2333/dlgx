@@ -246,6 +246,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     background-color: rgba(100,100,100,.5);
 }
 .pop-panel {
+    position: fixed;
     width: 80%;
     max-width: 36rem;
     background-color: #fff;

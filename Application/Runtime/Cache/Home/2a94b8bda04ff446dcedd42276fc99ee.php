@@ -25,29 +25,60 @@
 		<link rel="stylesheet" type="text/css" href="/collegial/Public/css/IE/ie678.css" />
 	<![endif]-->
 	
-	<title>大乐个学</title>
+	<title>首页</title>
+	<link rel="stylesheet" href="/collegial/Static/font-awesome-4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
-	<link rel="stylesheet" href="/collegial/Static/font-awesome-4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
-	
-	<style>body {background-color: #f2f2f2}</style>
 
 	<div id="act-top" >
-		<button class="round-button active">官方活动</button><button class="round-button">社团活动</button>
+		<button class="round-button active">活动</button><button class="round-button">社团</button>
 	</div>
-	<div id="notice-wrap">
-		<div id="notice-head" class="clearfix">
-			<p class="fl"><span>[公告]</span>成员须知</p>
-			<p class="fr">路三三 2016年8月26日</p>
+	<div class="search-wrap">
+		<img src="/collegial/Public/images/search.png" alt=""><input type="text" placeholder="搜索活动">
+	</div>
+	<div id="banner-wrap" class="none">
+		<div class="imgbox">
+		    <ul class="clearfix">
+		        <li><a href=""><img src="/collegial/Public/images/banner.jpg" alt=""></img></a></li>
+		        <li><a href=""><img src="/collegial/Public/images/banner.jpg" alt=""></img></a></li>
+		        <li><a href=""><img src="/collegial/Public/images/banner.jpg" alt=""></img></a></li>
+		    </ul>
 		</div>
-		<div id="notice-body">
-			各位同学，进入社团请实名，格式按照“学院+姓名”，如理学院-库三三。各位同学，进入社团请实名，格式按照“学院+姓名”，如理学院-库三三。
+		<div class="page">
+		    <ol>
+		        <li class="active"></li>
+		        <li></li>
+		        <li></li>
+		    </ol>
 		</div>
 	</div>
-	
+	<div class="acttype-head">
+		<span>线上活动</span>
+		<a href="">
+			<div class="fr">
+				<span>更多</span>
+				<img src="/collegial/Public/images/arrow_right.png" alt="">
+			</div>
+		</a>
+	</div>
+	<div class="online-act">
+		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+	</div>
+	<div class="acttype-head">
+		<span>线下活动</span>
+		<a href="">
+			<div class="fr">
+				<span>更多</span>
+				<img src="/collegial/Public/images/arrow_right.png" alt="">
+			</div>
+		</a>
+	</div>
 	<div id="act-list" class="pre-navbt">
 		<div class="act-item clearfix">
 			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
@@ -57,12 +88,11 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">立即报名</button>
-					<span>一天前发布</span>
+					<span>2016年10月20日发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
@@ -75,12 +105,11 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">立即报名</button>
-					<span>一天前发布</span>
+					<span>2016年10月20日发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
@@ -93,12 +122,11 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">立即报名</button>
-					<span>一天前发布</span>
+					<span>2016年10月20日发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
@@ -111,30 +139,11 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button>立即报名</button>
-					<span>一天前发布</span>
-					<img src="/collegial/Public/images/activity_over.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
-			<div class="act-info">
-				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
-				</h2>
-				<div class="act-organize clearfix">
-					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
-				</div>
-				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
-				<div class="act-operate">
-					<button class="active">立即报名</button>
-					<span>一天前发布</span>
+					<span>2016年10月20日发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
@@ -147,12 +156,11 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">立即报名</button>
-					<span>一天前发布</span>
+					<span>2016年10月20日发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
@@ -165,12 +173,11 @@
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
-					<span class="one-line">蒙牛早餐奶(浙江工业大学)</span>
+					<span class="one-line">发起人(浙江工业大学)</span>
 				</div>
 				<p class="act-time one-line">活动时间: 2016.9.2 - 9.30</p>
 				<div class="act-operate">
-					<button class="active">立即报名</button>
-					<span>一天前发布</span>
+					<span>2016年10月20日发布</span>
 					<img src="/collegial/Public/images/activity_ing.png" alt="">
 				</div>
 			</div>
@@ -188,17 +195,29 @@
 		</div>
 	</div>
 	<div class="nav-bottom">
-		<div class="navbt-item active"><img src="/collegial/Public/images/home.png" alt=""><span>首页</span>
+		<div class="navbt-item active"><img src="/collegial/Public/images/home.png" alt=""><p>首页</p>
 		</div>
 		<a href="<?php echo U('Index/user');?>">
-			<div class="navbt-item"><img src="/collegial/Public/images/person_white.png" alt=""><span>我的</span>
+			<div class="navbt-item"><img src="/collegial/Public/images/topic_gray.png" alt=""><p>话题</p>
+			</div>
+		</a>
+		<a href="<?php echo U('Index/user');?>">
+			<div class="navbt-item"><img src="/collegial/Public/images/person_gray.png" alt=""><p>我的</p>
 			</div>
 		</a>
 	</div>
 	
-	<script src="/collegial/Public/script/min/mypop.min.js"></script>
+	<script src="/collegial/Public/script/min/swipe.min.js"></script>
 	<script>
 		$(function() {
+			$("#banner-wrap").removeClass('none');
+			var scrollImg = $.mggScrollImg('.imgbox ul',{
+		        loop: true,//循环切换
+		        auto: true,//自动切换
+		        callback: function(ind){
+		            $('.page li').eq(ind).addClass('active').siblings().removeClass('active');
+		        }
+		    });
 			$(".round-button").click(function() {
 				$(this).addClass('active');
 				$(this).siblings().removeClass('active');
@@ -206,16 +225,6 @@
 			$(".act-video > p").click(function(){
 				$(this).css('bottom','-40px');
 			});
-			$(".act-operate button.active").click(function(){
-				if($(this).hasClass('_cancel')) {
-					myalert('取消报名成功');
-					$(this).removeClass('_cancel').text('立即报名');
-				}
-				else {
-					myalert('报名成功');
-					$(this).addClass('_cancel').text('取消报名');
-				}
-			})
 		})
 	</script>
 

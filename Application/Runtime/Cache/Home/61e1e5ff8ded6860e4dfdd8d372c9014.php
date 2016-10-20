@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
-	<meta name="keywords" content="社团创建" />
+	<meta name="keywords" content="创建社团" />
 	<meta name="description" content=""/>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<meta http-equiv="Cache-Control" content="no-transform" /> 
@@ -25,56 +25,79 @@
 		<link rel="stylesheet" type="text/css" href="/collegial/Public/css/IE/ie678.css" />
 	<![endif]-->
 	
-	<title>社团创建</title>
+	<title>创建社团</title>
+	<link rel="stylesheet" href="/collegial/Static/font-awesome-4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/core/core.min.css">
 	<link rel="stylesheet" href="/collegial/Public/css/style.css">
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
-	<style>body {background-color: #eee}</style>
-	
+
 	<div id="ccreate-wrap">
-		<form action="">
+		<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
 			<p class="ccreate-title">
 				填写社团资料
 			</p>
 			<div class="ccreate-detail">
 				<ul>
-					<li><span> 社团名称</span><input type="text" name="name" placeholder="请输入社团名称"></li>
-					<li class="show-dpicker pr"><span>社团级别</span><input type="text" name="rank" value="校级组织" readonly><img src="/collegial/Public/images/arrow_right.png" alt=""></li>
+					<li>
+						<span>社团名称</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="name" placeholder="请输入社团名称">
+						</div>
+					</li>
+					<li class="show-dpicker pr">
+						<span>社团类型</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="type" value="学术型" readonly>
+						</div>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<span>加入口令</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="password" placeholder="请设置加入口令">
+						</div>
+					</li>
 				</ul>
 			</div>
-			<p class="ccreate-title">
-				填写申请人信息
-			</p>
 			<div class="ccreate-detail">
 				<ul>
-					<li><span>申请人姓名</span><input type="text" name="user" placeholder="请输入您的姓名"></li>
-					<li><span>身份证号码</span><input type="text" name="idnumber" placeholder="请输入您的身份证号码"></li>
-					<li class="scode-send-wrap"><span>手机号码</span><input type="text" name="phone" placeholder="手机号码"><button>发送验证码</button></li>
-					<li><span>验证码</span><input type="text" name="scode" placeholder="请输入您收到的验证码"></li>
+					<li>
+						<span>社团简介</span>
+						<div class="cdinput-wrap">
+							<textarea name="intro" placeholder="请输入社团简介"></textarea>
+						</div>
+					</li>
+					<p class="club-add-img"><img src="/collegial/Public/images/picture.png" alt=""><span>添加图片</span></p>
+				</ul>
+			</div>
+			<div class="ccreate-detail">
+				<ul>
+					<li class="pr">
+						<span>社团logo</span>
+						<input type="file" name="logo">
+						<img id="club-logo-set" src="/collegial/Public/images/actorg1.png" alt="" >
+						<i class="fa fa-angle-right"></i>	
+					</li>
 				</ul>
 			</div>
 			<button class="submit">立即创建</button>
 		</form>
 	</div>
 	<div class="date-picker">
-		<p><span class="dpicker-finish">完成</span></p>
+		<p><span class="fl dpicker-cancel">取消</span>选择类型<span class="dpicker-finish fr">完成</span></p>
 		<div class="dpicker-body">
 			<ul>
 				<li class="dpicker-item empty sub-active"></li>
-				<li class="dpicker-item active">校级组织</li>
-				<li class="dpicker-item sub-active">院级组织</li>
-				<li class="dpicker-item">兴趣组织</li>
-				<li class="dpicker-item">校级组织</li>
-				<li class="dpicker-item">院级组织</li>
-				<li class="dpicker-item">兴趣组织</li>
+				<li class="dpicker-item active">体育类</li>
+				<li class="dpicker-item sub-active">实践类</li>
+				<li class="dpicker-item">艺术类</li>
+				<li class="dpicker-item">团学组织</li>
 				<li class="dpicker-item empty"></li>
 			</ul>
 		</div>
 	</div>
-	<script src="/collegial/Public/script/min/mypop.min.js"></script>
-	<script src="/collegial/Public/script/min/validate.min.js"></script>
 	<script src="/collegial/Public/script/min/clubCreate.min.js"></script>
 
 </body>

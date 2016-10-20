@@ -6,6 +6,7 @@
 }
 #act-list {
 	padding: 0 .8rem;
+	background-color: #eee;
 }
 .act-item {
 	position: relative;
@@ -96,7 +97,6 @@
 	margin-top: 1rem;
 	> span {
 		color: #999;
-		vertical-align: bottom;
 		font-size: 1.4rem;
 	}
 	> img {

@@ -61,6 +61,7 @@ $(function() {
 		});
 	});
 
+	$(".")
 	setPickerStyle(0);
 })
 
@@ -96,4 +97,29 @@ function isLeapYear(pYear) {
 		}
 	}
 	return false;
+}
+
+function check() {
+	if (!$("input[name='name']").val().trim()) {
+		alert("活动名称不能为空！");
+		return false;
+	}
+	if (!$("input[name='location']").val().trim()) {
+		alert("活动地点不能为空！");
+		return false;
+	}
+	if (!$("textarea[name='intro']").val().trim()) {
+		alert("活动介绍不能为空！");
+		return false;
+	}
+	if ($("input[name='starttime']").val().trim() === "未设置") {
+		alert("开始时间不能为空！");
+		return false;
+	}
+	if ($("input[name='endtime']").val().trim() === "未设置") {
+		alert("结束时间不能为空！");
+		return false;
+	}
+
+	return true;
 }

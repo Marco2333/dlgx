@@ -55,9 +55,10 @@ window.myprompt = function(msg, succsss, placeholder) {
 	$(".confirm-operate").on('click', '.inactive', function() {
 		$(".pop-wrap").remove();
 	}).on('click', '.active', function() {
+		var val = $(".prompt-input").val();
 		$(".pop-wrap").remove();
 		if (succsss != null) {
-			succsss();
+			succsss(val);
 		}
 	});
 }

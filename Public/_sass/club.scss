@@ -130,35 +130,49 @@
 	li {
 		padding: .7rem;
 		> span {
-			display: inline-block;
-			width: 8rem;
-			margin-right: .5rem;
-		}
-		> input[type='text'] {
-			width: 18.5rem;
-			height: 2.8rem;
-			border: none;
-			outline: none;
+			float: left;
+			width: 7.6rem;
+			line-height: 2.8rem;
 			font-size: 1.6rem;
-			vertical-align: 2px;
 		}
-		> textarea {
-			width: 18.5rem;
-			height: 8rem;
-			resize: none;
-			outline: none;
-			padding: .3rem;
-			font-size: 1.6rem;
-			border: none;
-			margin-top: -.3rem;
-			vertical-align: text-top;
-		}
-		> img {
+		> .fa {
 			position: absolute;
 			right: 1rem;
-			top: 1.2rem;
-			width: 1rem;
+			top: .9rem;
+			color: #999;
+			font-size: 2.5rem;
 		}
+		> input[type='file'] {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+	}
+}
+.cdinput-wrap {
+	overflow: hidden;
+	> input {
+		width: 100%;
+		height: 2.8rem;
+		border: none;
+		outline: none;
+		font-size: 1.6rem;
+		margin-top: -.1rem;	
+	}
+	> textarea { 
+		width: 100%;
+		height: 8rem;
+		resize: none;
+		outline: none;
+		padding: .4rem;
+		padding-right: 1.3rem;
+		margin-top: -.1rem;	
+		border: none;
+		font-size: 1.6rem;
+		vertical-align: text-top;
 	}
 }
 #club-logo-set {
@@ -166,13 +180,12 @@
 	width: 3.5rem;
 	height: 3.5rem;
 	border-radius: 100%;
-	+ img {
-		top: 1.6rem;
+	+ .fa {
+		top: 1.3rem;
 	}
 }
 .club-add-img {
 	padding: .7rem;
-	background-color: #fff;
 	> img {
 		width: 6rem;
 		height: 6rem;
@@ -184,7 +197,6 @@
 		font-size: 1.4rem;
 	}
 }
-
 .date-picker {
 	position: fixed;
 	left: 0;
@@ -228,13 +240,13 @@
 
 /*club-homepage*/
 #homepage-top {
-	height: 17rem;
+	height: 18rem;
 	position: relative;
 }
 #homepage-intro {
 	float: left;
 	width: 35%;
-	height: 17rem;
+	height: 18rem;
 	text-align: center;
 	background-color: $mainColor;
 	text-align: center;
@@ -242,18 +254,18 @@
 	font-size: 1.5rem;
 	> img {
 		width: 70%;
-		max-width: 15rem;
-		max-height: 15rem;
+		max-width: 10rem;
+		max-height: 10rem;
 		border-radius: 100%;
 		margin: 1.5rem 0 1rem;
 	}
 }
 #homepage-banner {
 	.imgbox img {
-		height: 17rem;
+		height: 18rem;
 	}
 	.imgbox li {
-		height: 17rem;
+		height: 18rem;
 	}
 	> .page ol {
 		left: auto;
@@ -296,6 +308,8 @@
 		color: #fff;
 	}
 }
+
+// member-list
 .name-initial {
 	padding: .7rem 1.2rem;
 	font-size: 1.8rem;
@@ -317,19 +331,18 @@
 }
 .member-portrait {
 	float: left;
-	width: 24%;
+	width: 8rem;
 	height: 8.2rem;
 	text-align: center; 
 	line-height: 8.2rem;
 	> img {
-		width: 88%;
-		border-radius: 100%;
+		width: 7.4rem;
+		height: 7.4rem;
 		max-height: 8rem;
 	}
 }
 .member-item-detail {
-	float: left;
-	width: 76%;
+	overflow: hidden;
 	height: 8.2rem;
 	padding-left: .4rem;
 	> h1 {

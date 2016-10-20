@@ -1,21 +1,46 @@
 <include file="Common/header" title="发起活动" keywords="发起活动" description=""/>
 	
 	<div id="ccreate-wrap">
-		<form action="">
+		<form action="" onsubmit="return check();">
 			<p class="ccreate-title">
 				填写活动资料
 			</p>
 			<div class="ccreate-detail">
 				<ul>
-					<li><span>活动名称</span><input type="text" name="name" placeholder="请输入活动名称"></li>
-					<li class="show-dpicker pr" data-id="0"><span>开始时间</span><input type="text" name="rank" value="未设置" readonly><img src="__PUBLIC__/images/arrow_right.png" alt=""></li>
-					<li class="show-dpicker pr" data-id="1"><span>结束时间</span><input type="text" name="rank" value="未设置" readonly><img src="__PUBLIC__/images/arrow_right.png" alt=""></li>
-					<li><span>活动地点</span><input type="text" name="name" placeholder="请输入活动地点"></li>
+					<li><span>活动名称</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="name" placeholder="请输入活动名称">
+						</div>
+					</li>
+					<li class="show-dpicker pr" data-id="0">
+						<span>开始时间</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="starttime" value="未设置" readonly>
+						</div>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="show-dpicker pr" data-id="1">
+						<span>结束时间</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="endtime" value="未设置" readonly>
+						</div>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<span>活动地点</span>
+						<div class="cdinput-wrap">
+							<input type="text" name="location" placeholder="请输入活动地点">
+						</div>
+					</li>
 				</ul>
 			</div>
 			<div class="ccreate-detail">
 				<ul>
-					<li><span>活动介绍</span><textarea name="" cols="30" rows="10" placeholder="请输入活动介绍"></textarea>
+					<li>
+						<span>活动介绍</span>
+						<div class="cdinput-wrap">
+							<textarea name="intro" cols="30" rows="10" placeholder="请输入活动介绍"></textarea>
+						</div>
 					</li>
 					<p class="club-add-img"><img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span></p>
 				</ul>
@@ -95,6 +120,5 @@
 		<div class="dpicker-info">日</div>
 	</div>
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
-	<script src="__PUBLIC__/script/min/validate.min.js"></script>
 	<script src="__PUBLIC__/script/min/launchAct.min.js"></script>
 <include file="Common/footer" />

@@ -22,17 +22,26 @@
 			    </ol>
 			</div>
 		</div>
+		<a class="homepage-watch"><img src="__PUBLIC__/images/plus_white.png" alt=""><span>关注</span></a>
 	</div>
 	
 	<div class="adetail-wrap">
-		<p class="adetail-head">社团公告<span class="fr"><img style="height: 1.2rem" src="__PUBLIC__/images/pen.png" alt="">修改</span></p>
+		<p class="adetail-head">社团公告
+			<span class="fr">
+				<i class="fa fa-pencil"></i>
+			修改</span>
+		</p>
 		<div id="adetail-intro">
 			社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团
 		</div>
 	</div>
 	
 	<div id="club-member" class="adetail-wrap">
-		<p class="adetail-head">社团成员<span class="fr">更多<img src="__PUBLIC__/images/arrow_right.png" alt=""></span></p>
+		<p class="adetail-head">社团成员
+		<span class="fr">更多
+			<i class="fa fa-angle-right"></i>
+		</span>
+		</p>
 		<div class="detail-info clearfix">
 			<ul>
 				<li><img src="__PUBLIC__/images/user1.jpg" alt=""><h4>路意义</h4></li>
@@ -45,7 +54,9 @@
 	</div>
 	
 	<div class="adetail-wrap">
-		<p class="adetail-head">社团活动<span class="fr">更多<img src="__PUBLIC__/images/arrow_right.png" alt=""></span></p>
+		<p class="adetail-head">社团活动<span class="fr">更多
+			<i class="fa fa-angle-right"></i>
+		</span></p>
 		<div id="homepage-actlist">
 			<div class="act-item clearfix">
 				<div class="act-img"><a href="{:U('Index/actdetail')}"><img src="__PUBLIC__/images/activity2.png" alt=""></a></div>
@@ -135,7 +146,11 @@
 		</div>
 	</div>
 	<div class="homepage-submit">
-		<button class="submit">发起活动</button>
+		<button class="submit">输入口令加入</button>
+	</div>
+	<div class="center trans-alert none">
+		<img src="__PUBLIC__/images/tick.png" alt="">
+		<p></p>
 	</div>
 	<script src="__PUBLIC__/script/min/swipe.min.js"></script>
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
@@ -143,12 +158,33 @@
 		$(function() {
 			$("#homepage-banner").removeClass('none');
 			var scrollImg = $.mggScrollImg('.imgbox ul',{
-		        loop: true,//循环切换
-		        auto: true,//自动切换
+		        loop: true,
+		        auto: true,
 		        callback: function(ind){
 		            $('.page li').eq(ind).addClass('active').siblings().removeClass('active');
 		        }
 		    });
+
+		    $(".homepage-watch").click(function() {
+		    	if($(this).hasClass("_watch")) {
+		    		return;
+		    	}
+		    	$(this).addClass('_watch').find('img').addClass('none').next('span').text('已关注');
+		    	$(".trans-alert p").text('关注成功').parent().removeClass('none');
+		    	setTimeout(function() {
+		    		$(".trans-alert").addClass('none');
+		    	},1400)
+		    });
+
+		    $(".submit").click(function() {
+		    	myprompt("请输入加入口令",function(val) {
+		    			if(val === '') {
+		    				myalert("口令不能为空！");
+		    				return;
+		    			}
+		    		myalert("恭喜您！成功加入“大学生创业社团”");
+		    	}, "例：123456789");
+		    })
 		})
 	</script>
 <include file="Common/footer" />
