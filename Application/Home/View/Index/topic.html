@@ -1,8 +1,8 @@
 <include file="Common/header" title="话题" keywords="话题" description=""/>
 
 	<div id="act-top" >
-		<button class="round-button">热门</button><button class="round-button active">最新</button>
-		<a class="club-create-button"><i class="fa fa-plus"></i>发布</a>
+		<a href="{:U('Index/topic-hot')}" class="round-button">热门</a><button class="round-button active">最新</button>
+		<a href="{:U('Index/topic-publish')}" class="club-create-button"><i class="fa fa-plus"></i>发布</a>
 	</div>
 	
 	<div id="topic-list" class="pre-navbt">
@@ -177,15 +177,16 @@
 		</ul>
 	</div>
 	<div class="nav-bottom">
-		<div class="navbt-item"><img src="__PUBLIC__/images/home_gray.png" alt=""><p>首页</p>
-		</div>
-		<div class="navbt-item active">
-			<a href="{:U('Index/user')}">
-				<img src="__PUBLIC__/images/topic.png" alt=""><p>话题</p>
+		<div class="navbt-item">
+			<a href="{:U('Index/index')}">
+				<img src="__PUBLIC__/images/home_gray.png" alt=""><p>首页</p>
 			</a>
 		</div>
+		<div class="navbt-item active">
+			<img src="__PUBLIC__/images/topic.png" alt=""><p>话题</p>
+		</div>
 		<div class="navbt-item">
-			<a href="{:U('Index/user')}">
+			<a href="{:U('Index/person-homepage')}">
 				<img src="__PUBLIC__/images/person_gray.png" alt=""><p>我的</p>
 			</a>
 		</div>

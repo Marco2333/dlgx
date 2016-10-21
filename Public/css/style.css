@@ -12,8 +12,10 @@
   background-color: #80d6c1; }
 
 .round-button {
-  padding: .7rem 2.2rem;
-  padding-bottom: .6rem;
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  padding: 0 2.2rem;
   border-radius: 18px;
   color: #80d6c1;
   background-color: #fff;
@@ -22,12 +24,16 @@
   border: 1px solid #80d6c1; }
   .round-button:last-of-type {
     margin-left: -2.3rem; }
+  .round-button:active {
+    color: #80d6c1; }
 
 .round-button.active {
   color: #fff;
   position: relative;
   z-index: 1;
   background-color: #80d6c1; }
+  .round-button.active:active {
+    color: #fff; }
 
 .pre-navbt {
   margin-bottom: 5.4rem; }
@@ -253,7 +259,7 @@
     margin-top: -.1rem; }
   .cdinput-wrap > textarea {
     width: 100%;
-    height: 8rem;
+    height: 12rem;
     resize: none;
     outline: none;
     padding: .4rem;
@@ -262,6 +268,18 @@
     border: none;
     font-size: 1.6rem;
     vertical-align: text-top; }
+
+.album-add > input[type='file'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+
+.album-add > span {
+  vertical-align: -.2rem;
+  color: #aaa; }
 
 #club-logo-set {
   position: static;
@@ -272,15 +290,12 @@
     top: 1.3rem; }
 
 .club-add-img {
-  padding: .7rem; }
+  padding: .7rem .7rem 0 .7rem; }
   .club-add-img > img {
     width: 6rem;
     height: 6rem;
     border-radius: 5px;
-    margin-right: 1.6rem; }
-  .club-add-img > span {
-    color: #aaa;
-    font-size: 1.4rem; }
+    margin: 0 .9rem 1rem 0; }
 
 .date-picker {
   position: fixed;
@@ -360,7 +375,7 @@
   bottom: 0;
   left: 0;
   width: 100%; }
-  .homepage-submit > .submit {
+  .homepage-submit .submit {
     width: 100%;
     margin: 0; }
 
@@ -381,6 +396,63 @@
   .homepage-watch:active {
     color: #fff; }
 
+.adetail-ablum-item {
+  float: left;
+  width: 33.3%;
+  padding: .8rem .5rem; }
+  .adetail-ablum-item > img {
+    width: 100%;
+    max-height: 15rem; }
+
+#club-ablum-wrap {
+  padding: .5rem 0 1rem;
+  margin-bottom: 4.5rem; }
+
+.club-ablum-item {
+  padding: .5rem;
+  float: left;
+  width: 33.3%; }
+  .club-ablum-item > img {
+    width: 100%;
+    max-height: 15rem; }
+
+.hover-layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(40, 40, 40, 0.95); }
+  .hover-layer > img {
+    position: fixed;
+    width: 100%;
+    max-height: 100vh; }
+
+.album-manager {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99; }
+  .album-manager > button {
+    width: 100%;
+    height: 4.4rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    background-color: #80d6c1; }
+  .album-manager > input[type='file'] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
+
+/*// member-list*/
 .name-initial {
   padding: .7rem 1.2rem;
   font-size: 1.8rem;
@@ -476,7 +548,7 @@
   color: #999; }
   .navbt-item > a {
     color: #999; }
-  .navbt-item.active > a {
+  .navbt-item.active {
     color: #80d6c1; }
   .navbt-item p {
     height: 1.5rem; }
@@ -609,15 +681,15 @@
     padding-left: .5rem; }
 
 .acttype-head {
-  padding: .5rem 1rem;
-  padding-top: .8rem;
+  padding: .7rem 1rem;
+  padding-top: 1.4rem;
   font-size: 1.7rem;
   color: #666; }
   .acttype-head div {
     font-size: 1.4rem;
     color: #999; }
   .acttype-head img {
-    height: 1.5rem;
+    height: 1.4rem;
     vertical-align: -.2rem;
     margin-left: .5rem; }
 
@@ -638,7 +710,7 @@
     height: 20rem; }
   .imgbox img {
     width: 100vw;
-    max-height: 20rem;
+    height: 20rem;
     margin: 0 auto; }
 
 .page {
@@ -779,16 +851,16 @@
   font-size: 1.8rem;
   background-color: #fff;
   border-bottom: 1px solid #ccc; }
-  .adetail-head > .fr {
+  .adetail-head .fr {
     font-size: 1.5rem;
     color: #aaa;
     margin-top: .4rem; }
-    .adetail-head > .fr .fa {
+    .adetail-head .fr .fa {
       font-size: 2.4rem;
       color: #bbb;
       vertical-align: -.2rem;
       margin-left: .1em; }
-    .adetail-head > .fr .fa-pencil {
+    .adetail-head .fr .fa-pencil {
       font-size: 1.4rem;
       vertical-align: .1rem; }
 

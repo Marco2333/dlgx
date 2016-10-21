@@ -38,6 +38,32 @@ $(function() {
 		if (objUrl) {
 			$("#club-logo-set").attr('src', objUrl)
 		}
+	});
+
+	var albumFlag = true;
+
+	$(".album-add").on('change', "input[type='file']", function() {
+		var len, i, objUrl, val = $(this).val(),
+			suffix = val.substring(val.lastIndexOf('.') + 1);
+
+		if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+			alert("请上传图片文件！");
+			$(this).val('');
+			return;
+		}
+
+		objUrl = getObjectURL(this.files[0]);
+		$("<img>").attr('src', objUrl).prependTo($(".club-add-img"));
+		$(this).after($("<input type='file' name='album[]'>"));
+
+		if (albumFlag) {
+			albumFlag = false;
+			$(".club-add-img img").last().attr("src", "../../../Public/images/add_picture.png")
+		}
+	});
+
+	$(".club-add-img").on('click', 'img:last-child', function() {
+		$(".album-add input:last-of-type").trigger('click');
 	})
 
 	setPickerStyle(0);

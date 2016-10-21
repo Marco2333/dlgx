@@ -16,8 +16,10 @@ $preNavbt: 5.4rem;
 }
 
 .round-button {
-	padding: .7rem 2.2rem;
-	padding-bottom: .6rem;
+	display: inline-block;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	padding: 0 2.2rem;
 	border-radius: 18px;
 	color: $mainColor;
 	background-color: #fff;
@@ -27,12 +29,18 @@ $preNavbt: 5.4rem;
 	&:last-of-type {
 		margin-left: -2.3rem;
 	}
+	&:active {
+		color: $mainColor;
+	}
 }
 .round-button.active {
 	color: #fff;
 	position: relative;
 	z-index: 1;
 	background-color: $mainColor;
+	&:active {
+		color: #fff;
+	}
 }
 
 .pre-navbt {

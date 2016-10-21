@@ -1,8 +1,9 @@
 <include file="Common/header" title="首页" keywords="主页" description=""/>
 
 	<div id="act-top" >
-		<button class="round-button">活动</button><button class="round-button active">社团</button>
-		<a class="club-create-button">
+		<a href="{:U('Index/index')}" class="round-button">活动</a>
+		<button class="round-button active">社团</button>
+		<a href="{:U('Index/club-create')}" class="club-create-button">
 		<i class="fa fa-plus"></i>创建</a>
 	</div>
 	<div class="search-wrap">
@@ -127,11 +128,11 @@
 	<div class="nav-bottom">
 		<div class="navbt-item active"><img src="__PUBLIC__/images/home.png" alt=""><p>首页</p>
 		</div>
-		<a href="{:U('Index/user')}">
+		<a href="{:U('Index/topic')}">
 			<div class="navbt-item"><img src="__PUBLIC__/images/topic_gray.png" alt=""><p>话题</p>
 			</div>
 		</a>
-		<a href="{:U('Index/user')}">
+		<a href="{:U('Index/person-homepage')}">
 			<div class="navbt-item"><img src="__PUBLIC__/images/person_gray.png" alt=""><p>我的</p>
 			</div>
 		</a>
@@ -143,11 +144,6 @@
 	</div>
 	<script>
 		$(function() {
-			$(".round-button").click(function() {
-				$(this).addClass('active');
-				$(this).siblings().removeClass('active');
-			}); 
-
 			$("#clubs-wrap").on('click','.club-watch',function() {
 				if($(this).hasClass('_watch')) {
 					$(this).removeClass('_watch').find('span').text('关注');

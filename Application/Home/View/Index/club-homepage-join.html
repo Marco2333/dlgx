@@ -26,21 +26,40 @@
 	
 	<div class="adetail-wrap">
 		<p class="adetail-head">社团公告
-			<span class="fr">
-				<i class="fa fa-pencil"></i>
-				修改
-			</span>
+			<a href="{:U('Index/edit-notice')}">
+				<span class="fr">
+					<i class="fa fa-pencil"></i>
+					修改
+				</span>
+			</a>
 		</p>
 		<div id="adetail-intro">
 			社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团公告社团
 		</div>
 	</div>
 	
+	<div class="adetail-wrap">
+		<p class="adetail-head">社团相册
+			<a href="{:U('Index/club-album')}">
+				<span class="fr">更多
+					<i class="fa fa-angle-right"></i>
+				</span>
+			</a>
+		</p>
+		<div id="adetail-ablum" class="clearfix">
+			<div class="adetail-ablum-item"><img src="__PUBLIC__/images/user1.jpg" alt=""></div>
+			<div class="adetail-ablum-item"><img src="__PUBLIC__/images/user1.jpg" alt=""></div>
+			<div class="adetail-ablum-item"><img src="__PUBLIC__/images/user1.jpg" alt=""></div>
+		</div>
+	</div>
+	
 	<div id="club-member" class="adetail-wrap">
 		<p class="adetail-head">社团成员
-			<span class="fr">更多
-			<i class="fa fa-angle-right"></i>
-			</span>
+			<a href="{:U('Index/member-list')}">
+				<span class="fr">更多
+				<i class="fa fa-angle-right"></i>
+				</span>
+			</a>
 		</p>
 		<div class="detail-info clearfix">
 			<ul>
@@ -55,7 +74,9 @@
 	
 	<div class="adetail-wrap">
 		<p class="adetail-head">社团活动
-			<span class="fr">更多<i class="fa fa-angle-right"></i></span>
+			<a href="{:U('Index/act-list')}">
+				<span class="fr">更多<i class="fa fa-angle-right"></i></span>
+			</a>
 		</p>
 		<div id="homepage-actlist">
 			<div class="act-item clearfix">
@@ -145,8 +166,11 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="homepage-submit">
-		<button class="submit">发起活动</button>
+		<a href="{:U('Index/launch-activity')}">
+			<button class="submit">发起活动</button>
+		</a>
 	</div>
 	<script src="__PUBLIC__/script/min/swipe.min.js"></script>
 	<script>

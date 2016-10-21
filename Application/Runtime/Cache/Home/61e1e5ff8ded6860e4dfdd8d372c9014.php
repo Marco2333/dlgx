@@ -64,12 +64,23 @@
 			<div class="ccreate-detail">
 				<ul>
 					<li>
+						<span>社团相册</span>
+						<div class="cdinput-wrap pr album-add">
+							<input type="file" name="album[]">
+							<span>添加图片</span>
+						</div>
+					</li>
+					<p class="club-add-img"><img src="/collegial/Public/images/picture.png" alt=""></p>
+				</ul>
+			</div>
+			<div class="ccreate-detail">
+				<ul>
+					<li>
 						<span>社团简介</span>
 						<div class="cdinput-wrap">
 							<textarea name="intro" placeholder="请输入社团简介"></textarea>
 						</div>
 					</li>
-					<p class="club-add-img"><img src="/collegial/Public/images/picture.png" alt=""><span>添加图片</span></p>
 				</ul>
 			</div>
 			<div class="ccreate-detail">

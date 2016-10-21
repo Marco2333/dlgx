@@ -1,0 +1,67 @@
+<include file="Common/header" title="社团相册" keywords="社团相册" description=""/>
+	
+	<div id="club-ablum-wrap" class="clearfix">
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div><div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div><div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+	</div>
+	<div class="hover-layer none">
+		<img src="__PUBLIC__/images/user1.jpg" alt="" class="center">
+		<div class="album-manager">
+			<button id="delete-photo">删除该图片</button>
+		</div>
+	</div>
+	<form action="" method="post" enctype="multipart/form-data">
+		<div class="album-manager">
+			<input type="file" name="album">
+			<button>上传图片</button>
+		</div>
+	</form>
+	<script>
+		$(function() {
+			$("#club-ablum-wrap").on('click','.club-ablum-item',function() {
+				$(".hover-layer img").attr('src',$(this).find('img').attr('src')).parent().removeClass('none');
+			});
+			$(".hover-layer img").click(function() {
+				$(this).parent().addClass('none');
+			});
+			$(".album-manager input[type='file']").change(function() {
+				$(this).next('button').trigger('click');
+			});
+			$("#delete-photo").click(function() {
+
+			})
+		})
+	</script>
+<include file="Common/footer" />

@@ -34,7 +34,8 @@
 <body>
 
 	<div id="act-top" >
-		<button class="round-button active">活动</button><button class="round-button">社团</button>
+		<a class="round-button active">活动</a>
+		<a href="<?php echo U('Index/index-club');?>" class="round-button">社团</a>
 	</div>
 	<div class="search-wrap">
 		<img src="/collegial/Public/images/search.png" alt=""><input type="text" placeholder="搜索活动">
@@ -57,7 +58,7 @@
 	</div>
 	<div class="acttype-head">
 		<span>线上活动</span>
-		<a href="">
+		<a href="<?php echo U('Index/act-list');?>">
 			<div class="fr">
 				<span>更多</span>
 				<img src="/collegial/Public/images/arrow_right.png" alt="">
@@ -65,14 +66,14 @@
 		</a>
 	</div>
 	<div class="online-act">
-		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
-		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
-		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
-		<a href=""><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href="<?php echo U('Index/onact-detail');?>"><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href="<?php echo U('Index/onact-detail');?>"><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href="<?php echo U('Index/onact-detail');?>"><img src="/collegial/Public/images/actdetail.png" alt=""></a>
+		<a href="<?php echo U('Index/onact-detail');?>"><img src="/collegial/Public/images/actdetail.png" alt=""></a>
 	</div>
 	<div class="acttype-head">
 		<span>线下活动</span>
-		<a href="">
+		<a href="<?php echo U('Index/act-list');?>">
 			<div class="fr">
 				<span>更多</span>
 				<img src="/collegial/Public/images/arrow_right.png" alt="">
@@ -81,10 +82,10 @@
 	</div>
 	<div id="act-list" class="pre-navbt">
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -98,10 +99,10 @@
 			</div>
 		</div>
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -115,10 +116,10 @@
 			</div>
 		</div>
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -132,10 +133,10 @@
 			</div>
 		</div>
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -149,10 +150,10 @@
 			</div>
 		</div>
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -166,10 +167,10 @@
 			</div>
 		</div>
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/actdetail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity2.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
-					<a href="<?php echo U('Index/actdetail');?>">蒙牛全明星~早间青春SHOW</a>
+					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
 				</h2>
 				<div class="act-organize clearfix">
 					<img src="/collegial/Public/images/actorg1.png" alt="">
@@ -198,12 +199,12 @@
 		<div class="navbt-item active"><img src="/collegial/Public/images/home.png" alt=""><p>首页</p>
 		</div>
 		<div class="navbt-item">
-			<a href="<?php echo U('Index/user');?>">
+			<a href="<?php echo U('Index/topic');?>">
 				<img src="/collegial/Public/images/topic_gray.png" alt=""><p>话题</p>
 			</a>
 		</div>
 		<div class="navbt-item">
-			<a href="<?php echo U('Index/user');?>">
+			<a href="<?php echo U('Index/person-homepage');?>">
 				<img src="/collegial/Public/images/person_gray.png" alt=""><p>我的</p>
 			</a>
 		</div>
@@ -220,10 +221,6 @@
 		            $('.page li').eq(ind).addClass('active').siblings().removeClass('active');
 		        }
 		    });
-			$(".round-button").click(function() {
-				$(this).addClass('active');
-				$(this).siblings().removeClass('active');
-			});
 			$(".act-video > p").click(function(){
 				$(this).css('bottom','-40px');
 			});

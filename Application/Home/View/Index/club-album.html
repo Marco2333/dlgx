@@ -1,0 +1,52 @@
+<include file="Common/header" title="社团相册" keywords="社团相册" description=""/>
+	
+	<div id="club-ablum-wrap">
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div><div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+		<div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div><div class="club-ablum-item">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+		</div>
+	</div>
+	<div class="hover-layer none">
+		<img src="__PUBLIC__/images/user1.jpg" alt="" class="center">
+	</div>
+	<script>
+		$(function() {
+			$("#club-ablum-wrap").on('click','.club-ablum-item',function() {
+				$(".hover-layer img").attr('src',$(this).find('img').attr('src')).parent().removeClass('none');
+			});
+			$(".hover-layer").click(function() {
+				$(this).addClass('none');
+			})
+		})
+	</script>
+<include file="Common/footer" />

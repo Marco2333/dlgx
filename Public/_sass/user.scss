@@ -55,7 +55,7 @@
 	> a {
 		color: #999;
 	}
-	&.active > a{
+	&.active {
 		color: $mainColor;
 	}
 	p {
