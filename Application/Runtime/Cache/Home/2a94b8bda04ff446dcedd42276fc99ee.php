@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
-	<meta name="keywords" content="主页" />
+	<meta name="keywords" content="首页" />
 	<meta name="description" content=""/>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<meta http-equiv="Cache-Control" content="no-transform" /> 
@@ -197,14 +197,16 @@
 	<div class="nav-bottom">
 		<div class="navbt-item active"><img src="/collegial/Public/images/home.png" alt=""><p>首页</p>
 		</div>
-		<a href="<?php echo U('Index/user');?>">
-			<div class="navbt-item"><img src="/collegial/Public/images/topic_gray.png" alt=""><p>话题</p>
-			</div>
-		</a>
-		<a href="<?php echo U('Index/user');?>">
-			<div class="navbt-item"><img src="/collegial/Public/images/person_gray.png" alt=""><p>我的</p>
-			</div>
-		</a>
+		<div class="navbt-item">
+			<a href="<?php echo U('Index/user');?>">
+				<img src="/collegial/Public/images/topic_gray.png" alt=""><p>话题</p>
+			</a>
+		</div>
+		<div class="navbt-item">
+			<a href="<?php echo U('Index/user');?>">
+				<img src="/collegial/Public/images/person_gray.png" alt=""><p>我的</p>
+			</a>
+		</div>
 	</div>
 	
 	<script src="/collegial/Public/script/min/swipe.min.js"></script>

@@ -1,41 +1,41 @@
-#account-top {
-	height: 14.2rem;
-	text-align: center;
-	background-color: $mainColor;
-	> .portrait {
-		width: 8rem;
-		height: 8rem;
-		margin: 1.8rem 0 1rem;
-	}
-	> p{
-		color: #fff;
-		font-size: 1.7rem;
-	}
-}
-#account-list {
-	font-size: 1.6rem;
-	a {
-		color: #111;
-	}
-	p {
-		margin: .5rem 0;
-		padding: 1rem;
-		background-color: #fff;
-	}
-	> ul {
-		background-color: #fff;
-		padding: 0 1rem;
-	}
-	li {
-		padding: 1rem 0;
-		border-bottom: 1px solid #f0f0f0;
-	}
-	img {
-		float: right;
-		width: .8rem;
-		margin-top: .5rem;
-	}
-}
+// #account-top {
+// 	height: 14.2rem;
+// 	text-align: center;
+// 	background-color: $mainColor;
+// 	> .portrait {
+// 		width: 8rem;
+// 		height: 8rem;
+// 		margin: 1.8rem 0 1rem;
+// 	}
+// 	> p{
+// 		color: #fff;
+// 		font-size: 1.7rem;
+// 	}
+// }
+// #account-list {
+// 	font-size: 1.6rem;
+// 	a {
+// 		color: #111;
+// 	}
+// 	p {
+// 		margin: .5rem 0;
+// 		padding: 1rem;
+// 		background-color: #fff;
+// 	}
+// 	> ul {
+// 		background-color: #fff;
+// 		padding: 0 1rem;
+// 	}
+// 	li {
+// 		padding: 1rem 0;
+// 		border-bottom: 1px solid #f0f0f0;
+// 	}
+// 	img {
+// 		float: right;
+// 		width: .8rem;
+// 		margin-top: .5rem;
+// 	}
+// }
 .nav-bottom {
 	position: fixed;
 	bottom: 0;
@@ -48,25 +48,25 @@
 .navbt-item {
 	float: left;
 	width: 33.3%;
-	padding: .7rem 0;
+	padding: .6rem 0;
 	text-align: center;
-	color: #999;
 	font-size: 1.5rem;
-	&.active {
+	color: #999;
+	> a {
+		color: #999;
+	}
+	&.active > a{
 		color: $mainColor;
 	}
-	&:nth-child(2) > .fa {
-		font-size: 1.7rem;
-	}
-	> .fa {
-		font-size: 2rem;	
-	}
-	> p {
+	p {
 		height: 1.5rem;
 	}
-	> img {
-		max-width: 1.9rem;
-		height: 1.9rem;
+	img {
+		max-width: 2rem;
+		height: 2rem;
+	}
+	&:nth-of-type(2) img {
+		height: 1.8rem;
 	}
 }
 

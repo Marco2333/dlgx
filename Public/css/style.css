@@ -32,63 +32,6 @@
 .pre-navbt {
   margin-bottom: 5.4rem; }
 
-#apply-list {
-  padding: 2px 12px; }
-
-.apply-item {
-  padding: 12px 1px;
-  border-bottom: 1px solid #ddd; }
-  .apply-item:last-of-type {
-    border-bottom: none; }
-
-.apply-info {
-  width: 70%;
-  float: left; }
-  .apply-info .portrait-wrap {
-    float: left;
-    margin-right: .7rem; }
-
-.portrait {
-  width: 6.8rem;
-  height: 6.8rem;
-  margin-top: .4rem;
-  border-radius: 100%; }
-
-.apply-detail {
-  float: left; }
-  .apply-detail > h1 {
-    font-size: 1.7rem;
-    color: #000; }
-  .apply-detail > h2 {
-    color: #777;
-    font-size: 1.4rem;
-    margin: .3rem 0 .4rem; }
-  .apply-detail > p {
-    color: #444;
-    font-size: 1.4rem; }
-
-.check-button-wrap {
-  width: 30%;
-  float: left;
-  font-size: 0;
-  text-align: right; }
-  .check-button-wrap > span {
-    color: #aaa;
-    font-size: 1.5rem; }
-  .check-button-wrap > button {
-    width: 8.2rem;
-    height: 2.8rem;
-    font-size: 1.3rem;
-    border-radius: 3px;
-    color: #fff;
-    outline: none;
-    border: none; }
-  .check-button-wrap .active {
-    margin-bottom: 12px;
-    background-color: #80d6c1; }
-  .check-button-wrap .inactive {
-    background-color: #999; }
-
 #uinfo-top {
   color: #fff;
   padding: .8rem;
@@ -253,94 +196,7 @@
   color: #333;
   padding-top: 3.3rem; }
 
-#none-club {
-  width: 100%;
-  text-align: center; }
-  #none-club > p {
-    color: #999;
-    font-size: 1.5rem; }
-  #none-club > a {
-    display: inline-block;
-    margin: 1.5rem 0;
-    padding: .7rem 3rem;
-    font-size: 1.6rem;
-    border-radius: 20px;
-    color: #fff;
-    background-color: #80d6c1; }
-
-#cselect-top {
-  padding: .1rem .3rem 0 .8rem;
-  line-height: 4.5rem;
-  color: #111;
-  background-color: #eee; }
-  #cselect-top img {
-    width: 2.6rem;
-    margin-right: .2rem;
-    vertical-align: -.8rem; }
-
-#club-list {
-  padding: .2rem .6rem; }
-
-.club-item {
-  padding: .7rem 0;
-  border-bottom: 1px solid #eee; }
-  .club-item > .portrait-wrap {
-    float: left;
-    width: 26%;
-    line-height: 7rem;
-    text-align: center;
-    padding-left: 1rem; }
-  .club-item .portrait {
-    width: 90%;
-    height: auto; }
-
-.club-info {
-  width: 74%;
-  padding-left: .5rem; }
-  .club-info > h2 {
-    color: #000;
-    font-size: 1.7rem; }
-  .club-info > h3 {
-    color: #888;
-    margin: .5rem 0; }
-  .club-info p {
-    color: #222; }
-
 /*club-detail*/
-#cdetail-top {
-  position: relative;
-  padding: 1.3rem 0;
-  text-align: center;
-  color: #fff;
-  background-color: #80d6c1; }
-  #cdetail-top > h2 {
-    margin: .8rem 0; }
-  #cdetail-top > img {
-    width: 7.2rem;
-    height: 7.2rem; }
-  #cdetail-top > button {
-    position: absolute;
-    right: .8rem;
-    top: 1.2rem;
-    height: 2.7rem;
-    padding: 0 1.5rem;
-    font-size: 1.1rem;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 2rem;
-    background-color: #4d8074; }
-
-.info-title {
-  padding: .7rem .12rem;
-  color: #000;
-  font-size: 1.7rem;
-  border-bottom: 1px solid #ddd; }
-
-.info-wrap {
-  padding: .5rem 1.2rem;
-  background-color: #fff; }
-
 #club-member {
   margin-top: .7rem;
   color: #111; }
@@ -602,37 +458,6 @@
     resize: none;
     border: 1px solid #ddd; }
 
-#account-top {
-  height: 14.2rem;
-  text-align: center;
-  background-color: #80d6c1; }
-  #account-top > .portrait {
-    width: 8rem;
-    height: 8rem;
-    margin: 1.8rem 0 1rem; }
-  #account-top > p {
-    color: #fff;
-    font-size: 1.7rem; }
-
-#account-list {
-  font-size: 1.6rem; }
-  #account-list a {
-    color: #111; }
-  #account-list p {
-    margin: .5rem 0;
-    padding: 1rem;
-    background-color: #fff; }
-  #account-list > ul {
-    background-color: #fff;
-    padding: 0 1rem; }
-  #account-list li {
-    padding: 1rem 0;
-    border-bottom: 1px solid #f0f0f0; }
-  #account-list img {
-    float: right;
-    width: .8rem;
-    margin-top: .5rem; }
-
 .nav-bottom {
   position: fixed;
   bottom: 0;
@@ -645,21 +470,21 @@
 .navbt-item {
   float: left;
   width: 33.3%;
-  padding: .7rem 0;
+  padding: .6rem 0;
   text-align: center;
-  color: #999;
-  font-size: 1.5rem; }
-  .navbt-item.active {
+  font-size: 1.5rem;
+  color: #999; }
+  .navbt-item > a {
+    color: #999; }
+  .navbt-item.active > a {
     color: #80d6c1; }
-  .navbt-item:nth-child(2) > .fa {
-    font-size: 1.7rem; }
-  .navbt-item > .fa {
-    font-size: 2rem; }
-  .navbt-item > p {
+  .navbt-item p {
     height: 1.5rem; }
-  .navbt-item > img {
-    max-width: 1.9rem;
-    height: 1.9rem; }
+  .navbt-item img {
+    max-width: 2rem;
+    height: 2rem; }
+  .navbt-item:nth-of-type(2) img {
+    height: 1.8rem; }
 
 /*userhomepage*/
 #uhome-top {
@@ -842,7 +667,8 @@
   position: relative;
   margin: .5rem .7rem;
   background-color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: .7rem 0; }
 
 .club-img {
   float: left;
@@ -876,13 +702,16 @@
   top: 1.2rem;
   right: .8rem;
   color: #80d6c1;
-  padding: 0 .5rem;
-  padding-top: .2rem;
-  line-height: 2.2rem;
+  padding: .2rem .5rem;
+  padding-top: .4rem;
   border: 2px solid #80d6c1;
-  border-radius: 3px; }
-  .club-watch > .fa {
+  border-radius: 3px;
+  font-size: 0; }
+  .club-watch > span {
     font-size: 1.3rem; }
+  .club-watch > .fa {
+    font-size: 1.2rem;
+    margin-right: .5rem; }
   .club-watch._watch {
     color: #ccc;
     border-color: #ccc; }
@@ -1236,12 +1065,6 @@
   .portrait {
     width: 6rem;
     height: 6rem; }
-  .apply-detail > h1 {
-    font-size: 1.8rem; }
-  .apply-detail > h2 {
-    font-size: 1.4rem; }
-  .apply-detail > p {
-    font-size: 1.4rem; }
   .act-organize > img {
     width: 2.3rem;
     height: 2.3rem; }
@@ -1256,16 +1079,10 @@
     font-size: 1.3rem; }
   .act-operate {
     margin-top: .7rem; }
-  .uinfo-item input[type='text'] {
-    width: 15.4rem; }
-  .scode-send-wrap > input[type='text'] {
-    width: 8rem; }
   #club-member li img {
     width: 5rem;
     height: 5rem; }
   .online-act img {
-    width: 46%; }
-  #topic-publish-wrap li textarea, #topic-publish-wrap li input {
-    width: 18.5rem; } }
+    width: 46%; } }
 
 /*# sourceMappingURL=style.css.map */

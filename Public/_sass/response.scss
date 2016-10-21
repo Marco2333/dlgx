@@ -3,17 +3,6 @@
 		width: 6rem;
 		height: 6rem;
 	}
-	.apply-detail {
-		> h1 {
-			font-size: 1.8rem;
-		}
-		> h2 {
-			font-size: 1.4rem;
-		}
-		> p {
-			font-size: 1.4rem;
-		}
-	}
 	.act-organize {
 		> img {
 			width: 2.3rem;
@@ -35,14 +24,6 @@
 	.act-operate {
 		margin-top: .7rem;
 	}
-	.uinfo-item input[type='text'] {
-		width: 15.4rem;
-	}
-	.scode-send-wrap {
-		> input[type='text'] {
-			width: 8rem;
-		}
-	}
 	#club-member li img {
 		width: 5rem;
 		height: 5rem;
@@ -50,13 +31,6 @@
 	.online-act {
 		img {
 			width: 46%;
-		}
-	}
-	#topic-publish-wrap {
-		li {
-			textarea, input {
-				width: 18.5rem;		
-			}
 		}
 	}
 }

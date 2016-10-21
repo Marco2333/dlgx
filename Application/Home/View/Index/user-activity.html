@@ -125,26 +125,5 @@
 			</div>
 		</div>
 	</div>
-	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
-<script>
-	$(function() {
-		$(".round-button").click(function() {
-			$(this).addClass('active');
-			$(this).siblings().removeClass('active');
-			if($(this).prev().length) {
-				myalert('功能有待开发');
-			}
-		});
-		$(".act-operate button.active").click(function(){
-			if($(this).hasClass('_apply')) {
-				myalert('报名成功');
-				$(this).removeClass('_apply').text('取消报名');
-			}
-			else {
-				myalert('取消报名成功');
-				$(this).addClass('_apply').text('立即报名');
-			}
-		})
-})
-</script>
+	
 <include file="Common/footer" />

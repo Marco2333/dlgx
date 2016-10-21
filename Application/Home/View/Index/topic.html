@@ -177,13 +177,17 @@
 		</ul>
 	</div>
 	<div class="nav-bottom">
-		<div class="navbt-item"><i class="fa fa-home"></i><p>首页</p>
+		<div class="navbt-item"><img src="__PUBLIC__/images/home_gray.png" alt=""><p>首页</p>
 		</div>
-		<div class="navbt-item active"><i class="fa fa-file-text-o"></i><p>话题</p>
+		<div class="navbt-item active">
+			<a href="{:U('Index/user')}">
+				<img src="__PUBLIC__/images/topic.png" alt=""><p>话题</p>
+			</a>
 		</div>
-		<a href="{:U('Index/user')}">
-			<div class="navbt-item"><i class="fa fa-user"></i><p>我的</p>
-			</div>
-		</a>
+		<div class="navbt-item">
+			<a href="{:U('Index/user')}">
+				<img src="__PUBLIC__/images/person_gray.png" alt=""><p>我的</p>
+			</a>
+		</div>
 	</div>
 <include file="Common/footer" />

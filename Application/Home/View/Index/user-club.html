@@ -16,7 +16,10 @@
 						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
 					</span>
 				</div>
-				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i>
+					<span>关注</span>
+				</a>
 			</li>
 			<li class="club-item clearfix">
 				<div class="club-img">
@@ -29,7 +32,9 @@
 						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
 					</span>
 				</div>
-				<a class="club-watch _watch"><img src="__PUBLIC__/images/plus.png" alt="" class="none"><span>已关注</span></a>
+				<a class="club-watch _watch">
+					<i class="fa fa-plus"></i><span>已关注</span>
+				</a>
 			</li>
 			<li class="club-item clearfix">
 				<div class="club-img">
@@ -42,7 +47,9 @@
 						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
 					</span>
 				</div>
-				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
 			</li>
 			<li class="club-item clearfix">
 				<div class="club-img">
@@ -55,7 +62,9 @@
 						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
 					</span>
 				</div>
-				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
 			</li>
 			<li class="club-item clearfix">
 				<div class="club-img">
@@ -68,7 +77,9 @@
 						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
 					</span>
 				</div>
-				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
 			</li>
 			<li class="club-item clearfix">
 				<div class="club-img">
@@ -81,8 +92,11 @@
 						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
 					</span>
 				</div>
-				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
-			</li><li class="club-item clearfix">
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
 				<div class="club-img">
 					<img src="__PUBLIC__/images/user3.jpg" alt="">
 				</div>
@@ -93,7 +107,9 @@
 						简介：fadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasf
 					</span>
 				</div>
-				<a class="club-watch"><img src="__PUBLIC__/images/plus.png" alt=""><span>关注</span></a>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
 			</li>
 		</ul>
 	</div>
@@ -111,10 +127,10 @@
 
 			$("#clubs-wrap").on('click','.club-watch',function() {
 				if($(this).hasClass('_watch')) {
-					$(this).removeClass('_watch').find('img').removeClass('none').next('span').text('关注');
+					$(this).removeClass('_watch').find('span').text('关注');
 					$(".trans-alert p").text('已取消关注').parent().removeClass('none');
 				} else {
-					$(this).addClass('_watch').find('img').addClass('none').next('span').text('已关注');
+					$(this).addClass('_watch').find('span').text('已关注');
 					$(".trans-alert p").text('关注成功').parent().removeClass('none');
 				}
 				setTimeout(function() {

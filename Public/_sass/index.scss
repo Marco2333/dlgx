@@ -92,6 +92,7 @@
 	margin: .5rem .7rem;
 	background-color: #fff;
 	overflow: hidden;
+	padding: .7rem 0;
 }
 .club-img {
 	float: left;
@@ -129,13 +130,17 @@
 	top: 1.2rem;
 	right: .8rem;
 	color: $mainColor;
-	padding: 0 .5rem;
-	padding-top: .2rem;
-	line-height: 2.2rem;
+	padding: .2rem .5rem;
+	padding-top: .4rem;
 	border: 2px solid $mainColor;
 	border-radius: 3px;
-	> .fa {
+	font-size: 0;
+	> span {
 		font-size: 1.3rem;
+	}
+	> .fa {
+		font-size: 1.2rem;
+		margin-right: .5rem;
 	}
 	&._watch {
 		color: #ccc;
@@ -165,7 +170,6 @@
 		color: #fff;
 	}
 }
-
 .trans-alert {
 	position: fixed;
 	width: 10.5rem;
