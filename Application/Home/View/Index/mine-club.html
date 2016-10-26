@@ -1,0 +1,142 @@
+<include file="Common/header" title="我的社团" keywords="我的社团" description=""/>
+
+	<div id="act-top" >
+		<button class="round-button active">我加入的</button><button class="round-button">我关注的</button>
+	</div>
+	<div id="clubs-wrap">
+		<ul>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i>
+					<span>关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch _watch">
+					<i class="fa fa-plus"></i><span>已关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+					</span>
+				</div>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
+			</li>
+			<li class="club-item clearfix">
+				<div class="club-img">
+					<img src="__PUBLIC__/images/user3.jpg" alt="">
+				</div>
+				<div class="club-item-info">
+					<h2>大学生就业协会</h2>
+					<p>安徽师范大学</p>
+					<span>
+						简介：fadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasffadsfasf
+					</span>
+				</div>
+				<a class="club-watch">
+					<i class="fa fa-plus"></i><span>关注</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="center trans-alert none">
+		<img src="__PUBLIC__/images/tick.png" alt="">
+		<p></p>
+	</div>
+	<script>
+		$(function() {
+			$(".round-button").click(function() {
+				$(this).addClass('active');
+				$(this).siblings().removeClass('active');
+			}); 
+
+			$("#clubs-wrap").on('click','.club-watch',function() {
+				if($(this).hasClass('_watch')) {
+					$(this).removeClass('_watch').find('span').text('关注');
+					$(".trans-alert p").text('已取消关注').parent().removeClass('none');
+				} else {
+					$(this).addClass('_watch').find('span').text('已关注');
+					$(".trans-alert p").text('关注成功').parent().removeClass('none');
+				}
+				setTimeout(function() {
+					$(".trans-alert").addClass('none');
+				},1400)
+			})
+		})
+	</script>
+<include file="Common/footer" />

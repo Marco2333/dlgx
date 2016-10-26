@@ -1,0 +1,110 @@
+<include file="Common/header" title="与我相关" keywords="与我相关" description=""/>
+	
+	<div id="about-me">
+		<div class="about-me-item">
+			<div class="ame-item-head">
+				<img src="__PUBLIC__/images/user1.jpg" alt="" class="ame-item-portrait">
+				<div class="ame-item-name">
+					<h2>昵称</h2>
+					<p>2016年8月12日 10:49</p>
+				</div>
+				<a class="reply-button">回复</a>
+			</div>
+			<div class="ame-item-body">
+				品论内容 评论内容评论内容评论内容评论内容
+				评论内容评论内容评论内容评论内容评论内容评论内容
+			</div>
+			<div class="ame-item-info">
+				评论了你的话题："话题话题话题话题话题话题话题话题话题话题话题话题"
+			</div>
+		</div>
+		<div class="about-me-item">
+			<div class="ame-item-head">
+				<img src="__PUBLIC__/images/user1.jpg" alt="" class="ame-item-portrait">
+				<div class="ame-item-name">
+					<h2>昵称</h2>
+					<p>2016年8月12日 10:49</p>
+				</div>
+				<a class="reply-button">回复</a>
+			</div>
+			<div class="ame-item-body">
+				品论内容 评论内容评论内容评论内容评论内容
+				评论内容评论内容评论内容评论内容评论内容评论内容
+			</div>
+			<div class="ame-item-info">
+				评论了你的话题："话题话题话题话题话题话题话题话题话题话题话题话题"
+			</div>
+		</div>
+		<div class="about-me-item">
+			<div class="ame-item-head">
+				<img src="__PUBLIC__/images/user1.jpg" alt="" class="ame-item-portrait">
+				<div class="ame-item-name">
+					<h2>昵称</h2>
+					<p>2016年8月12日 10:49</p>
+				</div>
+			</div>
+			<div class="ame-item-info">
+				收藏了你的话题："话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题话题"
+			</div>
+		</div>
+		<div class="about-me-item">
+			<div class="ame-item-head">
+				<img src="__PUBLIC__/images/user1.jpg" alt="" class="ame-item-portrait">
+				<div class="ame-item-name">
+					<h2>昵称</h2>
+					<p>2016年8月12日 10:49</p>
+				</div>
+			</div>
+			<div class="ame-item-info">
+				关注了你
+			</div>
+		</div>
+		<div class="about-me-item">
+			<div class="ame-item-head">
+				<img src="__PUBLIC__/images/user1.jpg" alt="" class="ame-item-portrait">
+				<div class="ame-item-name">
+					<h2>昵称</h2>
+					<p>2016年8月12日 10:49</p>
+				</div>
+			</div>
+			<div class="ame-item-body">
+				赞了你
+			</div>
+			<div class="ame-item-info">
+				昵称1："话题话题话题话题话题话题话题话题话题话题话题话题"
+			</div>
+		</div>
+	</div>
+	
+	<div class="mark-publish-wrap">
+		<p class="mark-publish-head">
+			<span class="fl">取消</span>
+			<span class="fr">发布</span>
+		</p>
+		<div class="mark-publish-body">
+			<textarea placeholder="写评论..."></textarea>
+			<p><img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span></p>
+		</div>
+	</div>
+	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
+	<script>
+	$(function() {
+		$(".reply-button").click(function() {
+			$(".mark-publish-wrap").css('bottom','0');
+		});
+
+		$(".mark-publish-head span.fl").click(function() {
+			$(".mark-publish-wrap").css("bottom", '-21rem');
+		});
+
+		$(".mark-publish-head span.fr").click(function() {
+			var text = $(".mark-publish-body > textarea").val().trim();
+			if (text == '') {
+				myalert("评论不能为空！");
+				return;
+			}
+			$(".mark-publish-wrap").css("bottom", '-21rem');
+		});
+	})
+	</script>
+<include file="Common/footer" />
