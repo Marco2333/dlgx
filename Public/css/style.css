@@ -1383,6 +1383,105 @@
   border-radius: 5px;
   background-color: #eee; }
 
+/*info-modify*/
+.portrait-modify {
+  position: relative;
+  height: 10rem;
+  line-height: 10rem;
+  padding: 0 1.1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  background-color: #fff; }
+  .portrait-modify > img {
+    width: 7rem;
+    height: 7rem;
+    margin-right: 1rem;
+    border-radius: 100%; }
+  .portrait-modify > .fa {
+    float: right;
+    color: #aaa;
+    margin-top: 4rem;
+    font-size: 2.1rem; }
+  .portrait-modify > input[type='file'] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
+
+.info-modify {
+  padding: 0 1rem;
+  background-color: #fff; }
+
+.imodify-item {
+  padding: .9rem 0;
+  border-bottom: 1px solid #eee; }
+  .imodify-item > p {
+    float: left;
+    font-size: 1.6rem; }
+  .imodify-item:last-child {
+    border-bottom: none; }
+
+.imodify-item-detail {
+  overflow: hidden;
+  text-align: right;
+  font-size: 1.6rem;
+  color: #999; }
+  .imodify-item-detail > .fa {
+    font-size: 2.1rem;
+    margin-left: 1rem; }
+  .imodify-item-detail > input {
+    display: none; }
+
+.panel-wrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(10, 10, 10, 0.6); }
+
+.input-panel {
+  position: fixed;
+  left: 0;
+  bottom: -7rem;
+  width: 100%;
+  z-index: 99;
+  background-color: #f2f2f2;
+  padding: 1rem 8rem 1rem 1.2rem;
+  transition: bottom 300ms ease-out; }
+
+.input-wrap {
+  position: relative;
+  background-color: #fff; }
+  .input-wrap > input {
+    outline: none;
+    width: 100%;
+    padding: 0 2rem 0 .4rem;
+    height: 4rem;
+    border: none; }
+  .input-wrap > .fa-close {
+    position: absolute;
+    top: 1rem;
+    right: .3rem;
+    color: #aaa;
+    font-size: 1.8rem; }
+
+.input-button {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1rem;
+  width: 6rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  background-color: #80d6c1; }
+
 @media screen and (max-width: 350px) {
   .portrait {
     width: 6rem;
