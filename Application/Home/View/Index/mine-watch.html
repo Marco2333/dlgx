@@ -130,4 +130,17 @@
 			</li>
 		</ul>
 	</div>
+
+	<script>
+		$(function() {
+			$("#fans-list").on('click','.club-watch',function() {
+				if($(this).hasClass('_watch')) {
+					$(this).removeClass('_watch').find('span').text('关注');
+				} else {
+					$(this).addClass('_watch').find('span').text('已关注');
+				}
+			});
+
+		})
+	</script>
 <include file="Common/footer" />

@@ -5,7 +5,7 @@
 		<img src="__PUBLIC__/images/user1.jpg" alt="">
 		<span>更改头像</span>
 		<i class="fa fa-angle-right"></i>
-		<input type="file">
+		<input type="file" name="portrait">
 	</div>
 
 	<div class="info-modify">
@@ -14,7 +14,7 @@
 				<p>昵称</p>
 				<div class="imodify-item-detail">
 					<span>大乐个学</span>
-					<input type="text">
+					<input type="text" name="nickname">
 					<i class="fa fa-angle-right"></i>
 				</div>
 			</li>
@@ -22,7 +22,7 @@
 				<p>性别</p>
 				<div class="imodify-item-detail">
 					<span>男</span>
-					<input type="text">
+					<input type="text" name="sex">
 					<i class="fa fa-angle-right"></i>
 				</div>
 			</li>
@@ -30,7 +30,7 @@
 				<p>学校</p>
 				<div class="imodify-item-detail">
 					<span>安徽师范大学</span>
-					<input type="text">
+					<input type="text" name="school">
 					<i class="fa fa-angle-right"></i>
 				</div>
 			</li>
@@ -38,7 +38,7 @@
 				<p>学院/院系</p>
 				<div class="imodify-item-detail">
 					<span>信息工程学院</span>
-					<input type="text">
+					<input type="text" name="college">
 					<i class="fa fa-angle-right"></i>
 				</div>
 			</li>
@@ -46,7 +46,7 @@
 				<p>专业班级</p>
 				<div class="imodify-item-detail">
 					<span>信管121级</span>
-					<input type="text">
+					<input type="text" name="major">
 					<i class="fa fa-angle-right"></i>
 				</div>
 			</li>
@@ -62,26 +62,12 @@
 	</div>
 	<button class="input-button">修改</button>
 </div>
-<script>
-	$(function() {
-		$(".imodify-item").each(function() {
-			if($(this).hasClass('change-sex')) {
-				return;
-			}
-			$(this).click(function() {
-				$(".panel-wrap").removeClass("none");
-				$(".input-panel").css('bottom','0');
-			});
-		})
-
-		$(".panel-wrap").click(function() {
-			$(".panel-wrap").addClass("none");
-			$(".input-panel").css('bottom','-7rem');
-		});
-
-		$(".fa-close").click(function() {
-			$(this).prev('input').val('');
-		})
-	})
-</script>
+<div class="sex-panel">
+	<div class="sex-panel-type">
+		<p>男</p>
+		<p>女</p>
+	</div>
+	<p>取消</p>
+</div>
+<script src="__PUBLIC__/script/min/infoModify.min.js"></script>
 <include file="Common/footer" />

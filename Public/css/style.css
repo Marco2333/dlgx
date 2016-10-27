@@ -1482,6 +1482,30 @@
   border-radius: 2px;
   background-color: #80d6c1; }
 
+.sex-panel {
+  position: fixed;
+  left: 0;
+  bottom: -15rem;
+  width: 100%;
+  padding: 1rem;
+  color: #80d6c1;
+  text-align: center;
+  z-index: 99;
+  font-size: 1.6rem;
+  transition: bottom 300ms ease-out; }
+  .sex-panel p {
+    padding: 1rem 0; }
+  .sex-panel > p {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #fff; }
+
+.sex-panel-type {
+  border-radius: 5px;
+  background-color: #fff; }
+  .sex-panel-type > p:first-child {
+    border-bottom: 1px solid #eee; }
+
 @media screen and (max-width: 350px) {
   .portrait {
     width: 6rem;

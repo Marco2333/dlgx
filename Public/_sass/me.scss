@@ -391,3 +391,32 @@
 	border-radius: 2px; 
 	background-color: $mainColor;
 }
+.sex-panel {
+	position: fixed;
+	left: 0;
+	bottom: -15rem;
+	width: 100%;
+	padding: 1rem;
+	color: $mainColor;
+	text-align: center;
+	z-index: 99;
+	font-size: 1.6rem;
+	transition: bottom 300ms ease-out;
+	p {
+		padding: 1rem 0;
+	}
+	> p {
+		margin-top: 1rem;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+}
+.sex-panel-type {
+	border-radius: 5px;
+	background-color: #fff;
+	> p {
+		&:first-child {
+			border-bottom: 1px solid #eee;
+		}	
+	}
+}
