@@ -204,7 +204,7 @@
 			</a>
 		</div>
 		<div class="navbt-item">
-			<a href="<?php echo U('Index/person-homepage');?>">
+			<a href="<?php echo U('Index/me');?>">
 				<img src="/collegial/Public/images/person_gray.png" alt=""><p>我的</p>
 			</a>
 		</div>

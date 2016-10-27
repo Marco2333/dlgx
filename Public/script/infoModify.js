@@ -43,6 +43,11 @@ $(function() {
 		$(".sex-panel").css('bottom', '0');
 	});
 
+	$(".sex-panel > p").click(function() {
+		$(".panel-wrap").addClass("none");
+		$(".sex-panel").css('bottom', '-15rem');
+	});
+
 	$(".sex-panel-type > p").each(function(i) {
 		$(this).click(function() {
 			$(".panel-wrap").addClass("none");
