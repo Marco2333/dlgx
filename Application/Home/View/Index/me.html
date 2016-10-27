@@ -1,28 +1,30 @@
 <include file="Common/header" title="我的" keywords="我的" description=""/>
 	
-	<div id="mine-top">
-		<div class="fl">
-			<img src="__PUBLIC__/images/user1.jpg" alt="">
+	<a href="{:U('Index/info-modify')}">
+		<div id="mine-top">
+			<div class="fl">
+				<img src="__PUBLIC__/images/user1.jpg" alt="">
+			</div>
+			<div class="mine-intro">
+				<h2>昵称昵称</h2>
+				<p>简介简介简介简介简介简介简介简介</p>
+			</div>
+			<i class="fa fa-angle-right"></i>
+			<div class="watch-fans clearfix">
+				<p>关注 2547</p>
+				<p>粉丝 14167</p>
+			</div>
 		</div>
-		<div class="mine-intro">
-			<h2>昵称昵称</h2>
-			<p>简介简介简介简介简介简介简介简介</p>
-		</div>
-		<i class="fa fa-angle-right"></i>
-		<div class="watch-fans clearfix">
-			<p>关注 2547</p>
-			<p>粉丝 14167</p>
-		</div>
-	</div>
+	</a>
 	<div class="mine-info">
 		<ul>
-			<a href=""><li class="mine-info-item">我的社团<i class="fa fa-angle-right"></i></li></a>
-			<a href=""><li class="mine-info-item">我的活动<i class="fa fa-angle-right"></i></li></a>
-			<a href=""><li class="mine-info-item">我的话题<i class="fa fa-angle-right"></i></li></a>
+			<a href="{:U('Index/mine-club')}"><li class="mine-info-item">我的社团<i class="fa fa-angle-right"></i></li></a>
+			<a href="{:U('Index/mine-onactivity')}"><li class="mine-info-item">我的活动<i class="fa fa-angle-right"></i></li></a>
+			<a href="{:U('Index/mine-topic')}"><li class="mine-info-item">我的话题<i class="fa fa-angle-right"></i></li></a>
 		</ul>
 	</div>
 	<div class="mine-info">
-		<a href=""><div class="mine-info-item">我的消息<i class="fa fa-angle-right"></i><span class="badge">9+</span></div></a>
+		<a href="{:U('Index/message')}"><div class="mine-info-item">我的消息<i class="fa fa-angle-right"></i><span class="badge">9+</span></div></a>
 	</div>
 	<div class="nav-bottom">
 		<div class="navbt-item">
