@@ -109,6 +109,7 @@
 			</ul>
 		</div>
 	</div>
+	<div class="info-mask center none" data-status="">修改失败</div>
 	<script src="/collegial/Public/script/min/clubCreate.min.js"></script>
 
 </body>

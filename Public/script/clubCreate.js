@@ -1,4 +1,17 @@
 $(function() {
+	var status = $(".info-mask").attr('data-status');
+	console.log(status);
+	if (status === '1' || status === '-1') {
+		if (status === '1') {
+			$(".info-mask").text('创建成功');
+		} else {
+			$(".info-mask").text('创建失败');
+		}
+		$(".info-mask").removeClass('none');
+		setTimeout(function() {
+			$(".info-mask").addClass('none');
+		}, 1500);
+	}
 	var rate = 0;
 	$(".dpicker-body").scroll(function() {
 		rate = setPickerStyle(rate)
