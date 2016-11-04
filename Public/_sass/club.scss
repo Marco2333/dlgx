@@ -200,12 +200,21 @@
 	}
 }
 .club-add-img {
+	position: relative;
 	padding: .7rem .7rem 0 .7rem;
 	> img {
 		width: 6rem;
 		height: 6rem;
 		border-radius: 5px;
 		margin: 0 .9rem 1rem 0;
+	}
+	> input[type='file'] {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
 	}
 }
 .date-picker {

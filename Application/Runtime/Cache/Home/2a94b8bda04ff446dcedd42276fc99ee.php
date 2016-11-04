@@ -82,7 +82,7 @@
 	</div>
 	<div id="act-list" class="pre-navbt">
 		<div class="act-item clearfix">
-			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/activity1.png" alt=""></a></div>
+			<div class="act-img"><a href="<?php echo U('Index/offact-detail');?>"><img src="/collegial/Public/images/poster1.png" alt=""></a></div>
 			<div class="act-info">
 				<h2 class="act-title one-line">
 					<a href="<?php echo U('Index/offact-detail');?>">蒙牛全明星~早间青春SHOW</a>
@@ -183,7 +183,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="act-item">
+		<div class="act-item act-video-wrap">
 			<div class="act-video">
 				<video src="/collegial/Public/video/v1.mp4" poster="/collegial/Public/images/poster1.png" controls></video>
 				<p><span class="fl one-line">因为青春</span><span class="fr">2.33</span></p>

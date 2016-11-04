@@ -1,7 +1,7 @@
 <include file="Common/header" title="发布话题" keywords="发布话题" description=""/>
 
 	<div id="topic-publish-wrap">
-		<form action="" onsubmit="return check();">
+		<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
 			<div class="ccreate-detail">
 				<ul>
 					<li class="topic-publish-item">
@@ -16,7 +16,10 @@
 							<textarea name="topic-detail" placeholder="请输入话题详情"></textarea>
 						</div>
 					</li>
-					<p class="club-add-img"><img src="__PUBLIC__/images/picture.png" alt=""><img src="__PUBLIC__/images/add_picture.png" alt=""></p>
+					<p class="club-add-img">
+						<img src="__PUBLIC__/images/add_picture.png" alt="">
+						<input type="file" name="file[]">
+					</p>
 				</ul>
 			</div>
 			<button class="submit">立即发布</button>
@@ -24,6 +27,23 @@
 	</div>
 
 	<script>
+		$(function() {
+			$(".club-add-img").on('change', "input[type='file']", function() {
+				var len, i, objUrl, val = $(this).val(),
+					suffix = val.substring(val.lastIndexOf('.') + 1);
+
+				if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+					alert("请上传图片文件！");
+					$(this).val('');
+					return;
+				}
+
+				objUrl = getObjectURL(this.files[0]);
+				$("<img>").attr('src', objUrl).prependTo($(".club-add-img"));
+				$(this).after($("<input type='file' name='file[]'>"));
+			});
+		})
+
 		function check() {
 			if(!$("input[name='title']").val().trim()) {
 				alert("标题不能为空！");
@@ -34,6 +54,18 @@
 				return false;
 			}
 			return true;
+		}
+
+		function getObjectURL(file) {
+			var url = null;
+			if (window.createObjectURL != undefined) { // basic
+				url = window.createObjectURL(file);
+			} else if (window.URL != undefined) { // mozilla(firefox)
+				url = window.URL.createObjectURL(file);
+			} else if (window.webkitURL != undefined) { // webkit or chrome
+				url = window.webkitURL.createObjectURL(file);
+			}
+			return url;
 		}
 	</script>
 <include file="Common/footer" />

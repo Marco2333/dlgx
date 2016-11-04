@@ -199,29 +199,13 @@
 		</p>
 		<div class="mark-publish-body">
 			<textarea placeholder="写评论..."></textarea>
-			<p><img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span></p>
+			<p>
+				<img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span>
+				<input type="file" name="file[]">
+			</p>
 		</div>
 	</div>
 
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
-	<script>
-	$(function() {
-		$("#topic-list").on('click','.topic-ibottom-item:first-child',function() {
-			$(".mark-publish-wrap").css('bottom','0');
-		});
-
-		$(".mark-publish-head span.fl").click(function() {
-			$(".mark-publish-wrap").css("bottom", '-21rem');
-		});
-
-		$(".mark-publish-head span.fr").click(function() {
-			var text = $(".mark-publish-body > textarea").val().trim();
-			if (text == '') {
-				myalert("评论不能为空！");
-				return;
-			}
-			$(".mark-publish-wrap").css("bottom", '-21rem');
-		});
-	})
-	</script>
+	<script src="__PUBLIC__/script/min/topic.min.js"></script>
 <include file="Common/footer" />

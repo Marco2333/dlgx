@@ -10,6 +10,7 @@
 }
 .act-item {
 	position: relative;
+	height: 13.8rem;
 	background-color: #fff;
 	margin: .7rem 0;
 	overflow: hidden;
@@ -17,6 +18,9 @@
 	&:first-child {
 		margin-top: 0;
 	}
+}
+.act-video-wrap {
+	height: auto;
 }
 .act-video {
 	position: relative;
@@ -56,16 +60,14 @@
 }
 .act-img {
 	float: left;
-	width: 31%;
-	max-width: 10.3rem;
+	width: 10.3rem;
 	img { 
 		width: 100%;
-		max-height: 14rem;
+		height: 13.8rem;
 	}
 }
 .act-info {
-	float: left;
-	width: 69%;
+	overflow: hidden;
 	padding: .8rem 1rem .4rem;
 }
 .act-title {

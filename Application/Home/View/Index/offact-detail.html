@@ -1,7 +1,22 @@
 <include file="Common/header" title="线下活动详情" keywords="活动详情" description=""/>
 
 	<div id="adetail-img">
-		<img src="__PUBLIC__/images/actdetail.png" alt="">
+		<div id="banner-wrap" class="none">
+			<div class="imgbox">
+			    <ul class="clearfix">
+			        <li><img src="__PUBLIC__/images/actdetail.png" alt=""></img></li>
+			        <li><img src="__PUBLIC__/images/actdetail.png" alt=""></img></li>
+			        <li><img src="__PUBLIC__/images/actdetail.png" alt=""></img></li>
+			    </ul>
+			</div>
+			<div class="page">
+			    <ol>
+			        <li class="active"></li>
+			        <li></li>
+			        <li></li>
+			    </ol>
+			</div>
+		</div>
 	</div>
 	<div class="adetail-wrap">
 		<p class="adetail-head">蒙牛校园全明星~早间青春SHOW</p>
@@ -147,11 +162,15 @@
 		</p>
 		<div class="mark-publish-body">
 			<textarea placeholder="写评论..."></textarea>
-			<p><img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span></p>
+			<p>
+				<img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span>
+				<input type="file" name="file[]">
+			</p>
 		</div>
 	</div>
 
 	<script src="__PUBLIC__/script/min/touch.min.js"></script>
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
+	<script src="__PUBLIC__/script/min/swipe.min.js"></script>
 	<script src="__PUBLIC__/script/min/actdetail.min.js"></script>
 <include file="Common/footer" />
