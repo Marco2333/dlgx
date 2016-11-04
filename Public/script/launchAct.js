@@ -1,4 +1,18 @@
 $(function() {
+
+	var status = $(".info-mask").attr('data-status');
+	if (status === '1' || status === '-1') {
+		if (status === '1') {
+			$(".info-mask").text('发起成功');
+		} else {
+			$(".info-mask").text('发起失败');
+		}
+		$(".info-mask").removeClass('none');
+		setTimeout(function() {
+			$(".info-mask").addClass('none');
+		}, 1500);
+	}
+
 	var rate1 = 0,
 		rate2 = 0,
 		rate3 = 0,
@@ -61,10 +75,62 @@ $(function() {
 		});
 	});
 
-	$(".")
 	setPickerStyle(0);
+
+	$("#club-logo-set").prev('input').change(function() {
+		var val = $(this).val(),
+			suffix = val.substring(val.lastIndexOf('.') + 1);
+		if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+			alert("请上传图片文件！");
+			$(this).val('');
+			return;
+		}
+
+		var objUrl = getObjectURL(this.files[0]);
+
+		if (objUrl) {
+			$("#club-logo-set").attr('src', objUrl)
+		}
+	});
+
+	var albumFlag = true;
+
+	$(".album-add").on('change', "input[type='file']", function() {
+		var len, i, objUrl, val = $(this).val(),
+			suffix = val.substring(val.lastIndexOf('.') + 1);
+
+		if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+			alert("请上传图片文件！");
+			$(this).val('');
+			return;
+		}
+
+		objUrl = getObjectURL(this.files[0]);
+		$("<img>").attr('src', objUrl).prependTo($(".club-add-img"));
+		$(this).after($("<input type='file' name='album[]'>"));
+
+		if (albumFlag) {
+			albumFlag = false;
+			$(".club-add-img img").last().attr("src", "../../../Public/images/add_picture.png")
+		}
+	});
+
+	$(".club-add-img").on('click', 'img:last-child', function() {
+		$(".album-add input:last-of-type").trigger('click');
+	})
 })
 
+function getObjectURL(file) {
+	var url = null;
+	if (window.createObjectURL != undefined) { // basic
+		url = window.createObjectURL(file);
+	} else if (window.URL != undefined) { // mozilla(firefox)
+		url = window.URL.createObjectURL(file);
+	} else if (window.webkitURL != undefined) { // webkit or chrome
+		url = window.webkitURL.createObjectURL(file);
+	}
+	return url;
+}
 
 function setPickerStyle(rate, index) {
 

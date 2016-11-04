@@ -1,7 +1,7 @@
 <include file="Common/header" title="发起活动" keywords="发起活动" description=""/>
 	
 	<div id="ccreate-wrap">
-		<form action="" onsubmit="return check();">
+		<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
 			<p class="ccreate-title">
 				填写活动资料
 			</p>
@@ -37,15 +37,25 @@
 			<div class="ccreate-detail">
 				<ul>
 					<li>
-						<span>活动介绍</span>
-						<div class="cdinput-wrap">
-							<textarea name="intro" cols="30" rows="10" placeholder="请输入活动介绍"></textarea>
+						<span>添加图片</span>
+						<div class="cdinput-wrap pr album-add">
+							<input type="file" name="album[]">
+							<span>添加图片</span>
 						</div>
 					</li>
-					<p class="club-add-img"><img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span></p>
+					<p class="club-add-img"><img src="__PUBLIC__/images/picture.png" alt=""></p>
 				</ul>
 			</div>
-
+			<div class="ccreate-detail">
+				<ul>
+					<li>
+						<span>活动介绍</span>
+						<div class="cdinput-wrap">
+							<textarea name="intro" placeholder="请输入活动介绍"></textarea>
+						</div>
+					</li>
+				</ul>
+			</div>
 			<button class="submit">立即发起</button>
 		</form>
 	</div>
@@ -119,6 +129,7 @@
 		</div>
 		<div class="dpicker-info">日</div>
 	</div>
+	<div class="info-mask center none" data-status="">修改失败</div>
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
 	<script src="__PUBLIC__/script/min/launchAct.min.js"></script>
 <include file="Common/footer" />
