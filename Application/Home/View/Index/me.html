@@ -1,7 +1,7 @@
 <include file="Common/header" title="我的" keywords="我的" description=""/>
 	
-	<a href="{:U('Index/info-modify')}">
-		<div id="mine-top">
+	<div id="mine-top">
+		<a href="{:U('Index/info-modify')}">
 			<div class="fl">
 				<img src="__PUBLIC__/images/user1.jpg" alt="">
 			</div>
@@ -10,12 +10,13 @@
 				<p>简介简介简介简介简介简介简介简介</p>
 			</div>
 			<i class="fa fa-angle-right"></i>
-			<div class="watch-fans clearfix">
-				<p>关注 2547</p>
-				<p>粉丝 14167</p>
-			</div>
+		</a>
+		<div class="watch-fans clearfix">
+			<a href=""><p>关注 2547</p></a>
+			<a href=""><p>粉丝 14167</p></a>
 		</div>
-	</a>
+	</div>
+	
 	<div class="mine-info">
 		<ul>
 			<a href="{:U('Index/mine-club')}"><li class="mine-info-item">我的社团<i class="fa fa-angle-right"></i></li></a>

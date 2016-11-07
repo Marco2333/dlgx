@@ -1156,13 +1156,13 @@
 #mine-top {
   position: relative;
   background-color: #fff; }
-  #mine-top > .fl {
+  #mine-top .fl {
     width: 10rem;
     height: 10rem;
     line-height: 10rem;
     text-align: center;
     overflow: hidden; }
-    #mine-top > .fl > img {
+    #mine-top .fl > img {
       width: 8rem;
       height: 8rem;
       border-radius: 100%; }
@@ -1190,14 +1190,14 @@
 
 .watch-fans {
   border-top: 1px solid #eee; }
-  .watch-fans > p {
+  .watch-fans p {
     float: left;
     width: 50%;
     color: #888;
     text-align: center;
     height: 3.8rem;
     line-height: 3.8rem; }
-    .watch-fans > p:first-child {
+    .watch-fans p:first-child {
       border-right: 1px solid #eee; }
 
 .mine-info {

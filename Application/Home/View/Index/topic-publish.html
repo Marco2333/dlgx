@@ -24,10 +24,24 @@
 			</div>
 			<button class="submit">立即发布</button>
 		</form>
+		<div class="info-mask center none" data-status=""></div>
 	</div>
 
 	<script>
 		$(function() {
+			var status = $(".info-mask").attr('data-status');
+			if (status === '1' || status === '-1') {
+				if (status === '1') {
+					$(".info-mask").text('发布成功');
+				} else {
+					$(".info-mask").text('发布失败');
+				}
+				$(".info-mask").removeClass('none');
+				setTimeout(function() {
+					$(".info-mask").addClass('none');
+				}, 1500);
+			}
+
 			$(".club-add-img").on('change', "input[type='file']", function() {
 				var len, i, objUrl, val = $(this).val(),
 					suffix = val.substring(val.lastIndexOf('.') + 1);
