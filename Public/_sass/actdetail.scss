@@ -70,7 +70,7 @@
 	width: 5.6rem;
 	height: 5.6rem;
 	padding: .2rem;
-	> img {
+	img {
 		width: 5.2rem;
 		height: 5.2rem;
 		border-radius: 100%;
@@ -162,7 +162,16 @@
 	text-align: center;
 	border-bottom: 1px solid #eee;
 	> span {
+		position: relative;
 		margin: 0 1rem;
+		> input[type='submit'] {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
 	}
 }
 .mark-publish-body {
@@ -185,7 +194,7 @@
 			margin: 0 .4rem;
 			border-radius: 3px;
 			&:last-of-type {
-				margin-right: 1rem;
+				margin-right: .5rem;
 			}
 		}
 		> span {
@@ -200,5 +209,15 @@
 			height: 100%;
 			opacity: 0;
 		}
+	}
+}
+#adetail-count > .fr {
+	color: #999;
+	font-size: 1.4rem;
+	&:active {
+		color: #999;
+	}
+	.fa {
+		font-size: 1.9rem;
 	}
 }
