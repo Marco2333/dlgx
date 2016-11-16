@@ -1,0 +1,97 @@
+<include file="Common/header" title="填写报名信息" keywords="填写报名信息" description=""/>
+<style> .cdinput-wrap > textarea {height: 7rem}</style>
+<div id="ccreate-wrap">
+	<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
+		<div class="ccreate-detail">
+			<ul>
+				<li>
+					<span>社团名称</span>
+					<div class="cdinput-wrap">
+						<input type="text" name="name" value="×××××社团 （默认该团长创建的社团）" placeholder="请输入社团名称" readonly>
+					</div>
+				</li>
+				<div class="ccreate-detail">
+					<ul>
+						<li>
+							<span>社团简介</span>
+							<div class="cdinput-wrap">
+								<textarea name="intro" placeholder="请输入社团简介">请输入社团简介请输入社团简介请输入社团简介请输入社团简介请输入社团简介请输入社团简</textarea>
+							</div>
+						</li>
+						<li>
+							<span>社团展示</span>
+							<div class="cdinput-wrap">
+								<textarea name="show" placeholder="请输入社团简介">请输入社团简介请输入社团简介请输入社团简介请输入社团简介请输入社团简介请输入社团简</textarea>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<p class="club-add-img">
+					<img src="__PUBLIC__/images/add_picture.png" alt="">
+					<input type="file" name="file[]">
+				</p>
+			</ul>
+		</div>
+		<button class="submit">立即报名</button>
+	</form>
+</div>
+
+<div class="info-mask center none" data-status="1"></div>
+
+<script src="__PUBLIC__/script/min/mypop.min.js"></script>
+<script>
+	$(function() {
+		var status = $(".info-mask").attr('data-status');
+		if (status === '1' || status === '-1') {
+			if (status === '1') {
+				$(".info-mask").text('报名成功');
+			} else {
+				$(".info-mask").text('报名失败');
+			}
+			$(".info-mask").removeClass('none');
+			setTimeout(function() {
+				$(".info-mask").addClass('none');
+			}, 1500);
+		}
+
+		$(".club-add-img").on('change', "input[type='file']", function() {
+			var len, i, objUrl, val = $(this).val(),
+				suffix = val.substring(val.lastIndexOf('.') + 1);
+
+			if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+				alert("请上传图片文件！");
+				$(this).val('');
+				return;
+			}
+
+			objUrl = getObjectURL(this.files[0]);
+			$("<img>").attr('src', objUrl).prependTo($(".club-add-img"));
+			$(this).after($("<input type='file' name='file[]'>"));
+		});
+	})
+
+	function check() {
+		if(!$("input[name='title']").val().trim()) {
+			alert("标题不能为空！");
+			return false;
+		}
+		if(!$("textarea[name='topic-detail']").val().trim()) {
+			alert("内容不能为空！");
+			return false;
+		}
+		return true;
+	}
+
+	function getObjectURL(file) {
+		var url = null;
+		if (window.createObjectURL != undefined) { // basic
+			url = window.createObjectURL(file);
+		} else if (window.URL != undefined) { // mozilla(firefox)
+			url = window.URL.createObjectURL(file);
+		} else if (window.webkitURL != undefined) { // webkit or chrome
+			url = window.webkitURL.createObjectURL(file);
+		}
+		return url;
+	}
+</script>
+<include file="Common/footer" />
