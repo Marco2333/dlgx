@@ -193,18 +193,25 @@
 	</div>
 
 	<div class="mark-publish-wrap">
-		<p class="mark-publish-head">
-			<span class="fl">取消</span>
-			<span class="fr">发布</span>
-		</p>
-		<div class="mark-publish-body">
-			<textarea placeholder="写评论..."></textarea>
-			<p>
-				<img src="__PUBLIC__/images/picture.png" alt=""><span>添加图片</span>
-				<input type="file" name="file[]">
+		<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
+			<p class="mark-publish-head">
+				<span class="fl">取消</span>
+				发表评论
+				<span class="fr"><input type="submit">发布</span>
 			</p>
-		</div>
+			<div class="mark-publish-body">
+				<textarea name="mark" placeholder="写评论..."></textarea>
+				<div class="mark-publish-img">
+					<div class="mark-img-button">
+						<img src="__PUBLIC__/images/add_picture.png" alt="">
+						<input type="file" name="file[]">
+					</div>
+				</div>
+			</div>
+		</form>
 	</div>
+
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
 	<script src="__PUBLIC__/script/min/topic.min.js"></script>
+	<script src="__PUBLIC__/script/min/remark.min.js"></script>
 <include file="Common/footer" />

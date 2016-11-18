@@ -67,53 +67,7 @@ $(function() {
 		$(".mark-publish-wrap").css('bottom', '0');
 	});
 
-	$(".mark-publish-head span.fl").click(function() {
-		$(".mark-publish-wrap").css("bottom", '-21rem');
-	});
-
 	$(".mark-list").on('click', '.mark-reply > span', function() {
 		$(".mark-publish-wrap").css('bottom', '0');
 	});
-
-	$(".mark-publish-body").on('change', "input[type='file']", function() {
-		var len, i, objUrl, val = $(this).val(),
-			suffix = val.substring(val.lastIndexOf('.') + 1);
-
-		if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
-			alert("请上传图片文件！");
-			$(this).val('');
-			return;
-		}
-
-		if ($(".mark-publish-body img").length >= 6) {
-			alert("最多上传5张图片");
-			$(this).val('');
-			return;
-		}
-
-		objUrl = getObjectURL(this.files[0]);
-		$("<img>").attr('src', objUrl).prependTo($(".mark-publish-body > p"));
-		$(this).after($("<input type='file' name='file[]'>"));
-	});
-})
-
-function getObjectURL(file) {
-	var url = null;
-	if (window.createObjectURL != undefined) { // basic
-		url = window.createObjectURL(file);
-	} else if (window.URL != undefined) { // mozilla(firefox)
-		url = window.URL.createObjectURL(file);
-	} else if (window.webkitURL != undefined) { // webkit or chrome
-		url = window.webkitURL.createObjectURL(file);
-	}
-	return url;
-}
-
-function check() {
-	var text = $(".mark-publish-body > textarea").val().trim();
-	if (text == '') {
-		myalert("评论不能为空！");
-		return false;
-	}
-	return true;
-}
+});

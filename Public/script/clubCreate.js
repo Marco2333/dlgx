@@ -52,6 +52,23 @@ $(function() {
 		}
 	});
 
+	$("#upload-proof").prev('input').change(function() {
+		var val = $(this).val(),
+			suffix = val.substring(val.lastIndexOf('.') + 1);
+		if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+			alert("请上传图片文件！");
+			$(this).val('');
+			return;
+		}
+
+		var objUrl = getObjectURL(this.files[0]);
+
+		if (objUrl) {
+			$("#upload-proof").attr('src', objUrl)
+		}
+	});
+
+
 	var albumFlag = true;
 
 	$(".album-add").on('change', "input[type='file']", function() {
