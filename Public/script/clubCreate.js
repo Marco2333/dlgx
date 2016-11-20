@@ -69,31 +69,47 @@ $(function() {
 	});
 
 
-	var albumFlag = true;
+	// var albumFlag = true;
 
-	$(".album-add").on('change', "input[type='file']", function() {
-		var len, i, objUrl, val = $(this).val(),
-			suffix = val.substring(val.lastIndexOf('.') + 1);
+	// $(".album-add").on('change', "input[type='file']", function() {
+	// 	var len, i, objUrl, val = $(this).val(),
+	// 		suffix = val.substring(val.lastIndexOf('.') + 1);
 
-		if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
-			alert("请上传图片文件！");
-			$(this).val('');
-			return;
+	// 	if (['jpg', 'png', 'gif', 'jpeg', 'bmp'].indexOf(suffix.toLowerCase()) == -1) {
+	// 		alert("请上传图片文件！");
+	// 		$(this).val('');
+	// 		return;
+	// 	}
+
+	// 	objUrl = getObjectURL(this.files[0]);
+	// 	$("<img>").attr('src', objUrl).prependTo($(".club-add-img"));
+	// 	$(this).after($("<input type='file' name='album[]'>"));
+
+	// 	if (albumFlag) {
+	// 		albumFlag = false;
+	// 		$(".club-add-img img").last().attr("src", "../../../Public/images/add_picture.png")
+	// 	}
+	// });
+
+	// $(".club-add-img").on('click', 'img:last-child', function() {
+	// 	$(".album-add input:last-of-type").trigger('click');
+	// })
+
+	$(".mark-img-button").on("change", "input[type='file']", function() {
+		var i, e = $(this).val(),
+			t = e.substring(e.lastIndexOf(".") + 1);
+		if (["jpg", "png", "gif", "jpeg", "bmp"].indexOf(t.toLowerCase()) == -1) return alert("请上传图片文件！"), void $(this).val("");
+		if ($(".mark-item-img").length >= 6) return alert("最多上传6张图片"), void $(this).val("");
+		i = getObjectURL(this.files[0]);
+		var r = $("<div class='mark-item-img'>");
+		r.append("<div class='mark-item-mask'>删除</div>"), $("<img>").appendTo(r).attr("src", i), r.prependTo($(".mark-publish-img")), $(this).after($("<input type='file' name='file[]'>"))
+	}), $(".mark-publish-img").on("click", ".mark-item-img", function() {
+		for (var i = $(this), e = 0;;) {
+			if (i = i.prev(".mark-item-img"), 0 == i.length) break;
+			e++
 		}
-
-		objUrl = getObjectURL(this.files[0]);
-		$("<img>").attr('src', objUrl).prependTo($(".club-add-img"));
-		$(this).after($("<input type='file' name='album[]'>"));
-
-		if (albumFlag) {
-			albumFlag = false;
-			$(".club-add-img img").last().attr("src", "../../../Public/images/add_picture.png")
-		}
+		confirm("确认删除？") && ($(this).remove(), $(".mark-img-button input[type='file']").eq(e).remove())
 	});
-
-	$(".club-add-img").on('click', 'img:last-child', function() {
-		$(".album-add input:last-of-type").trigger('click');
-	})
 
 	setPickerStyle(0);
 })

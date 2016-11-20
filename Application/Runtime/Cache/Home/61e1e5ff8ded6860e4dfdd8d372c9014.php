@@ -32,7 +32,11 @@
 	<script type="text/javascript" src="/collegial/Public/plugins/zepto.min.js"></script>
 </head>
 <body>
-
+	<style>
+		.mark-publish-img {height: auto;}
+		.mark-img-button > img {width: 5rem;height: 5rem;}
+		.mark-item-img > img {width: 5rem;height: 5rem;}
+	</style>
 	<div id="ccreate-wrap">
 		<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
 			<p class="ccreate-title">
@@ -65,12 +69,16 @@
 				<ul>
 					<li>
 						<span>社团相册</span>
-						<div class="cdinput-wrap pr album-add">
-							<input type="file" name="album[]">
+						<div class="cdinput-wrap album-add">
 							<span>添加图片</span>
 						</div>
 					</li>
-					<p class="club-add-img"><img src="/collegial/Public/images/picture.png" alt=""></p>
+					<div class="mark-publish-img">
+					    <div class="mark-img-button">
+					        <img src="/collegial/Public/images/add_picture.png" alt="">
+					        <input type="file" name="album[]">
+					    </div>
+					</div>
 				</ul>
 			</div>
 			<div class="ccreate-detail">
