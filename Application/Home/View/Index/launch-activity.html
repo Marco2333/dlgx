@@ -1,5 +1,9 @@
 <include file="Common/header" title="发起活动" keywords="发起活动" description=""/>
-	
+	<style>
+		.mark-publish-img {height: auto;}
+		.mark-img-button > img {width: 5rem;height: 5rem;}
+		.mark-item-img > img {width: 5rem;height: 5rem;}
+	</style>
 	<div id="ccreate-wrap">
 		<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
 			<p class="ccreate-title">
@@ -38,12 +42,16 @@
 				<ul>
 					<li>
 						<span>添加图片</span>
-						<div class="cdinput-wrap pr album-add">
-							<input type="file" name="album[]">
+						<div class="cdinput-wrap album-add">
 							<span>添加图片</span>
 						</div>
 					</li>
-					<p class="club-add-img"><img src="__PUBLIC__/images/picture.png" alt=""></p>
+					<div class="mark-publish-img">
+					    <div class="mark-img-button">
+					        <img src="__PUBLIC__/images/add_picture.png" alt="">
+					        <input type="file" name="file[]">
+					    </div>
+					</div>
 				</ul>
 			</div>
 			<div class="ccreate-detail">

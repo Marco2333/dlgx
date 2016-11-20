@@ -271,14 +271,6 @@
     font-size: 1.6rem;
     vertical-align: text-top; }
 
-.album-add > input[type='file'] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; }
-
 .album-add > span {
   vertical-align: -.2rem;
   color: #aaa; }
@@ -290,22 +282,6 @@
   border-radius: 100%; }
   #club-logo-set + .fa, #upload-proof + .fa {
     top: 1.3rem; }
-
-.club-add-img {
-  position: relative;
-  padding: .7rem .7rem 0 .7rem; }
-  .club-add-img > img {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5px;
-    margin: 0 .9rem 1rem 0; }
-  .club-add-img > input[type='file'] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0; }
 
 .date-picker {
   position: fixed;
