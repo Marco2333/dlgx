@@ -133,6 +133,16 @@ $(function() {
 		}
 		confirm("确认删除？") && ($(this).remove(), $(".mark-img-button input[type='file']").eq(e).remove())
 	});
+
+	$("#rank-head input[type=checkbox]").change(function() {
+		if ($(this).prop("checked")) {
+			$(".rank-input-wrap input").prop('disabled', false);
+			$(".rank-input-wrap textarea").prop('disabled', false);
+		} else {
+			$(".rank-input-wrap input").val("").prop('disabled', true);
+			$(".rank-input-wrap textarea").val("").prop('disabled', true);
+		}
+	})
 })
 
 function getObjectURL(file) {
@@ -201,6 +211,16 @@ function check() {
 		alert("结束时间不能为空！");
 		return false;
 	}
-
+	if ($("#rank-head input[type=checkbox]").prop("checked")) {
+		var val = $("input[name='fund']").val().trim();
+		if (!val) {
+			alert("资金需求不能为空！");
+			return false;
+		}
+		if (isNaN(val)) {
+			alert("请输入规范的数字！");
+			return false;
+		}
+	}
 	return true;
 }

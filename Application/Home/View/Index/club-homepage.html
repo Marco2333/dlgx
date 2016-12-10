@@ -5,21 +5,18 @@
 			<img src="__PUBLIC__/images/user1.jpg" alt="">
 			<h2>大学生创业协会</h2>
 			<p>关注数 2345</p>
-		</div>
-		<div id="homepage-banner" class="none">
-			<div class="imgbox">
-			    <ul class="clearfix">
-			        <li><a href=""><img src="__PUBLIC__/images/banner.jpg" alt=""></img></a></li>
-			        <li><a href=""><img src="__PUBLIC__/images/banner.jpg" alt=""></img></a></li>
-			        <li><a href=""><img src="__PUBLIC__/images/banner.jpg" alt=""></img></a></li>
-			    </ul>
-			</div>
-			<div class="page">
-			    <ol>
-			        <li class="active"></li>
-			        <li></li>
-			        <li></li>
-			    </ol>
+			<div id="homepage-rank">
+				<p><img src="__PUBLIC__/images/star.png" alt=""></p>
+				<div class="rank-bar-wrap">
+					<div class="rank-bar">
+						<span class="rank-bar-score" data-score="50"></span>
+					</div>
+				</div>
+				<p>535/1000</p>
+				<div class="hrank-explain">
+					<img src="__PUBLIC__/images/mark_wen.png" alt="">
+					等级说明
+				</div>
 			</div>
 		</div>
 		<a class="homepage-watch"><img src="__PUBLIC__/images/plus_white.png" alt=""><span>关注</span></a>
@@ -176,19 +173,12 @@
 		<img src="__PUBLIC__/images/tick.png" alt="">
 		<p></p>
 	</div>
-	<script src="__PUBLIC__/script/min/swipe.min.js"></script>
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
 	<script>
 		$(function() {
-			$("#homepage-banner").removeClass('none');
-			var scrollImg = $.mggScrollImg('.imgbox ul',{
-		        loop: true,
-		        auto: true,
-		        callback: function(ind){
-		            $('.page li').eq(ind).addClass('active').siblings().removeClass('active');
-		        }
-		    });
-
+			var width = $(".rank-bar-score").attr('data-score');
+			$(".rank-bar-score").css('width',width + "%");
+			
 		    $(".homepage-watch").click(function() {
 		    	if($(this).hasClass("_watch")) {
 		    		return;

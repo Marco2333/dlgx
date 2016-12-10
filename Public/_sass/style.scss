@@ -10,5 +10,112 @@
 @import "topic.scss";
 @import "me.scss";
 
-@import "response.scss"
+@import "response.scss";
 
+.rank-top {
+	font-size: 1.4rem;
+	color: $mainColor;
+	text-align: right;
+}
+#rank-head {
+	padding: .8rem 0;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	img {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	> span {
+		margin: 0 .6rem 0 1.6rem;
+	}
+}
+.rank-item {
+	margin: .8rem 0;
+	> span.fl {
+		width: 10rem;
+		text-align: center;
+	}
+}
+.rank-input-wrap {
+	overflow: hidden;
+	padding-right: 3rem;
+	> input {
+		width: 7.5rem;
+		height: 2.3rem;
+		outline: none;
+		padding: 0 .5rem;
+		margin-right: .5rem;
+		vertical-align: middle;
+		border-radius: 10px;
+		border: 1px solid #eee;
+	}
+	> textarea {
+		width: 100%;
+		height: 7rem;
+		resize: none;
+		outline: none;
+		padding: .5rem;
+		border-radius: 10px;
+		border: 1px solid #eee;
+	}
+}
+#special-need {
+	color: #fff;
+	padding: .6rem 0;
+	margin-bottom: 2.6rem;
+	text-align: center;
+	font-size: 1.6rem;
+	background-color: $mainColor;
+	> .fl {
+		width: 86%;
+	}
+	> .fr {
+		width: 14%;
+		padding-top: .7rem;
+	}
+}
+
+#homepage-rank {
+	position: relative;
+	padding-bottom: .6rem;
+	> p {
+		color: #effe21;
+		font-size: 1.3rem;
+		img {
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+	}
+}
+.rank-bar-wrap {
+	font-size: 1rem;
+}
+.rank-bar {
+	display: inline-block;
+	width: 11rem;
+	height: .7rem;
+	background-color: #fff;
+	border-radius: 30px;
+	position: relative;
+}
+.rank-bar-score {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	height: .7rem;
+	border-radius: 30px;
+	background-color: #03ffe4;
+	transition: width 1500ms ease-out;
+}
+.hrank-explain {
+	position: absolute;
+	right: 2rem;
+	bottom: 1rem;
+	font-size: 1.3rem;
+	img {
+		width: 1.6rem;
+		height: 1.6rem;
+		vertical-align: -3px;
+	}
+}
