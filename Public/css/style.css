@@ -368,16 +368,22 @@
   color: #fff;
   font-size: 1.4rem;
   border-radius: 20px;
-  padding: .5rem 1.1rem .3rem;
+  text-align: center;
   background-color: rgba(100, 100, 100, 0.5); }
-  .homepage-watch > img {
-    width: 1.3rem;
-    max-height: 2rem;
-    vertical-align: -.1rem;
-    margin-right: .6rem; }
+  .homepage-sign > .fa,
+  .homepage-watch > .fa {
+    margin-right: .5rem;
+    font-size: 1.6rem;
+    vertical-align: -1px; }
+  .homepage-sign:active,
   .homepage-watch:active {
     color: #fff; }
 
+.homepage-sign {
+  right: .8rem; }
+
+.homepage-watch {
+  left: .8rem; }
 .adetail-ablum-item {
   float: left;
   width: 33.3%;
@@ -1653,5 +1659,28 @@
     width: 1.6rem;
     height: 1.6rem;
     vertical-align: -3px; }
+
+  #vadetail-pop > a {
+    display: inline-block;
+    width: 100%;
+    color: #80d6c1;
+    font-size: 1.6rem;
+    padding: .8rem 0;
+    border-top: 1px solid #eee; }
+
+#vadetail-pop-body {
+  padding: .8rem .7rem 0; }
+  #vadetail-pop-body > h1 {
+    margin: .8rem 0 .5rem;
+    color: #111;
+    font-size: 1.6rem; }
+  #vadetail-pop-body > h2 {
+    margin-top: .5rem;
+    color: #222;
+    font-size: 1.5rem; }
+  #vadetail-pop-body > h5 {
+    margin: .8rem 0 .7rem;
+    color: #aaa;
+    font-size: 1.1rem; }
 
 /*# sourceMappingURL=style.css.map */

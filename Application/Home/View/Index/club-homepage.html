@@ -19,7 +19,8 @@
 				</div>
 			</div>
 		</div>
-		<a class="homepage-watch"><img src="__PUBLIC__/images/plus_white.png" alt=""><span>关注</span></a>
+		<a class="homepage-watch"><i class="fa fa-plus"></i><span>关注</span></a>
+		<a class="homepage-sign"><i class="fa fa-plus"></i><span>签到</span></a>
 	</div>
 	
 	<div class="adetail-wrap">
@@ -173,6 +174,24 @@
 		<img src="__PUBLIC__/images/tick.png" alt="">
 		<p></p>
 	</div>
+
+	<div id="vadetail-pop" class="center none">
+		<div id="vadetail-pop-body">
+			<h1>社团最佳CP评选</h1>
+			无论你是闺蜜，兄弟，还是基友= =<br>
+			只要你敢秀出你们的合照及故事<br>
+			就有机会获得我们的奖品<br>
+			<h2>奖项设置：</h2>
+			第一名：XXXXXX<br>
+			第二名：XXXXXX<br>
+			第三名：XXXXXX<br>
+			4-10名：XXXXXX<br>
+			最佳闺蜜奖1名：XXXXX<br>
+			最佳基友奖1名：XXXXX<br>
+			<h5>本活动最终解释权由大乐个学所有</h5>
+		</div>
+		<a>关闭</a>
+	</div>
 	<script src="__PUBLIC__/script/min/mypop.min.js"></script>
 	<script>
 		$(function() {
@@ -183,13 +202,29 @@
 		    	if($(this).hasClass("_watch")) {
 		    		return;
 		    	}
-		    	$(this).addClass('_watch').find('img').addClass('none').next('span').text('已关注');
+		    	$(this).addClass('_watch').find('.fa').addClass('none').next('span').text('已关注');
 		    	$(".trans-alert p").text('关注成功').parent().removeClass('none');
 		    	setTimeout(function() {
 		    		$(".trans-alert").addClass('none');
 		    	},1400)
 		    });
 
+		    $(".homepage-sign").click(function() {
+		    	if($(this).hasClass("_sign")) {
+		    		return;
+		    	}
+		    	$(this).addClass('_sign').find('.fa').addClass('none').next('span').text('已签到');
+		    	$(".trans-alert p").text('签到成功').parent().removeClass('none');
+		    	setTimeout(function() {
+		    		$(".trans-alert").addClass('none');
+		    	},1400)
+		    });
+		    $(".hrank-explain").click(function() {
+		    	$("#vadetail-pop").removeClass("none");
+		    });
+		    $("#vadetail-pop a").click(function() {
+		    	$("#vadetail-pop").addClass("none");
+		    });
 		    $(".submit").click(function() {
 		    	myprompt("请输入加入口令",function(val) {
 		    			if(val === '') {

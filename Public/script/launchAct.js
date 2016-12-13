@@ -221,6 +221,10 @@ function check() {
 			alert("请输入规范的数字！");
 			return false;
 		}
+		if (+val > +$("input[name='fund']").attr('data-fund')) {
+			alert("资金申请超过当前等级最高申请，如需举办大型活动，请选择大型活动申请")
+			return false;
+		}
 	}
 	return true;
 }
