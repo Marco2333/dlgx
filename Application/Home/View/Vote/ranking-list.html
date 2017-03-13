@@ -1,0 +1,119 @@
+<include file="Common/header" title="排行榜" keywords="排行榜" description=""/>
+
+<form action="" onsubmit="return check();">
+	<div class="vsearch-wrap">
+		<button>搜索</button>
+		<div class="vinput-wrap">
+			<input type="text" placeholder="请输入编号进入投票">
+		</div>
+	</div>
+</form>
+
+<div id="rank-list" class="pre-navbt">
+	<div class="rank-item">
+		<div class="rank-head">
+			<div class="fr">
+				票数：562票
+			</div>
+			<a href="{:U('Index/player-detail')}">
+				<div class="rank-name">
+					<span>No.1</span>
+					路意义（12号）
+				</div>
+			</a>
+		</div>
+		<div class="rank-body">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<p>CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍</p>
+			<div class="vote-button">
+				<button>投TA一票</button>
+			</div>
+		</div>
+	</div>
+	<div class="rank-item">
+		<div class="rank-head">
+			<div class="fr">
+				票数：562票
+			</div>
+			<a href="{:U('Index/player-detail')}">
+				<div class="rank-name">
+					<span>No.2</span>
+					路意义（12号）
+				</div>
+			</a>
+		</div>
+		<div class="rank-body">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<p>CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍</p>
+			<div class="vote-button">
+				<button>投TA一票</button>
+			</div>
+		</div>
+	</div>
+	<div class="rank-item">
+		<div class="rank-head">
+			<div class="fr">
+				票数：562票
+			</div>
+			<a href="{:U('Index/player-detail')}">
+				<div class="rank-name">
+					<span>No.3</span>
+					路意义（12号）
+				</div>
+			</a>
+		</div>
+		<div class="rank-body">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<p>CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍</p>
+			<div class="vote-button">
+				<button>投TA一票</button>
+			</div>
+		</div>
+	</div>
+	<div class="rank-item">
+		<div class="rank-head">
+			<div class="fr">
+				票数：562票
+			</div>
+			<a href="{:U('Index/player-detail')}">
+				<div class="rank-name">
+					<span>No.4</span>
+					路意义（12号）
+				</div>
+			</a>
+		</div>
+		<div class="rank-body">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<p>CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍CP介绍</p>
+			<div class="vote-button">
+				<button>投TA一票</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="nav-bottom">
+	<div class="navbt-item">
+		<a href="{:U('Index/vote')}">
+			<img src="__PUBLIC__/images/home_gray.png" alt=""><p>投票首页</p>
+		</a>
+	</div>
+	<div class="navbt-item">
+		<a href="{:U('Index/apply')}">
+			<img src="__PUBLIC__/images/add_gray.png" alt=""><p>报名</p>
+		</a>
+	</div>
+	<div class="navbt-item active">
+		<img src="__PUBLIC__/images/chart.png" alt=""><p>排行榜</p>
+	</div>
+</div>
+<script>
+function check() {
+	if($(".input-wrap input").val().trim() == '') {
+		alert('搜索内容不能为空！');
+		return false;
+	}
+	return true;
+}
+</script>
+<include file="Common/footer" />

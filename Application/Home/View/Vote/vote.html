@@ -1,0 +1,183 @@
+<include file="Common/header" title="投票" keywords="投票" description=""/>
+
+<style>body {background-color: #fff;}</style>
+<div id="vote-top">
+	<div id="countdown">
+		<p>活动倒计时</p>
+		<p><span class="day">01</span>天<span class="hour">01</span>小时<span class="minute">01</span>分<span class="second">00</span>秒</p>
+	</div>
+	<div id="vote-info" class="clearfix">
+		<div class="vote-info-item">
+			<p>已报名</p>
+			<p>10</p>
+		</div>
+		<div class="vote-info-item">
+			<p>投票人次</p>
+			<p>388</p>
+		</div>
+		<div class="vote-info-item">
+			<p>访问量</p>
+			<p>1208</p>
+		</div>
+	</div>
+	<p><a id="vadetail-button">活动详情</a><a href="{:U('Index/apply')}">我要报名</a></p>
+</div>
+
+<div class="vsearch-wrap">
+	<button>搜索</button>
+	<div class="vinput-wrap">
+		<input type="text" placeholder="请输入编号进入投票">
+	</div>
+</div>
+
+<div id="vote-list" class="pre-navbt clearfix">
+	<div class="vote-list-item">
+		<div class="vote-litem-img">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<div class="vote-iimg-mask">
+				<p><i class="fa fa-heart"></i>路意义</p>
+				<p class="fr">52<span>票</span></p>
+			</div>
+			<span class="vote-iimg-num">1号</span>
+		</div>
+		<div class="vote-button">
+			<button>投TA一票</button>
+		</div>
+	</div>
+	<div class="vote-list-item">
+		<div class="vote-litem-img">
+			<img src="__PUBLIC__/images/user1.jpg" alt="">
+			<div class="vote-iimg-mask">
+				<p><i class="fa fa-heart"></i>路意义</p>
+				<p class="fr">52<span>票</span></p>
+			</div>
+			<span class="vote-iimg-num">2号</span>
+		</div>
+		<div class="vote-button">
+			<button>投TA一票</button>
+		</div>
+	</div>
+	<div class="vote-list-item">
+		<div class="vote-litem-img">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<div class="vote-iimg-mask">
+				<p><i class="fa fa-heart"></i>路意义</p>
+				<p class="fr">52<span>票</span></p>
+			</div>
+			<span class="vote-iimg-num">3号</span>
+		</div>
+		<div class="vote-button">
+			<button>投TA一票</button>
+		</div>
+	</div>
+	<div class="vote-list-item">
+		<div class="vote-litem-img">
+			<img src="__PUBLIC__/images/ranktemp.png" alt="">
+			<div class="vote-iimg-mask">
+				<p><i class="fa fa-heart"></i>路意义</p>
+				<p class="fr">52<span>票</span></p>
+			</div>
+			<span class="vote-iimg-num">4号</span>
+		</div>
+		<div class="vote-button">
+			<button>投TA一票</button>
+		</div>
+	</div>
+</div>
+
+<div class="nav-bottom">
+	<div class="navbt-item active"><img src="__PUBLIC__/images/home.png" alt=""><p>投票首页</p>
+	</div>
+	<div class="navbt-item">
+		<a href="{:U('Index/apply')}">
+			<img src="__PUBLIC__/images/add_gray.png" alt=""><p>报名</p>
+		</a>
+	</div>
+	<div class="navbt-item">
+		<a href="{:U('Index/ranking-list')}">
+			<img src="__PUBLIC__/images/chart_gray.png" alt=""><p>排行榜</p>
+		</a>
+	</div>
+</div>
+
+<div id="vadetail-pop" class="center none">
+	<div id="vadetail-pop-body">
+		<h1>社团最佳CP评选</h1>
+		无论你是闺蜜，兄弟，还是基友= =<br>
+		只要你敢秀出你们的合照及故事<br>
+		就有机会获得我们的奖品<br>
+		<h2>奖项设置：</h2>
+		第一名：XXXXXX<br>
+		第二名：XXXXXX<br>
+		第三名：XXXXXX<br>
+		4-10名：XXXXXX<br>
+		最佳闺蜜奖1名：XXXXX<br>
+		最佳基友奖1名：XXXXX<br>
+		<h5>本活动最终解释权由大乐个学所有</h5>
+	</div>
+	<a>关闭</a>
+</div>
+<script>
+$(function() {
+	var day = +$('.day').text(),
+		hour = +$('.hour').text(),
+		minute = +$('.minute').text(),
+		second = +$('.second').text();
+
+	if(day != 0 || hour != 0 || minute != 0 || second != 0) {
+		var intid = setInterval(function() {
+			if(day == 0 && hour == 0 && minute == 0 && second == 0) {
+				clearInterval(intid);
+				return;
+			}
+			if(second > 0) {
+				second--;
+			} else {
+				second = 59;
+				if(minute > 0) {
+					minute--;
+				}
+				else {
+					minute = 59;
+					if(hour > 0) {
+						hour--;
+					}
+					else {
+						hour = 23;
+						if(day > 0) {
+							day--;
+						} 
+					}
+				}
+			}
+			$('.day').text(day > 9 ? day : "0" + day);
+			$('.hour').text(hour > 9 ? hour : "0" + hour);
+			$('.minute').text(minute > 9 ? minute : "0" + minute);
+			$('.second').text(second > 9 ? second : "0" + second);
+		},1000);
+	}
+
+	var percent = $(".vote-litem-img").width() / $(".vote-litem-img").height();
+
+	$(".vote-litem-img img").each(function() {
+		if($(this).width() / $(this).height() > percent) {
+			$(this).css('min-width','100%').css('height','100%');
+		}
+		else {
+			$(this).css({
+				'width': '100%',
+				'min-height' : '100%'
+			})
+		}
+	});
+
+	$("#vadetail-button").click(function() {
+		$("#vadetail-pop").removeClass('none');
+	});
+
+	$("#vadetail-pop a").click(function() {
+		$("#vadetail-pop").addClass("none");
+	})
+})
+</script>
+<include file="Common/footer" /> 

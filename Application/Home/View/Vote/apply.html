@@ -1,0 +1,103 @@
+<include file="Common/header" title="我要报名" keywords="我要报名" description=""/>
+
+<style>.mark-img-button > img {width: 5rem;height: 5rem;} .mark-item-img > img {width: 5rem;height: 5rem;}.mark-publish-img{height: auto}</style>
+<form action="" method="post" enctype="multipart/form-data" onsubmit="return check();">
+	<div class="ccreate-detail">
+		<ul>
+			<li>
+				<span>“CP”名称</span>
+				<div class="cdinput-wrap">
+					<input type="text" name="name" placeholder="请输入“CP”名称">
+				</div>
+			</li>
+			<li class="show-dpicker pr">
+				<span>“CP”关系</span>
+				<div class="cdinput-wrap">
+					<input type="text" name="type" value="闺蜜" readonly>
+				</div>
+				<i class="fa fa-angle-right"></i>
+			</li>
+		</ul>
+	</div>
+	<div class="ccreate-detail">
+		<ul>
+			<li>
+				<span style="width:100%;float: none">参赛照片（至少合照一张，最多三张）</span>
+			</li>
+			<div class="mark-publish-img">
+			    <div class="mark-img-button">
+			        <img src="__PUBLIC__/images/add_picture.png" alt="">
+			        <input type="file" name="album[]">
+			    </div>
+			</div>
+		</ul>
+	</div>
+	<div class="ccreate-detail">
+		<ul>
+			<li class="show-dpicker1 pr">
+				<span>参赛话题</span>
+				<div class="cdinput-wrap">
+					<input type="text" name="topic" value="1" readonly>
+				</div>
+				<i class="fa fa-angle-right"></i>
+			</li>
+		</ul>
+	</div>
+	<div class="ccreate-detail">
+		<ul>
+			<li>
+				<span>话题内容</span>
+				<div class="cdinput-wrap">
+					<textarea name="detail" placeholder="请输入话题内容"></textarea>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<button class="submit">立即报名</button>
+</form>
+<div class="info-mask center none" data-status=""></div>
+<div class="date-picker date-picker0">
+	<p><span class="fl dpicker-cancel">取消</span>选择关系<span class="dpicker-finish fr">完成</span></p>
+	<div class="dpicker-body dpicker-body0">
+		<ul>
+			<li class="dpicker-item empty sub-active"></li>
+			<li class="dpicker-item active">基友</li>
+			<li class="dpicker-item sub-active">闺蜜</li>
+			<li class="dpicker-item">情侣</li>
+			<li class="dpicker-item">其他</li>
+			<li class="dpicker-item empty"></li>
+		</ul>
+	</div>
+</div>
+
+<div class="date-picker date-picker1">
+	<p><span class="fl dpicker-cancel">取消</span>选择关系<span class="dpicker-finish dpicker-finish1 fr">完成</span></p>
+	<div class="dpicker-body dpicker-body1">
+		<ul>
+			<li class="dpicker-item empty sub-active"></li>
+			<li class="dpicker-item active">1</li>
+			<li class="dpicker-item sub-active">2</li>
+			<li class="dpicker-item">3</li>
+			<li class="dpicker-item">4</li>
+			<li class="dpicker-item empty"></li>
+		</ul>
+	</div>
+</div>
+<div class="nav-bottom">
+	<div class="navbt-item">
+		<a href="{:U('Index/vote')}">
+			<img src="__PUBLIC__/images/home_gray.png" alt=""><p>投票首页</p>
+		</a>
+	</div>
+	<div class="navbt-item active">
+		<img src="__PUBLIC__/images/add.png" alt=""><p>报名</p>
+	</div>
+	<div class="navbt-item">
+		<a href="{:U('Index/ranking-list')}">
+			<img src="__PUBLIC__/images/chart_gray.png" alt=""><p>排行榜</p>
+		</a>
+	</div>
+</div>
+
+<script src="__PUBLIC__/script/min/apply.min.js"></script>
+<include file="Common/footer" /> 
